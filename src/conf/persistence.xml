@@ -30,6 +30,7 @@
 -->
 <persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
   <persistence-unit name="web-jpaPU" transaction-type="JTA">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <jta-data-source>DB</jta-data-source>
     <properties>
       <!-- use this property if target server is GlassFish V3 with EclipseLink -->
@@ -37,6 +38,7 @@
       <!-- use this property if target server uses toplink
       <property name="toplink.ddl-generation" value="drop-and-create-tables"/>
       -->
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
     </properties>
   </persistence-unit>
 </persistence>

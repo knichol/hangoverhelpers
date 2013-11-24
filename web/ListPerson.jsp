@@ -31,5 +31,6 @@
 
 </table>
 <a href="CreatePerson.jsp"><strong>Create a Person Record</strong></a>
+<a href="register.jsp"><strong>Register</strong></a>
 </body>
 </html>

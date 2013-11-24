@@ -8,8 +8,7 @@
     <head>
     </head>
     <body>
-    <jsp:forward page="ListPerson" />
+    <jsp:forward page="ListPerson"/>
     <p> Hello there </p>
-    
     </body>
 </html>

@@ -55,16 +55,18 @@ public class Customer implements Serializable {
     @Column(name = "Password")
     private String password;
     @Column(name = "Phone")
-    private Integer phone;
+    private String phone;
 
     public Customer() {
     }
 
-    public Customer(String name, String email, String address) {
+    public Customer(String name, String password, String email, String address, String phone) {
         //this.customerID = customerID;
         this.name = name;
+        this.password = password;
         this.email = email;
         this.address = address;
+        this.phone = phone;
     }
 
     public Integer getCustomerID() {
@@ -107,11 +109,11 @@ public class Customer implements Serializable {
         this.password = password;
     }
 
-    public Integer getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Integer phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
