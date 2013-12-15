@@ -16,15 +16,21 @@
     
 <table id="personListTable" border="3">
 <tr >
+    <th bgcolor=>ID Number</th>
     <th bgcolor=>Name</th>
     <th bgcolor=>Email</th>
     <th bgcolor=>Address</th>
+    <th bgcolor=>Phone</th>
+    <th bgcolor=>Password</th>
 </tr>
 <c:forEach var="cust" begin="0" items="${requestScope.personList}">
 <tr>
-    <td>${Customer.Name}&nbsp;&nbsp;</td> 
-    <td>${Customer.Email}&nbsp;&nbsp;</td> 
-    <td>${Customer.Address}&nbsp;&nbsp;</td> 
+    <td>${cust.customerID}</td>
+    <td>${cust.name}</td> 
+    <td>${cust.email}&nbsp;&nbsp;</td> 
+    <td>${cust.address}&nbsp;&nbsp;</td>
+    <td>${cust.phone}&nbsp;&nbsp;</td>
+    <td>${cust.password}&nbsp;&nbsp;</td>
 </tr> 
 
 </c:forEach>
@@ -32,5 +38,6 @@
 </table>
 <a href="CreatePerson.jsp"><strong>Create a Person Record</strong></a>
 <a href="register.jsp"><strong>Register</strong></a>
+<a href="login.jsp"><strong>Login</strong></a>
 </body>
 </html>

@@ -31,7 +31,7 @@ public class ListPersonServlet extends HttpServlet {
             em = emf.createEntityManager();
 
             //query for all the persons in database
-            List persons = em.createQuery("SELECT c FROM Customer c").getResultList();
+            List persons = em.createQuery("select c from Customer c").getResultList();
             request.setAttribute("personList",persons);
             
             //Forward to the jsp page for rendering
