@@ -13,12 +13,14 @@
 </div>
  <div style=" margin-left: auto;margin-right:auto;">
     <p style="margin-top:-50px; margin-left:100px;"class="alignleft">
-        <font size="6" color="white" face="Bradley hand ITC" >HangoverHelpers</font></p>
+        <a href="index.jsp" style="text-decoration: none;">
+             <font size="6" color="white" face="Bradley hand ITC" >HangoverHelpers</a></font></p>
       <p style="margin-top:-24px; margin-left: 40px;" class="aligncenter">
 <table border="0">
   <tr>
-    <td><font color="white" size ="5" face="Bradley hand ITC"
-		onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">Home</font></td>
+    <td><a href="index.jsp" style="text-decoration: none;">
+        <font color="white" size ="5" face="Bradley hand ITC"
+		onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">Home</font></a></td>
     <td>&nbsp;</td>
        <td>&nbsp;</td>
     <td><font color="white" size ="5" face="Bradley hand ITC"
@@ -105,8 +107,28 @@
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 } 
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #7092BE; }
     </style> 
-	<body background ="http://i.imgur.com/WvJjCS2.jpg">
+	<body background ="http://www.hdwallpaperspot.com/wp-content/uploads/2013/01/Calm_2560_1600.jpg">
                         
                 
   <form name="welcome" >
