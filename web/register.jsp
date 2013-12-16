@@ -2,19 +2,64 @@
  <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registration</title>
-        <div id="background">
-        <img src="http://i.imgur.com/y1AGOMf.jpg" class="stretch" alt=""/>
-                  </div>
+       <div id="background">
+        <img src="http://i.imgur.com/y1AGOMf.jpg" class="stretch"/>
+        </div>
+ 
+     <div style="margin-right:auto; margin-left:10px; margin-top:10px;">
+         <img src="http://i.imgur.com/O23t68w.jpg"width="70" height="60" alt="Hangover Helpers"/>
+</div>
+ <div style=" margin-left: auto;margin-right:auto;">
+    <p style="margin-top:-50px; margin-left:100px;"class="alignleft"><font size="6" color="white" face="Bradley hand ITC" >HangoverHelpers</font></p>
+      <p style="margin-top:-24px;" class="alignleft">
+<table border="0">
+  <tr>
+    <td><font color="white" size ="5" face="Bradley hand ITC"
+		onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">Home</font></td>
+    <td>&nbsp;</td>
+       <td>&nbsp;</td>
+    <td><font color="white" size ="5" face="Bradley hand ITC"
+		onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">Services</font></td>
+    <td>&nbsp;</td>
+       <td>&nbsp;</td>
+    <td><font color="white" size ="5" face="Bradley hand ITC"
+		onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">Help</font></td>
+    <td>&nbsp;</td>
+       <td>&nbsp;</td>
+    <td><font color="white" size ="5" face="Bradley hand ITC"
+		onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">Contact</font></td>
+  </tr>
 
-    </head>	
+</table></p>
+  <p class="alignright"></p>
+</div>
+
+<!-- <div style="margin-top:-60px; text-align:left;margin-right:auto; margin-left:100px; " class="alignleft">
+<font size="6" color="white" face="Bradley hand ITC" >HangoverHelpers</font>
+</div>-->
+             </head>	
            <style>
-         
+         .alignleft {
+    float: left;
+    text-align:left;
+    width:33.33333%;
+}
+.aligncenter {
+    float: left;
+    text-align:center;
+    width:33.33333%;
+}
+.alignright {
+    float: left;
+    text-align:right;
+    width:33.33333%;
+}
 #background {
     width: 100%; 
-    height: 14%; 
+    height: 80px; 
     position: fixed; 
     left: 0px; 
-    top: 0px; 
+    top: 0px;
     z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
 }
 
@@ -22,17 +67,10 @@
     width:100%;
     height:100%;
 }
-label
-{
-width: 4em;
-float: left;
-text-align: right;
-margin-right: 0.5em;
-display: block
-}
+
     </style> 
 	<body background ="http://i.imgur.com/WvJjCS2.jpg">
-            <div style="width:400px; text-align:center; margin-right:auto; margin-left:auto; margin-top:120px; border:0px solid #000;"><a>
+            <div style="width:400px; text-align:center; margin-right:auto; margin-left:auto; margin-top:80px; border:0px solid #000;"><a>
 <center>
 <font size="6" color="white" face="Bradley hand ITC">Register</font>
 </center>
@@ -47,5 +85,8 @@ display: block
 				style="color:white;border: none;background-image:url('http://i.imgur.com/WvJjCS2.jpg'); width:100px; height:36px;" 
 			value="Register">		-
 			</form>	
+            
+            
+          
 	</body>
 </html>
