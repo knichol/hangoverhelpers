@@ -10,8 +10,10 @@
          <img src="http://i.imgur.com/O23t68w.jpg"width="70" height="60" alt="Hangover Helpers"/>
 </div>
  <div style=" margin-left: auto;margin-right:auto;">
-    <p style="margin-top:-50px; margin-left:100px;"class="alignleft"><font size="6" color="white" face="Bradley hand ITC" >HangoverHelpers</font></p>
-      <p style="margin-top:-24px; margin-left: 40px;" class="alignleft">
+    <p style="margin-top:-50px; margin-left:100px;"class="alignleft">
+        <a href="index.jsp" style="text-decoration: none;">
+             <font size="6" color="white" face="Bradley hand ITC" >HangoverHelpers</a></font></p>
+      <p style="margin-top:-24px; margin-left: 40px;" class="aligncenter">
 <table border="0">
   <tr>
     <td><font color="white" size ="5" face="Bradley hand ITC"
@@ -31,7 +33,11 @@
   </tr>
 
 </table></p>
-  <p class="alignright"></p>
+  <p class="alignright" style="margin-top:-48px; ">
+      <a href="#login" style="text-decoration: none;">
+      <font color="white" size ="5" face="Bradley hand ITC"
+		onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">
+            Login</font></a></p>
 </div>
 
              </head>	
@@ -47,7 +53,7 @@
     width:33.33333%;
 }
 .alignright {
-    float: left;
+    float: right;
     text-align:right;
     width:33.33333%;
 }
@@ -64,9 +70,61 @@
     width:100%;
     height:100%;
 }
+      .login {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+       .login:target {
+	opacity:1;
+	pointer-events: auto;
+}
 
+.login > div {
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	width: 300px;
+	height: 300px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	background: url(http://i.imgur.com/LhLujbv.jpg) no-repeat;
+                box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+} 
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #7092BE; }
     </style> 
-	<body background ="http://i.imgur.com/WvJjCS2.jpg">
+	<body background ="http://www.hdwallpaperspot.com/wp-content/uploads/2013/01/Calm_2560_1600.jpg">
             <div style="width:400px; text-align:center; margin-right:auto; margin-left:auto; margin-top:80px; border:0px solid #000;"><a>
 <center>
 <font size="6" color="white" face="Bradley hand ITC">Register</font>
@@ -84,6 +142,17 @@
 			</form>	
             
             
-          
+   <div id="login" class="login">
+	<div>
+		<a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+		</br></br></br></br>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text" id="Email "name="Email" placeholder="Email" style="text-align: center;width:200px; height:30px;"></br></br>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="password" id="Password" name="Password" placeholder="Password" style="text-align: center; width:200px; height:30px;"></br></br>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="submit" id="CreateRecord"
+style="color:white;border: none;background-image:url('http://i.imgur.com/WvJjCS2.jpg'); width:100px; height:36px;" 
+value="Login"></br></br>
+<a href="register.jsp" style="text-decoration:none;"><font size="3"color="white">
+    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Not Registered?<font><a></div>
+</div>       
 	</body>
 </html>
