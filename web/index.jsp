@@ -1,14 +1,131 @@
-<%@page contentType="text/html"%>
-<%@page pageEncoding="UTF-8"%>
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
-
 <html>
-    <head>
-    </head>
-    <body>
-    <jsp:forward page="ListPerson"/>
-    <p> Hello there </p>
-    </body>
+ <head>
+     	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Registration</title>
+       <div id="background">
+        <img src="http://i.imgur.com/y1AGOMf.jpg" class="stretch"/>
+        </div>
+ 
+     <div style="margin-right:auto; margin-left:10px; margin-top:10px;">
+         <img src="http://i.imgur.com/O23t68w.jpg"width="70" height="60" alt="Hangover Helpers"/>
+</div>
+ <div style=" margin-left: auto;margin-right:auto;">
+    <p style="margin-top:-50px; margin-left:100px;"class="alignleft">
+        <font size="6" color="white" face="Bradley hand ITC" >HangoverHelpers</font></p>
+      <p style="margin-top:-24px; margin-left: 40px;" class="aligncenter">
+<table border="0">
+  <tr>
+    <td><font color="white" size ="5" face="Bradley hand ITC"
+		onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">Home</font></td>
+    <td>&nbsp;</td>
+       <td>&nbsp;</td>
+    <td><font color="white" size ="5" face="Bradley hand ITC"
+		onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">Services</font></td>
+    <td>&nbsp;</td>
+       <td>&nbsp;</td>
+    <td><font color="white" size ="5" face="Bradley hand ITC"
+		onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">Help</font></td>
+    <td>&nbsp;</td>
+       <td>&nbsp;</td>
+    <td><font color="white" size ="5" face="Bradley hand ITC"
+		onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">Contact</font></td>
+  </tr>
+
+</table></p>
+  <p class="alignright" style="margin-top:-48px; ">
+      <a href="#login" style="text-decoration: none;">
+      <font color="white" size ="5" face="Bradley hand ITC"
+		onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">
+            Login</font></a></p>
+</div>
+
+             </head>	
+           <style content="text/css">
+         .alignleft {
+    float: left;
+    text-align:left;
+    width:33.33333%;
+}
+.aligncenter {
+    float: left;
+    text-align:center;
+    width:33.33333%;
+}
+.alignright {
+    float: right;
+    text-align:right;
+    width:33.33333%;
+}
+#background {
+    width: 100%; 
+    height: 80px; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px;
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+      .login {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+       .login:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.login > div {
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	width: 300px;
+	height: 300px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	background: url(http://i.imgur.com/LhLujbv.jpg) no-repeat;
+                box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+} 
+    </style> 
+	<body background ="http://i.imgur.com/WvJjCS2.jpg">
+                        
+                
+  <form name="welcome" >
+<p style=" text-align:left; margin-top: 80px;margin-left: 60px;">
+<font size="7" color="white">Welcome to HangoverHelpers</font></br></br>
+<font size="5" color="white">&ensp;&ensp;A fast, friendly and intriguing delivery service</font></p>
+
+
+<div id="login" class="login">
+	<div>
+		<a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+		</br></br></br></br>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text" id="Email "name="Email" placeholder="Email" style="text-align: center;width:200px; height:30px;"></br></br>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="password" id="Password" name="Password" placeholder="Password" style="text-align: center; width:200px; height:30px;"></br></br>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="submit" id="CreateRecord"
+style="color:white;border: none;background-image:url('http://i.imgur.com/WvJjCS2.jpg'); width:100px; height:36px;" 
+value="Login"></br></br>
+<a href="register.jsp" style="text-decoration:none;"><font size="3"color="white">
+    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Not Registered?<font><a></div>
+</div>
+</body>
 </html>

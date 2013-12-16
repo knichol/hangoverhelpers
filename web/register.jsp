@@ -11,7 +11,7 @@
 </div>
  <div style=" margin-left: auto;margin-right:auto;">
     <p style="margin-top:-50px; margin-left:100px;"class="alignleft"><font size="6" color="white" face="Bradley hand ITC" >HangoverHelpers</font></p>
-      <p style="margin-top:-24px;" class="alignleft">
+      <p style="margin-top:-24px; margin-left: 40px;" class="alignleft">
 <table border="0">
   <tr>
     <td><font color="white" size ="5" face="Bradley hand ITC"
@@ -34,9 +34,6 @@
   <p class="alignright"></p>
 </div>
 
-<!-- <div style="margin-top:-60px; text-align:left;margin-right:auto; margin-left:100px; " class="alignleft">
-<font size="6" color="white" face="Bradley hand ITC" >HangoverHelpers</font>
-</div>-->
              </head>	
            <style>
          .alignleft {
