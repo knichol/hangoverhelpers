@@ -128,19 +128,21 @@
 
 .close:hover { background: #7092BE; }
     </style> 
-	<body background ="http://www.hdwallpaperspot.com/wp-content/uploads/2013/01/Calm_2560_1600.jpg">
+	<body background ="http://i.imgur.com/D5HT75P.jpg">
                         
                 
   <form name="welcome" >
 <p style=" text-align:left; margin-top: 80px;margin-left: 60px;">
-<font size="7" color="white">Welcome to HangoverHelpers</font></br></br>
-<font size="5" color="white">&ensp;&ensp;A fast, friendly and intriguing delivery service</font></p>
+<font size="7" color="white"face="Bradley hand ITC">Welcome to HangoverHelpers</font></br></br>
+<font size="5" color="white" face="Bradley hand ITC">&ensp;&ensp;A fast, friendly and intriguing delivery service</font></p>
 
 
 <div id="login" class="login">
 	<div>
 		<a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
-		</br></br></br></br>
+		</br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Login</font>
+                </br></br>
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text" id="Email "name="Email" placeholder="Email" style="text-align: center;width:200px; height:30px;"></br></br>
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="password" id="Password" name="Password" placeholder="Password" style="text-align: center; width:200px; height:30px;"></br></br>
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="submit" id="CreateRecord"
