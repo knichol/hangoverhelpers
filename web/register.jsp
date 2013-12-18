@@ -22,11 +22,11 @@
         <font color="white" size ="5" face="Bradley hand ITC"
 		onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">Home</font></a></td>
     <td>&nbsp;</td>
-    <td><a title="Contact" href="Contact.jsp"style="text-decoration: none;">
+    <td><a title="Services" style="text-decoration: none;">
         <font color="white" size ="5" face="Bradley hand ITC"
               onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">Services</font></a></td>
     <td>&nbsp;</td>
-    <td><a title="Contact" href="Contact.jsp"style="text-decoration: none;">
+    <td><a title="Help" style="text-decoration: none;">
         <font color="white" size ="5" face="Bradley hand ITC"
               onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';">Help</font></a></td>
     <td>&nbsp;</td>
