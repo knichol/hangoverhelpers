@@ -21,14 +21,11 @@
                 <td><a title="Home"href="index.jsp"class="test">
                         <font color="white" size ="5" face="Bradley hand ITC">Home</font></a></td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
                 <td><a title="Services" href="Services.jsp"class="test">
                         <font color="white" size ="5" face="Bradley hand ITC">Services</font></a></td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
                 <td><a href="Help.jsp"title="Help"class="test">
                         <font color="white" size ="5" face="Bradley hand ITC">Help</font></a></td>
-                <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td><a title="Contact" href="Contact.jsp"class="test">
                         <font color="white" size ="5" face="Bradley hand ITC">Contact</font></a></td>
@@ -40,7 +37,6 @@
             <font color="white" size ="5" face="Bradley hand ITC"
                   >        
             Register</font></a>
-    <td>&nbsp;</td>
     <td>&nbsp;</td>
     <a class="test"href="#login" title="Login">
         <font color="white" size ="5" face="Bradley hand ITC">      
@@ -75,7 +71,7 @@
         color:white;
         border: none;
     }
-        .btn:hover {    
+    .btn:hover {    
         box-shadow: 0 0 10px rgba(0, 0, 0, 1);
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
