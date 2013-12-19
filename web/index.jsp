@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>HangoverHelpers - Services</title>
+        <title>HangoverHelpers - Home</title>
     <div id="background">
         <img src="http://i.imgur.com/y1AGOMf.jpg" class="stretch"/>
     </div>
@@ -48,18 +48,17 @@
 </div>
 <style content="text/css">
     .test{
-        text-decoration: none;
-    }
-    .test:hover { 
-        text-decoration: none;
+        text-decoration: none;       
         padding-right:0;
         padding: 5px 5px 5px 5px;
-        background-color: #ADC0DA;
         background-repeat:repeat;
-        background-position: right; 
         border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
+    }
+    .test:hover { 
+        background-color: #ADC0DA;
+        text-decoration: none;
         box-shadow: 0 0 10px rgba(0, 0, 0, 1);
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
@@ -75,6 +74,11 @@
         background-image:url('http://i.imgur.com/WvJjCS2.jpg');
         color:white;
         border: none;
+    }
+        .btn:hover {    
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     }
     .alignleft {
         float: left;
