@@ -21,15 +21,15 @@
                 <td><a title="Home"href="index.jsp"class="test">
                         <font color="white" size ="5" face="Bradley hand ITC">Home</font></a></td>
                 <td>&nbsp;</td>
-                 <td>&nbsp;</td>
+                <td>&nbsp;</td>
                 <td><a title="Services" href="Services.jsp"class="test">
                         <font color="white" size ="5" face="Bradley hand ITC">Services</font></a></td>
                 <td>&nbsp;</td>
-                 <td>&nbsp;</td>
+                <td>&nbsp;</td>
                 <td><a href="Help.jsp" title="Help"class="test">
                         <font color="white" size ="5" face="Bradley hand ITC">Help</font></a></td>
                 <td>&nbsp;</td>
-                 <td>&nbsp;</td>
+                <td>&nbsp;</td>
                 <td><a title="Contact" href="Contact.jsp"class="test">
                         <font color="white" size ="5" face="Bradley hand ITC">Contact</font></a></td>
             </tr>
@@ -41,15 +41,14 @@
                   >        
             Register</font></a>
     <td>&nbsp;</td>
-     <td>&nbsp;</td>
+    <td>&nbsp;</td>
     <a class="test"href="#login" title="Login">
         <font color="white" size ="5" face="Bradley hand ITC">      
         Login</font></a></p>
 </div>
 
 <style type='text/css'>
-    /*  onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';"*/
-    .alignleft {
+     .alignleft {
         float: left;
         text-align:left;
         width:33.33333%;
@@ -60,7 +59,7 @@
         width:33.33333%;
     }
     .test{
-         text-decoration: none;
+        text-decoration: none;
     }
     .test:hover { 
         text-decoration: none;
@@ -76,14 +75,14 @@
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     }
-     .help {
+    .help {
         text-decoration: none;
         padding-right:0;
         position: relative;
         top: 80px;
         text-align: center;
-margin-left: auto;
-margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
         padding: 5px 5px 5px 5px;
         background-color: #7092BE;
         background-repeat:repeat;
@@ -94,17 +93,22 @@ margin-right: auto;
         box-shadow: 0 0 10px rgba(0, 0, 0, 1);
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-         width: 400px;
+        width: 400px;
         height: 400px;
     }
     textarea {
-    width: 200px;
-    height: 50px;
-    max-width: 400px; 
-    max-height: 200px;
-}
-
-    
+        width: 200px;
+        height: 50px;
+        max-width: 400px; 
+        max-height: 200px;
+    }
+    input:focus,textarea:focus,select:focus{
+        border:2px solid #fafafa; 
+        box-shadow:0 0 10px #7DFDFE;
+        -webkit-box-shadow:0 0 10px #7DFDFE;
+        -moz-box-shadow:0 0 10px #7DFDFE;
+        outline: none;
+    }
     .alignright {
         float: right;
         text-align:right;
@@ -118,7 +122,6 @@ margin-right: auto;
         top: 0px;
         z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
     }
-
     .stretch {
         width:100%;
         height:100%;
@@ -187,8 +190,8 @@ margin-right: auto;
     <div class="help">
         <form method="post" action="mailto:ciansheehy92@gmail.com"></br>
             <font size ="5"color="white"face="Bradley hand ITC">
-                Contact Us</font>
-                </br>
+            Contact Us</font>
+            </br>
             <input type="text" title="Name"  id="Name"  name="Name"  placeholder="Fullname" style="text-align: center; width:200px; height:30px;"></br></br>
             <input type="text" title="Email" id="Email" name="Email" placeholder="Email" style="text-align: center; width:200px; height:30px;"></br></br>
             <textarea maxlength="400"placeholder="Dear Sir/Madam...(400 Characters Max)"></textarea>
@@ -196,20 +199,20 @@ margin-right: auto;
             <input type="reset" value="Reset" style="position: absolute;margin-left: auto;margin-right: auto;left: 120px;right: 0;bottom:10px;color:white;border: none;background-image:url('http://i.imgur.com/WvJjCS2.jpg'); width:100px; height:36px;">
         </form>
     </div>
-        <div id="login" class="login">
-            <div>
-                <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
-                </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">
-                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Login</font>
-                </br></br>
-                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text" title="Email"id="Email "name="Email" placeholder="Email" style="text-align: center;width:200px; height:30px;"></br></br>
-                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="password" title="Password"id="Password" name="Password" placeholder="Password" style="text-align: center; width:200px; height:30px;"></br></br>
-                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="submit" id="CreateRecord"
-                                                                                               style="color:white;border: none;background-image:url('http://i.imgur.com/WvJjCS2.jpg'); width:100px; height:36px;" 
-                                                                                               value="Login" title="Login"></br></br>
-                <a href="register.jsp" style="text-decoration:none;"title="Register Here" ><font size="3"color="white">
-                    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Not Registered?<font></a></div>
-        </div> 
+    <div id="login" class="login">
+        <div>
+            <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Login</font>
+            </br></br>
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text" title="Email"id="Email "name="Email" placeholder="Email" style="text-align: center;width:200px; height:30px;"></br></br>
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="password" title="Password"id="Password" name="Password" placeholder="Password" style="text-align: center; width:200px; height:30px;"></br></br>
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="submit" id="CreateRecord"
+                                                                                           style="color:white;border: none;background-image:url('http://i.imgur.com/WvJjCS2.jpg'); width:100px; height:36px;" 
+                                                                                           value="Login" title="Login"></br></br>
+            <a href="register.jsp" style="text-decoration:none;"title="Register Here" ><font size="3"color="white">
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Not Registered?<font></a></div>
+    </div> 
 </body>
 </html>
 
