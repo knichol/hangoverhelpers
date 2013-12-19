@@ -165,6 +165,13 @@
     .close:hover { 
         background: #7092BE; 
     }
+        input:focus,textarea:focus,select:focus{
+        border:2px solid #fafafa; 
+        box-shadow:0 0 10px #7DFDFE;
+        -webkit-box-shadow:0 0 10px #7DFDFE;
+        -moz-box-shadow:0 0 10px #7DFDFE;
+        outline: none;
+    }
 </style>
 </head>
 <body background ="http://i.imgur.com/D5HT75P.jpg">

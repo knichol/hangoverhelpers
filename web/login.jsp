@@ -107,27 +107,8 @@
     }
 
     .login {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0,0,0,0.5);
-        z-index: 99999;
-        opacity:0;
-        -webkit-transition: opacity 500ms ease-in;
-        -moz-transition: opacity 500ms ease-in;
-        transition: opacity 500ms ease-in;
-        pointer-events: none;
-    }
-    .login:target {
-        opacity:1;
-        pointer-events: auto;
-    }
-
-    .login > div {
         position: relative;
-        top: 80px;
+        top: 0px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -142,37 +123,21 @@
         box-shadow: 0 0 8px rgba(0, 0, 0, .8);
         -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
         -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    } 
-    .close {
-        background: #606061;
-        color: #FFFFFF;
-        line-height: 25px;
-        position: absolute;
-        right: -12px;
-        text-align: center;
-        top: -10px;
-        width: 24px;
-        text-decoration: none;
-        font-weight: bold;
-        -webkit-border-radius: 12px;
-        -moz-border-radius: 12px;
-        border-radius: 12px;
-        -moz-box-shadow: 1px 1px 3px #000;
-        -webkit-box-shadow: 1px 1px 3px #000;
-        box-shadow: 1px 1px 3px #000;
-
     }
-    .close:hover { 
-        background: #7092BE; 
+        input:focus,textarea:focus,select:focus{
+        border:2px solid #fafafa; 
+        box-shadow:0 0 10px #7DFDFE;
+        -webkit-box-shadow:0 0 10px #7DFDFE;
+        -moz-box-shadow:0 0 10px #7DFDFE;
+        outline: none;
     }
 </style>
 </head>
 <body background ="http://i.imgur.com/D5HT75P.jpg">
     <div id="login" class="login">
         <div>
-            <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
-            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Login</font>
-            </br></br>
+           </br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Login</font>
+            </br> </br>
             <input type="text" title="Email"id="Email "name="Email" placeholder="Email" style="text-align: center;width:200px; height:30px;"></br></br>
             <input type="password" title="Password"id="Password" name="Password" placeholder="Password" style="text-align: center; width:200px; height:30px;"></br></br>
             <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>

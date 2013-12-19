@@ -39,7 +39,7 @@
                   >        
             Register</font></a>
     <td>&nbsp;</td>
-    <a class="test"href="#login" title="Login">
+    <a class="test"href="login.jsp" title="Login">
         <font color="white" size ="5" face="Bradley hand ITC">      
         Login</font></a></p>
 </div>
