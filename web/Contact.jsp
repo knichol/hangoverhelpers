@@ -48,7 +48,7 @@
 </div>
 
 <style type='text/css'>
-     .alignleft {
+    .alignleft {
         float: left;
         text-align:left;
         width:33.33333%;
@@ -95,6 +95,18 @@
         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
         width: 400px;
         height: 400px;
+    }
+    .btn{
+        padding-right:0;
+        padding: 5px 5px 5px 5px; 
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        width:90px; 
+        height:30px;
+        background-image:url('http://i.imgur.com/WvJjCS2.jpg');
+        color:white;
+        border: none;
     }
     textarea {
         width: 200px;
@@ -148,6 +160,10 @@
 
     .login > div {
         position: relative;
+        top: 80px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
         margin: 10% auto;
         padding: 5px 20px 13px 20px;
         width: 300px;
@@ -195,24 +211,21 @@
             <input type="text" title="Name"  id="Name"  name="Name"  placeholder="Fullname" style="text-align: center; width:200px; height:30px;"></br></br>
             <input type="text" title="Email" id="Email" name="Email" placeholder="Email" style="text-align: center; width:200px; height:30px;"></br></br>
             <textarea maxlength="400"placeholder="Dear Sir/Madam...(400 Characters Max)"></textarea>
-            <input value="Send Email"type="submit"style="position: absolute;margin-left: auto;margin-right: auto;left: 0;right: 120px;bottom:10px;color:white;border: none;background-image:url('http://i.imgur.com/WvJjCS2.jpg'); width:100px; height:36px;"/>          
-            <input type="reset" value="Reset" style="position: absolute;margin-left: auto;margin-right: auto;left: 120px;right: 0;bottom:10px;color:white;border: none;background-image:url('http://i.imgur.com/WvJjCS2.jpg'); width:100px; height:36px;">
+            <input class="btn"value="Send Email"type="submit"style="position: absolute;margin-left: auto;margin-right: auto;left: 0;right: 120px;bottom:10px;"/>          
+            <input type="reset" class="btn" value="Reset" style="position: absolute;margin-left: auto;margin-right: auto;left: 120px;right: 0;bottom:10px;">
         </form>
     </div>
     <div id="login" class="login">
         <div>
             <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
-            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">
-            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Login</font>
+            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Login</font>
             </br></br>
-            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text" title="Email"id="Email "name="Email" placeholder="Email" style="text-align: center;width:200px; height:30px;"></br></br>
-            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="password" title="Password"id="Password" name="Password" placeholder="Password" style="text-align: center; width:200px; height:30px;"></br></br>
-            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="submit" id="CreateRecord"
-                                                                                           style="color:white;border: none;background-image:url('http://i.imgur.com/WvJjCS2.jpg'); width:100px; height:36px;" 
-                                                                                           value="Login" title="Login"></br></br>
-            <a href="register.jsp" style="text-decoration:none;"title="Register Here" ><font size="3"color="white">
-                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Not Registered?<font></a></div>
-    </div> 
+            <input type="text" title="Email"id="Email "name="Email" placeholder="Email" style="text-align: center;width:200px; height:30px;"></br></br>
+            <input type="password" title="Password"id="Password" name="Password" placeholder="Password" style="text-align: center; width:200px; height:30px;"></br></br>
+            <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
+            <a href="register.jsp" title="Register"style="text-decoration:none;" >
+                <font size="3"color="white" style="text-align:center;">Not Registered?<font></a></div>
+    </div>
 </body>
 </html>
 
