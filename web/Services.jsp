@@ -47,8 +47,19 @@
         Login</font></a></p>
 </div>
 
-<style>
-        .test{
+<style type='text/css'>
+    /*  onMouseOver = "this.style.backgroundColor = '#ADC0DA';"onMouseOut = "this.style.backgroundColor = '#7092BE';"*/
+    .alignleft {
+        float: left;
+        text-align:left;
+        width:33.33333%;
+    }
+    .aligncenter {
+        float: left;
+        text-align:center;
+        width:33.33333%;
+    }
+    .test{
          text-decoration: none;
     }
     .test:hover { 
@@ -64,16 +75,6 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 1);
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    }
-    .alignleft {
-        float: left;
-        text-align:left;
-        width:33.33333%;
-    }
-    .aligncenter {
-        float: left;
-        text-align:center;
-        width:33.33333%;
     }
     .alignright {
         float: right;
@@ -93,6 +94,7 @@
         width:100%;
         height:100%;
     }
+
     .login {
         position: fixed;
         top: 0;
@@ -125,7 +127,7 @@
         box-shadow: 0 0 8px rgba(0, 0, 0, .8);
         -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
         -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    }  
+    } 
     .close {
         background: #606061;
         color: #FFFFFF;
@@ -143,62 +145,31 @@
         -moz-box-shadow: 1px 1px 3px #000;
         -webkit-box-shadow: 1px 1px 3px #000;
         box-shadow: 1px 1px 3px #000;
-    }
 
-    .close:hover { background: #7092BE; }
-</style> 
-<!--  <script>
-       function CheckInfos(form) {
-  if (form.elements.Name.value === "") {
-     alert("Enter Name");
-  }
-//  if (form.elements.Password.value === "") {
-//     alert("Enter Password");
-//  }
-//  if (form.elements.Email.value === "") {
-//     alert("Enter Email");
-//  }
-//  if (form.elements.Address.value === "") {
-//     alert("Enter Address");
-//  }
-//if (form.elements.Phone.value === "") {
-//     alert("Enter Phone");
-//  }
-  return false;
-}
- </script>-->
+    }
+    .close:hover { 
+        background: #7092BE; 
+    }
+</style>
 </head>
 <body background ="http://i.imgur.com/D5HT75P.jpg">
-    <div style="width:400px; text-align:center; margin-right:auto; margin-left:auto; margin-top:80px; border:0px solid #000;"><a>
-            <center>
-                <font size="6" color="white" face="Bradley hand ITC">Register</font>
-            </center>
-    </div>
-    <div id="register">
-        <form  onsubmit="return CheckInfos(this);"style="width:400px; text-align:center; margin-right:auto; margin-left:auto; margin-top:30px; border:0px solid #000;"id ="register" action="Register" method="post">
-            &nbsp;<input type="text" id="Name" title="Name"name="Name" placeholder="Fullname" style="text-align: center; width:200px; height:30px;"></br></br>
-            &nbsp;<input type="password" title="Password"id="Password" name="Password" placeholder="Password" style="text-align: center; width:200px; height:30px;"></br></br>
-            &nbsp;<input type="text" title="Email"id="Email "name="Email" placeholder="Email" style="text-align: center; width:200px; height:30px;"></br></br>
-            &nbsp;<input type="text" title="Address"id="Address" name="Address" placeholder="Address" style="text-align: center; width:200px; height:30px;"></br></br>
-            &nbsp;<input type="text" title="Phone Number"id="Phone" name="Phone" placeholder="Phone Number" style="text-align: center; width:200px; height:30px;"></br></br>
-            &ensp;&ensp;<input type="submit" id="CreateRecord"
-                               style="color:white;border: none;background-image:url('http://i.imgur.com/WvJjCS2.jpg'); width:100px; height:36px;" 
-                               title="Register"value="Register">
-        </form>	
-    </div>
-    <div id="login" class="login">
-        <div>
-            <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
-            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">
-            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Login</font>
-            </br></br>
-            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text" title="Email"id="Email "name="Email" placeholder="Email" style="text-align: center;width:200px; height:30px;"></br></br>
-            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="password" title="Password"id="Password" name="Password" placeholder="Password" style="text-align: center; width:200px; height:30px;"></br></br>
-            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="submit" id="CreateRecord"
-                                                                                           style="color:white;border: none;background-image:url('http://i.imgur.com/WvJjCS2.jpg'); width:100px; height:36px;" 
-                                                                                           value="Login" title="Login"></br></br>
-            <a href="register.jsp" title="Register"style="text-decoration:none;" ><font size="3"color="white">
-                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Not Registered?<font></a></div>
-    </div>
+
+
+    <form name="welcome" >
+        <div id="login" class="login">
+            <div>
+                <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+                </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Login</font>
+                </br></br>
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text" title="Email"id="Email "name="Email" placeholder="Email" style="text-align: center;width:200px; height:30px;"></br></br>
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="password" title="Password"id="Password" name="Password" placeholder="Password" style="text-align: center; width:200px; height:30px;"></br></br>
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="submit" id="CreateRecord"
+                                                                                               style="color:white;border: none;background-image:url('http://i.imgur.com/WvJjCS2.jpg'); width:100px; height:36px;" 
+                                                                                               value="Login" title="Login"></br></br>
+                <a href="register.jsp" style="text-decoration:none;"title="Register Here" ><font size="3"color="white">
+                    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Not Registered?<font></a></div>
+        </div> 
 </body>
 </html>
+
