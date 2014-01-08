@@ -1,59 +1,76 @@
 <html>
     <head>
-        <title>HangoverHelpers - Login</title>
+        <title>HangoverHelpers - Services</title>
     <div id="background">
         <img src="http://i.imgur.com/y1AGOMf.jpg" class="stretch"/>
-    </div>
 
-    <div style="margin-right:auto; margin-left:4px; margin-top:14px;">
-        <a title="HangoverHelpers"href="index.jsp" style="text-decoration: none;">
-            <img src="http://i.imgur.com/O23t68w.jpg"width="70" height="60" alt="Hangover Helpers"/>
-        </a>
-    </div>
-    <div style=" margin-left: auto;margin-right:auto;">
-        <p style="margin-top:-32px; margin-left:80px;"class="alignleft">
-            <a title="HangoverHelpers">
-                <font size="6" color="white" face="Bradley hand ITC" >HangoverHelpers</a></font></p>
+        <div style="position: fixed;top: 2%;left: 1%;">
+            <a title="HangoverHelpers"href="index.jsp" style="text-decoration: none;">
+                <img src="http://i.imgur.com/O23t68w.jpg"width="70" height="60" alt="Hangover Helpers"/>
+            </a>
+        </div>
+        <div style=" margin-left: auto;margin-right:auto;">
+            <p style="margin-top:-32px; margin-left:80px;"class="alignleft">
+                <a title="HangoverHelpers">
+                    <font size="6" color="white" face="Bradley hand ITC" >HangoverHelpers</a></font></p>
+            <p style="margin-top:-54px;" class="aligncenter">
+            <table border="0">
+                <tr>
+                    <td><a title="Home"href="index.jsp"class="test">
+                            <font color="white" size ="5" face="Bradley hand ITC">Home</font></a></td>
+                    <td>&nbsp;</td>
+                    <td><a title="Services" href="Services.jsp"class="test">
+                            <font color="white" size ="5" face="Bradley hand ITC">Services</font></a></td>
+                    <td>&nbsp;</td>
+                    <td><a href="Help.jsp"title="Help"class="test">
+                            <font color="white" size ="5" face="Bradley hand ITC">Help</font></a></td>
+                    <td>&nbsp;</td>
+                    <td><a title="Contact" href="Contact.jsp"class="test">
+                            <font color="white" size ="5" face="Bradley hand ITC">Contact</font></a></td>
+                </tr>
 
-        <p style="margin-top:-54px;" class="aligncenter">
-        <table border="0">
-            <tr>
-                <td><a title="Home"href="index.jsp"class="test">
-                        <font color="white" size ="5" face="Bradley hand ITC">Home</font></a></td>
-                <td>&nbsp;</td>
-                <td><a title="Services" href="Services.jsp"class="test">
-                        <font color="white" size ="5" face="Bradley hand ITC">Services</font></a></td>
-                <td>&nbsp;</td>
-                <td><a href="Help.jsp"title="Help"class="test">
-                        <font color="white" size ="5" face="Bradley hand ITC">Help</font></a></td>
-                <td>&nbsp;</td>
-                <td><a title="Contact" href="Contact.jsp"class="test">
-                        <font color="white" size ="5" face="Bradley hand ITC">Contact</font></a></td>
-            </tr>
-
-        </table></p>
-    <p class="alignright" style="margin-top:-24px; ">
-        <a  class="test"href="register.jsp" title="Register">
-            <font color="white" size ="5" face="Bradley hand ITC"
-                  >        
-            Register</font></a>
-    <td>&nbsp;</td>
-    <a class="test"href="#login" title="Login">
-        <font color="white" size ="5" face="Bradley hand ITC">      
-        Login</font></a></p>
+            </table></p>
+            <p class="alignright" style="margin-top:-24px; ">
+                <a  class="test"href="register.jsp" title="Register">
+                    <font color="white" size ="5" face="Bradley hand ITC"
+                          >        
+                    Register</font></a>
+            <td>&nbsp;</td>
+            <a class="test"href="#login" title="Login">
+                <font color="white" size ="5" face="Bradley hand ITC">      
+                Login</font></a></p>
+        </div>
 </div>
-
-<style type='text/css'>
-     .alignleft {
-        float: left;
-        text-align:left;
-        width:33.33333%;
-    }
-    .aligncenter {
-        float: left;
-        text-align:center;
-        width:33.33333%;
-    }
+    <style type='text/css'>
+                #background {
+            width: 100%; 
+            height: 80px; 
+            position: fixed; 
+            left: 0px; 
+            top: 0px;
+            z-index: 3; /* Ensure div tag stays behind content; -999 might work, too. */
+        }
+        .alignleft {
+            float: left;
+            text-align:left;
+            width:33.33333%;
+            position:fixed;
+            top:10%; left:1%
+        }
+        .aligncenter {
+            float: left;
+            text-align:center;
+            width:33.33333%;
+            position:fixed;
+            top:10%;left: 40%;
+        }
+       .alignright {
+            float: right;
+            text-align:right;
+            width:33.33333%;
+            position:fixed;
+            top:10%; right:1%
+        }
     .test{
         text-decoration: none;       
         padding-right:0;
@@ -87,19 +104,6 @@
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     }
-    .alignright {
-        float: right;
-        text-align:right;
-        width:33.33333%;
-    }
-    #background {
-        width: 100%; 
-        height: 80px; 
-        position: fixed; 
-        left: 0px; 
-        top: 0px;
-        z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
-    }
 
     .stretch {
         width:100%;
@@ -113,12 +117,12 @@
         margin-left: auto;
         margin-right: auto;
         margin: 10% auto;
-        padding: 5px 20px 13px 20px;
+        padding: 5px 5px 5px 5px;
         width: 300px;
         height: 300px;
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
         background: url(http://i.imgur.com/LhLujbv.jpg) no-repeat;
         box-shadow: 0 0 8px rgba(0, 0, 0, .8);
         -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
