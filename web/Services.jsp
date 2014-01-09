@@ -55,7 +55,7 @@
             <a href="register.jsp" title="Register"style="text-decoration:none;" >
                 <font size="3"color="white" style="text-align:center;">Not Registered?<font></a></div>               
     </div>
-
+<div id="cleaners">
     <div id="cleaner1" class="cleaner">
         <div>
             <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
@@ -75,7 +75,37 @@
             <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
         </div>
     </div>
-
+        <div id="cleaner3" class="cleaner">
+        <div>
+            <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package Three</font>
+            </br></br>
+            Cleaner comes in and cleans the rubbish in the house and the floor! 
+            They will also dispose of the rubbish is a healthy manner!</br></br>
+            <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
+        </div>
+    </div>
+        <div id="cleaner4" class="cleaner">
+        <div>
+            <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package Four</font>
+            </br></br>
+            Cleaner comes in and cleans the rubbish in the house and the floor! 
+            They will also dispose of the rubbish is a healthy manner and clean the windows and any outside damage!</br></br>
+            <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
+        </div>
+    </div>        
+    <div id="cleaner5" class="cleaner">
+        <div>
+            <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package Four</font>
+            </br></br>
+            The Ultimate Package</br>
+            The cleaners will clean the full house</br></br>
+            <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
+        </div>
+    </div>
+</div>
     <div class="goods">   
         <p style="margin-top:3px;">
             <a  href="#1" name="1" onclick="show();
@@ -157,19 +187,19 @@
                     </div></br>
                 </a><font color="white">Package Two</font>
                 </br></br>
-                <a href="#cleaner" style="margin-top: 10px;text-decoration: none;">
+                <a href="#cleaner3" style="margin-top: 10px;text-decoration: none;">
                     <div class="imgBox3">
                         <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
                     </div></br>
                 </a><font color="white">Package Three</font>
                 </br></br>
-                <a href="#cleaner" style="margin-top: 10px;text-decoration: none; text-align: center;">
+                <a href="#cleaner4" style="margin-top: 10px;text-decoration: none; text-align: center;">
                     <div class="imgBox4">
                         <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
                     </div></br>
                 </a><font color="white">Package Four</font>
                 </br></br>
-                <a href="#cleaner" style="margin-top: 10px;text-decoration: none;text-align: center;">
+                <a href="#cleaner5" style="margin-top: 10px;text-decoration: none;text-align: center;">
                     <div class="imgBox5">
                         <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
                     </div></br>
