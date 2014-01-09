@@ -325,7 +325,7 @@
                 <select>
                     <option selected>0</option>
                     <option>1</option>
-                    <option >2</option>
+                    <option>2</option>
                     <option>3</option>
                     <option>4</option>
                 </select></div> 
@@ -334,17 +334,17 @@
                 <select>
                     <option selected>0</option>
                     <option>1</option>
-                    <option >2</option>
+                    <option>2</option>
                     <option>3</option>
                     <option>4</option>
                 </select>
             </div> 
             <div id="goods3" style="display:none;margin-top: 10px;">
                 <img style="width:60px;height:60px;"src="http://i.imgur.com/dBBbBo6.jpg"/>
-                <select>
+                <select style="width:30px;">
                     <option selected>0</option>
                     <option>1</option>
-                    <option >2</option>
+                    <option>2</option>
                     <option>3</option>
                     <option>4</option>
                 </select>
