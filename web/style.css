@@ -425,3 +425,27 @@ select {
     -moz-box-shadow:0 0 10px #7DFDFE;
     outline: none;
 }
+.drink9 {
+    background-image:url("http://i.imgur.com/fZ5uwFC.jpg");
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
+    display:inline-block;
+    border:2px solid #fafafa; 
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+    outline: none;
+}
+.drink10 {
+    background-image:url("http://i.imgur.com/ZV10Ezr.jpg");
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
+    display:inline-block;
+    border:2px solid #fafafa; 
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+    outline: none;
+}
