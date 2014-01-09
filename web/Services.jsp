@@ -56,22 +56,26 @@
                 <font size="3"color="white" style="text-align:center;">Not Registered?<font></a></div>               
     </div>
 
-    <div id="cleaner1" class="cleaner1">
+    <div id="cleaner1" class="cleaner">
         <div>
             <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
-            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Cleaner 1</font>
+            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package One</font>
             </br></br>
-            <img style="width:60px;height:60px;"src="http://i.imgur.com/JthQdqx.jpg"/></br>
-            This option Is the basic package! </br></br>
-            <select>
-                <option selected>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-            </select>
+            Cleaner comes in and cleans the rubbish in the house!</br></br>
+            <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
         </div>
     </div>
+
+    <div id="cleaner2" class="cleaner">
+        <div>
+            <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package Two</font>
+            </br></br>
+            Cleaner comes in and cleans the rubbish in the house and the floor! </br></br>
+            <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
+        </div>
+    </div>
+
     <div class="goods">   
         <p style="margin-top:3px;">
             <a  href="#1" name="1" onclick="show();
@@ -139,9 +143,38 @@
                     <option>4</option>
                 </select>
             </div> 
-            <div id="goods4" style="display:none;margin-top: 10px;">
-                <a href="#cleaner1">               
-                    <img style="width:60px;height:60px;"src="http://i.imgur.com/JthQdqx.jpg"/></a>
+
+            <div id="goods4" style="display:none; ">
+                <a href="#cleaner1" style="margin-top: 10px;text-decoration: none;text-align: center;">
+                    <div class="imgBox1">
+                        <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
+                    </div></br>
+                </a><font color="white">Package One</font>
+                </br></br>
+                <a href="#cleaner2" style="margin-top: 10px;text-decoration: none;text-align: center;">
+                    <div class="imgBox2">
+                        <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
+                    </div></br>
+                </a><font color="white">Package Two</font>
+                </br></br>
+                <a href="#cleaner" style="margin-top: 10px;text-decoration: none;">
+                    <div class="imgBox3">
+                        <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
+                    </div></br>
+                </a><font color="white">Package Three</font>
+                </br></br>
+                <a href="#cleaner" style="margin-top: 10px;text-decoration: none; text-align: center;">
+                    <div class="imgBox4">
+                        <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
+                    </div></br>
+                </a><font color="white">Package Four</font>
+                </br></br>
+                <a href="#cleaner" style="margin-top: 10px;text-decoration: none;text-align: center;">
+                    <div class="imgBox5">
+                        <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
+                    </div></br>
+                </a><font color="white">Package Five</font>
+                </br></br>              
             </div> 
         </div>
 </body>

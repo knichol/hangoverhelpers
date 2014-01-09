@@ -29,6 +29,9 @@
     position:fixed;
     top:10%; right:1%
 }
+.tt {
+    overflow:auto;
+}
 .test{
     text-decoration: none;       
     padding-right:0;
@@ -206,10 +209,25 @@ select {
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    width: 510px;
+    width: 470px;
     height: 30px;
 }
+::-webkit-scrollbar { 
+    width: 14px; 
+    border-radius: 10px;
+}  
+::-webkit-scrollbar-track {  
+    background-color: #7092BE;
+}  
+::-webkit-scrollbar-thumb {  
+    background-color: #ccc;  
+}  
+::-webkit-scrollbar-thumb:hover {  
+    background-color: #aaa;  
+}  
+
 .box {
+    overflow-y: auto;
     text-decoration: none;   
     position: relative;
     top: 4px;
@@ -226,11 +244,54 @@ select {
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    width: 500px;
+    width: 460px;
     height: 440px;
 
 }
-.cleaner1 {
+.imgBox1  { 
+    background-image:url("http://wp.hepb.org/wp-content/uploads/2011/08/cleaning-supplies1.jpg");
+    background-size:80px 80px;
+    width:80px; 
+    height:80px;
+    display:inline-block;
+}
+.imgBox2  { 
+    background-image:url("http://wp.hepb.org/wp-content/uploads/2011/08/cleaning-supplies1.jpg");
+    background-size:80px 80px;
+    width:80px; 
+    height:80px;
+    display:inline-block;
+}
+.imgBox3  { 
+    background-image:url("http://wp.hepb.org/wp-content/uploads/2011/08/cleaning-supplies1.jpg");
+    background-size:80px 80px;
+    width:80px; 
+    height:80px;
+    display:inline-block;
+}
+.imgBox4  { 
+    background-image:url("http://wp.hepb.org/wp-content/uploads/2011/08/cleaning-supplies1.jpg");
+  background-size:80px 80px;
+    width:80px; 
+    height:80px;
+    display:inline-block;
+}
+.imgBox5  { 
+    background-image:url("http://wp.hepb.org/wp-content/uploads/2011/08/cleaning-supplies1.jpg");
+    background-size:80px 80px;
+    width:80px; 
+    height:80px;
+    display:inline-block;
+}
+.imgText { 
+    text-decoration: none;
+    text-align:center; 
+    margin:0; 
+    padding:25px 0 0 0; 
+    font-size:80%;
+    display:inline-block;
+}
+.cleaner {
     position: fixed;
     top: 0;
     right: 0;
@@ -244,12 +305,12 @@ select {
     transition: opacity 300ms ease-in;
     pointer-events: none;
 }
-.cleaner1:target {
+.cleaner:target {
     opacity:1;
     pointer-events: auto;
 }
 
-.cleaner1 > div {
+.cleaner > div {
     position: relative;
     top: 60px;
     text-align: center;
