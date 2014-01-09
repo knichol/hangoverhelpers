@@ -187,8 +187,7 @@ textarea {
     max-height: 200px;
 }
 select {
-    display: inline-block;
-    padding: 4px 3px 5px 5px;
+    padding: 2px 1px 3px 3px;
     width: 50px;
     border-radius: 2px;
 }
@@ -250,37 +249,37 @@ select {
 }
 .imgBox1  { 
     background-image:url("http://wp.hepb.org/wp-content/uploads/2011/08/cleaning-supplies1.jpg");
-    background-size:80px 80px;
-    width:80px; 
-    height:80px;
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
     display:inline-block;
 }
 .imgBox2  { 
     background-image:url("http://wp.hepb.org/wp-content/uploads/2011/08/cleaning-supplies1.jpg");
-    background-size:80px 80px;
-    width:80px; 
-    height:80px;
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
     display:inline-block;
 }
 .imgBox3  { 
     background-image:url("http://wp.hepb.org/wp-content/uploads/2011/08/cleaning-supplies1.jpg");
-    background-size:80px 80px;
-    width:80px; 
-    height:80px;
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
     display:inline-block;
 }
 .imgBox4  { 
     background-image:url("http://wp.hepb.org/wp-content/uploads/2011/08/cleaning-supplies1.jpg");
-  background-size:80px 80px;
-    width:80px; 
-    height:80px;
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
     display:inline-block;
 }
 .imgBox5  { 
     background-image:url("http://wp.hepb.org/wp-content/uploads/2011/08/cleaning-supplies1.jpg");
-    background-size:80px 80px;
-    width:80px; 
-    height:80px;
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
     display:inline-block;
 }
 .imgText { 
@@ -328,4 +327,101 @@ select {
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.drink1 {
+    background-image:url("http://i.imgur.com/dBBbBo6.jpg");
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
+    display:inline-block;
+    border:2px solid #fafafa; 
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+    outline: none;
+}
+.drink2 {
+    background-image:url("http://i.imgur.com/azDIMfZ.jpg");
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
+    display:inline-block;
+    border:2px solid #fafafa; 
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+    outline: none;
+}
+.drink3 {
+    background-image:url("http://i.imgur.com/drPeNkv.jpg");
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
+    display:inline-block;
+    border:2px solid #fafafa; 
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+    outline: none;
+}
+.drink4 {
+    background-image:url("http://i.imgur.com/fJ8zfBN.jpg");
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
+    display:inline-block;
+    border:2px solid #fafafa; 
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+    outline: none;
+}
+.drink5 {
+    background-image:url("http://i.imgur.com/0R7zVVz.jpg");
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
+    display:inline-block;
+    border:2px solid #fafafa; 
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+    outline: none;
+}
+.drink6 {
+    background-image:url("http://i.imgur.com/Gx2pJxI.jpg");
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
+    display:inline-block;
+    border:2px solid #fafafa; 
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+    outline: none;
+}
+.drink7 {
+    background-image:url("http://i.imgur.com/MXQugSn.jpg");
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
+    display:inline-block;
+    border:2px solid #fafafa; 
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+    outline: none;
+}
+.drink8 {
+    background-image:url("http://i.imgur.com/Seswp0B.jpg");
+    background-size:100px 100px;
+    width:100px; 
+    height:100px;
+    display:inline-block;
+    border:2px solid #fafafa; 
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+    outline: none;
 }

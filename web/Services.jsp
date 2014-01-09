@@ -55,57 +55,57 @@
             <a href="register.jsp" title="Register"style="text-decoration:none;" >
                 <font size="3"color="white" style="text-align:center;">Not Registered?<font></a></div>               
     </div>
-<div id="cleaners">
-    <div id="cleaner1" class="cleaner">
-        <div>
-            <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
-            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package One</font>
-            </br></br>
-            Cleaner comes in and cleans the rubbish in the house!</br></br>
-            <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
+    <div id="cleaners">
+        <div id="cleaner1" class="cleaner">
+            <div>
+                <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+                </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package One</font>
+                </br></br>
+                Cleaner comes in and cleans the rubbish in the house!</br></br>
+                <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
+            </div>
         </div>
-    </div>
 
-    <div id="cleaner2" class="cleaner">
-        <div>
-            <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
-            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package Two</font>
-            </br></br>
-            Cleaner comes in and cleans the rubbish in the house and the floor! </br></br>
-            <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
+        <div id="cleaner2" class="cleaner">
+            <div>
+                <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+                </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package Two</font>
+                </br></br>
+                Cleaner comes in and cleans the rubbish in the house and the floor! </br></br>
+                <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
+            </div>
         </div>
-    </div>
         <div id="cleaner3" class="cleaner">
-        <div>
-            <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
-            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package Three</font>
-            </br></br>
-            Cleaner comes in and cleans the rubbish in the house and the floor! 
-            They will also dispose of the rubbish is a healthy manner!</br></br>
-            <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
+            <div>
+                <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+                </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package Three</font>
+                </br></br>
+                Cleaner comes in and cleans the rubbish in the house and the floor! 
+                They will also dispose of the rubbish is a healthy manner!</br></br>
+                <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
+            </div>
         </div>
-    </div>
         <div id="cleaner4" class="cleaner">
-        <div>
-            <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
-            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package Four</font>
-            </br></br>
-            Cleaner comes in and cleans the rubbish in the house and the floor! 
-            They will also dispose of the rubbish is a healthy manner and clean the windows and any outside damage!</br></br>
-            <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
-        </div>
-    </div>        
-    <div id="cleaner5" class="cleaner">
-        <div>
-            <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
-            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package Four</font>
-            </br></br>
-            The Ultimate Package</br>
-            The cleaners will clean the full house</br></br>
-            <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
+            <div>
+                <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+                </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package Four</font>
+                </br></br>
+                Cleaner comes in and cleans the rubbish in the house and the floor! 
+                They will also dispose of the rubbish is a healthy manner and clean the windows and any outside damage!</br></br>
+                <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
+            </div>
+        </div>        
+        <div id="cleaner5" class="cleaner">
+            <div>
+                <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+                </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Package Four</font>
+                </br></br>
+                The Ultimate Package</br>
+                The cleaners will clean the full house</br></br>
+                <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
+            </div>
         </div>
     </div>
-</div>
     <div class="goods">   
         <p style="margin-top:3px;">
             <a  href="#1" name="1" onclick="show();
@@ -163,8 +163,112 @@
                     <option>4</option>
                 </select>
             </div> 
-            <div id="goods3" style="display:none;margin-top: 10px;">
-                <img style="width:60px;height:60px;"src="http://i.imgur.com/dBBbBo6.jpg"/>
+            <div id="goods3" style="display:none;margin-top: 20px; text-align: center;">           
+                <div class="drink1"></div>  
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="drink2"></div> 
+                </br>
+               Powerade
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                Water
+                </br>
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                </br></br>
+
+                <div class="drink3"></div>  
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="drink4"></div> 
+                </br>        
+                Diet Coke
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                Coca Cola
+                </br>
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                </br></br>
+
+                <div class="drink5"></div>  
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="drink6"></div> 
+                </br>
+                Lucozade
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                Lucozade Sport
+                </br>        
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                </br></br>
+                <div class="drink7"></div>  
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="drink8"></div> 
+                </br>
+                7up
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                Fanta Orange
+                </br>          
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <select>
                     <option selected>0</option>
                     <option>1</option>
@@ -174,31 +278,41 @@
                 </select>
             </div> 
 
-            <div id="goods4" style="display:none; ">
-                <a href="#cleaner1" style="margin-top: 10px;text-decoration: none;text-align: center;">
+            <div id="goods4" style="display:none; margin-top: 20px;">
+                <a href="#cleaner1">
                     <div class="imgBox1">
                         <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
-                    </div></br>
-                </a><font color="white">Package One</font>
-                </br></br>
-                <a href="#cleaner2" style="margin-top: 10px;text-decoration: none;text-align: center;">
+                    </div></a>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <a href="#cleaner2">
                     <div class="imgBox2">
                         <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
-                    </div></br>
-                </a><font color="white">Package Two</font>
+                    </div></a>
+                </br>
+                <font color="white">Package One</font>
+                <td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td>
+                <font color="white">Package Two</font>
                 </br></br>
-                <a href="#cleaner3" style="margin-top: 10px;text-decoration: none;">
+
+                <a href="#cleaner3">
                     <div class="imgBox3">
                         <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
-                    </div></br>
-                </a><font color="white">Package Three</font>
-                </br></br>
-                <a href="#cleaner4" style="margin-top: 10px;text-decoration: none; text-align: center;">
+                    </div></a>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <a href="#cleaner4">
                     <div class="imgBox4">
                         <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
-                    </div></br>
-                </a><font color="white">Package Four</font>
+                    </div></a>
+                </br>
+                <font color="white">Package Three</font>
+                <td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <font color="white">Package Four</font>
                 </br></br>
+
                 <a href="#cleaner5" style="margin-top: 10px;text-decoration: none;text-align: center;">
                     <div class="imgBox5">
                         <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
