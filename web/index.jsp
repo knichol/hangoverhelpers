@@ -3,7 +3,6 @@
         <title>HangoverHelpers - Services</title>
     <div id="background">
         <img src="http://i.imgur.com/y1AGOMf.jpg" class="stretch"/>
-
         <div style="position: fixed;top: 2%;left: 1%;">
             <a title="HangoverHelpers"href="index.jsp" style="text-decoration: none;">
                 <img src="http://i.imgur.com/O23t68w.jpg"width="70" height="60" alt="Hangover Helpers"/>
@@ -50,8 +49,6 @@
         <p style=" text-align:left; margin-top: 160px;margin-left: 60px;">
             <font size="7" color="white"face="Bradley hand ITC">Welcome to HangoverHelpers</font></br></br>
             <font size="5" color="white" face="Bradley hand ITC">&ensp;&ensp;A fast, friendly and intriguing delivery service</font></p>
-
-
         <div id="login" class="login">
             <div>
                 <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
