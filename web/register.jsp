@@ -40,9 +40,9 @@
                 <font color="white" size ="5" face="Bradley hand ITC">      
                 Login</font></a></p>
         </div>
-</div>
+    </div>
     <style type='text/css'>
-                #background {
+        #background {
             width: 100%; 
             height: 80px; 
             position: fixed; 
@@ -175,47 +175,47 @@
             -moz-box-shadow:0 0 10px #7DFDFE;
             outline: none;
         }
-           .register {
-        text-decoration: none;   
-        position: relative;
-       top: 160px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 5px 5px 5px 5px;
-        background-color: #7092BE;
-        background-repeat:repeat;
-        background-position: right; 
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-        width: 400px;
-        height: 400px;
-    }
+        .register {
+            text-decoration: none;   
+            position: relative;
+            top: 160px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px 5px 5px 5px;
+            background-color: #7092BE;
+            background-repeat:repeat;
+            background-position: right; 
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            width: 400px;
+            height: 400px;
+        }
     </style>
-<!--  <script>
-       function CheckInfos(form) {
-  if (form.elements.Name.value === "") {
-     alert("Enter Name");
-  }
-//  if (form.elements.Password.value === "") {
-//     alert("Enter Password");
-//  }
-//  if (form.elements.Email.value === "") {
-//     alert("Enter Email");
-//  }
-//  if (form.elements.Address.value === "") {
-//     alert("Enter Address");
-//  }
-//if (form.elements.Phone.value === "") {
-//     alert("Enter Phone");
-//  }
-  return false;
-}
- </script>-->
+    <!--  <script>
+           function CheckInfos(form) {
+      if (form.elements.Name.value === "") {
+         alert("Enter Name");
+      }
+    //  if (form.elements.Password.value === "") {
+    //     alert("Enter Password");
+    //  }
+    //  if (form.elements.Email.value === "") {
+    //     alert("Enter Email");
+    //  }
+    //  if (form.elements.Address.value === "") {
+    //     alert("Enter Address");
+    //  }
+    //if (form.elements.Phone.value === "") {
+    //     alert("Enter Phone");
+    //  }
+      return false;
+    }
+     </script>-->
 </head>
 <body background ="http://i.imgur.com/D5HT75P.jpg">
     <div class="register">

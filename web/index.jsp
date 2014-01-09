@@ -40,9 +40,9 @@
                 <font color="white" size ="5" face="Bradley hand ITC">      
                 Login</font></a></p>
         </div>
-</div>
+    </div>
     <style type='text/css'>
-                #background {
+        #background {
             width: 100%; 
             height: 80px; 
             position: fixed; 
@@ -64,7 +64,7 @@
             position:fixed;
             top:10%;left: 40%;
         }
-       .alignright {
+        .alignright {
             float: right;
             text-align:right;
             width:33.33333%;
@@ -105,7 +105,7 @@
             -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
         }
 
-  
+
 
         .stretch {
             width:100%;
