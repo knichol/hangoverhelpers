@@ -341,7 +341,7 @@
             </div> 
             <div id="goods3" style="display:none;margin-top: 10px;">
                 <img style="width:60px;height:60px;"src="http://i.imgur.com/dBBbBo6.jpg"/>
-                <select style="width:30px;">
+                <select>
                     <option selected>0</option>
                     <option>1</option>
                     <option>2</option>

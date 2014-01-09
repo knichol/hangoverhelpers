@@ -3,7 +3,6 @@
         <title>HangoverHelpers - Services</title>
     <div id="background">
         <img src="http://i.imgur.com/y1AGOMf.jpg" class="stretch"/>
-
         <div style="position: fixed;top: 2%;left: 1%;">
             <a title="HangoverHelpers"href="index.jsp" style="text-decoration: none;">
                 <img src="http://i.imgur.com/O23t68w.jpg"width="70" height="60" alt="Hangover Helpers"/>
