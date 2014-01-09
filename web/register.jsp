@@ -20,8 +20,8 @@
                     <td><a title="Services" href="Services.jsp"class="test">
                             <font color="white" size ="5" face="Bradley hand ITC">Services</font></a></td>
                     <td>&nbsp;</td>
-                    <td><a href="Help.jsp"title="Help"class="test">
-                            <font color="white" size ="5" face="Bradley hand ITC">Help</font></a></td>
+                    <td><a href="About.jsp"title="About Us"class="test">
+                            <font color="white" size ="5" face="Bradley hand ITC">About Us</font></a></td>
                     <td>&nbsp;</td>
                     <td><a title="Contact" href="Contact.jsp"class="test">
                             <font color="white" size ="5" face="Bradley hand ITC">Contact</font></a></td>

@@ -20,8 +20,8 @@
                     <td><a title="Services" href="Services.jsp"class="test">
                             <font color="white" size ="5" face="Bradley hand ITC">Services</font></a></td>
                     <td>&nbsp;</td>
-                    <td><a href="Help.jsp"title="Help"class="test">
-                            <font color="white" size ="5" face="Bradley hand ITC">Help</font></a></td>
+                    <td><a href="About.jsp"title="About Us"class="test">
+                            <font color="white" size ="5" face="Bradley hand ITC">About Us</font></a></td>
                     <td>&nbsp;</td>
                     <td><a title="Contact" href="Contact.jsp"class="test">
                             <font color="white" size ="5" face="Bradley hand ITC">Contact</font></a></td>
@@ -49,14 +49,9 @@
     <div class="help">
         <form method="post" action="mailto:ciansheehy92@gmail.com"></br>
             <font size ="5"color="white"face="Bradley hand ITC">
-            Help</font>
+            About Us</font>
             </br>
-            <input type="text" title="Name"  id="Name"  name="Name"  placeholder="Fullname" style="text-align: center; width:200px; height:30px;"></br></br>
-            <input type="text" title="Email" id="Email" name="Email" placeholder="Email" style="text-align: center; width:200px; height:30px;"></br></br>
-            <textarea maxlength="400"placeholder="Dear Sir/Madam...(400 Characters Max)"></textarea>
-            <input class="btn"value="Send Email"type="submit"style="position: absolute;margin-left: auto;margin-right: auto;left: 0;right: 120px;bottom:10px;"/>          
-            <input type="reset" class="btn" value="Reset" style="position: absolute;margin-left: auto;margin-right: auto;left: 120px;right: 0;bottom:10px;">
-        </form>
+          </form>
     </div>
     <div id="login" class="login">
         <div>
