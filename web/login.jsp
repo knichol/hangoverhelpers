@@ -2,9 +2,7 @@
     <head>
         <title>HangoverHelpers - Services</title>
     <div id="background">
-        <img src="http://i.imgur.com/y1AGOMf.jpg" class="stretch"/>
-
-        <div style="position: fixed;top: 2%;left: 1%;">
+       <div style="position: fixed;top: 2%;left: 1%;">
             <a title="HangoverHelpers"href="index.jsp" style="text-decoration: none;">
                 <img src="http://i.imgur.com/O23t68w.jpg"width="70" height="60" alt="Hangover Helpers"/>
             </a>
@@ -41,101 +39,9 @@
                 Login</font></a></p>
         </div>
     </div>
-    <style type='text/css'>
-        #background {
-            width: 100%; 
-            height: 80px; 
-            position: fixed; 
-            left: 0px; 
-            top: 0px;
-            z-index: 3; /* Ensure div tag stays behind content; -999 might work, too. */
-        }
-        .alignleft {
-            float: left;
-            text-align:left;
-            width:33.33333%;
-            position:fixed;
-            top:10%; left:1%
-        }
-        .aligncenter {
-            float: left;
-            text-align:center;
-            width:33.33333%;
-            position:fixed;
-            top:10%;left: 40%;
-        }
-        .alignright {
-            float: right;
-            text-align:right;
-            width:33.33333%;
-            position:fixed;
-            top:10%; right:1%
-        }
-        .test{
-            text-decoration: none;       
-            padding-right:0;
-            padding: 5px 5px 5px 5px;
-            background-repeat:repeat;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-        }
-        .test:hover { 
-            background-color: #ADC0DA;
-            text-decoration: none;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-        }
-        .btn{
-            padding-right:0;
-            padding: 5px 5px 5px 5px; 
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            width:90px; 
-            height:30px;
-            background-image:url('http://i.imgur.com/WvJjCS2.jpg');
-            color:white;
-            border: none;
-        }
-        .btn:hover {    
-            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-        }
-
-        .stretch {
-            width:100%;
-            height:100%;
-        }
-
-        .login {
-            position: relative;
-            top: 0px;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            margin: 10% auto;
-            padding: 5px 5px 5px 5px;
-            width: 300px;
-            height: 300px;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            background: url(http://i.imgur.com/LhLujbv.jpg) no-repeat;
-            box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-            -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-            -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-        }
-        input:focus,textarea:focus,select:focus{
-            border:2px solid #fafafa; 
-            box-shadow:0 0 10px #7DFDFE;
-            -webkit-box-shadow:0 0 10px #7DFDFE;
-            -moz-box-shadow:0 0 10px #7DFDFE;
-            outline: none;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type='text/css'></style>
+    <script src="script.js"></script> 
 </head>
 <body background ="http://i.imgur.com/D5HT75P.jpg">
     <div id="login" class="login">

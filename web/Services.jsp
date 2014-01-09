@@ -2,8 +2,6 @@
     <head>
         <title>HangoverHelpers - Services</title>
     <div id="background">
-        <img src="http://i.imgur.com/y1AGOMf.jpg" class="stretch"/>
-
         <div style="position: fixed;top: 2%;left: 1%;">
             <a title="HangoverHelpers"href="index.jsp" style="text-decoration: none;">
                 <img src="http://i.imgur.com/O23t68w.jpg"width="70" height="60" alt="Hangover Helpers"/>
@@ -41,234 +39,9 @@
                 Login</font></a></p>
         </div>
     </div>
-    <style type='text/css'>
-        #background {
-            width: 100%; 
-            height: 80px; 
-            position: fixed; 
-            left: 0px; 
-            top: 0px;
-            z-index: 3; /* Ensure div tag stays behind content; -999 might work, too. */
-        }
-        .alignleft {
-            float: left;
-            text-align:left;
-            width:33.33333%;
-            position:fixed;
-            top:10%; left:1%
-        }
-        .aligncenter {
-            float: left;
-            text-align:center;
-            width:33.33333%;
-            position:fixed;
-            top:10%;left: 40%;
-        }
-        .test{
-            text-decoration: none;       
-            padding-right:0;
-            padding: 5px 5px 5px 5px;
-            background-repeat:repeat;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-        }
-        .test:hover { 
-            background-color: #ADC0DA;
-            text-decoration: none;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-        }
-        .btn{
-            padding-right:0;
-            padding: 5px 5px 5px 5px; 
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            width:90px; 
-            height:30px;
-            background-image:url('http://i.imgur.com/WvJjCS2.jpg');
-            color:white;
-            border: none;
-        }
-        .btn:hover {    
-            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-        }
-        .alignright {
-            float: right;
-            text-align:right;
-            width:33.33333%;
-            position:fixed;
-            top:10%; right:1%
-        }
-
-
-        .stretch {
-            width:100%;
-            height:100%;
-        }
-
-        .login {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: rgba(0,0,0,0.5);
-            z-index: 99999;
-            opacity:0;
-            -webkit-transition: opacity 500ms ease-in;
-            -moz-transition: opacity 500ms ease-in;
-            transition: opacity 500ms ease-in;
-            pointer-events: none;
-        }
-        .login:target {
-            opacity:1;
-            pointer-events: auto;
-        }
-
-        .login > div {
-            position: relative;
-            top: 80px;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            margin: 10% auto;
-            padding: 5px 20px 13px 20px;
-            width: 300px;
-            height: 300px;
-            border-radius: 50px;
-            -webkit-border-radius: 50px;
-            -moz-border-radius: 50px;
-            background: url(http://i.imgur.com/LhLujbv.jpg) no-repeat;
-            box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-            -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-            -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-        } 
-        .close {
-            background: #606061;
-            color: #FFFFFF;
-            line-height: 25px;
-            position: absolute;
-            right: -12px;
-            text-align: center;
-            top: -10px;
-            width: 24px;
-            text-decoration: none;
-            font-weight: bold;
-            -webkit-border-radius: 12px;
-            -moz-border-radius: 12px;
-            border-radius: 12px;
-            -moz-box-shadow: 1px 1px 3px #000;
-            -webkit-box-shadow: 1px 1px 3px #000;
-            box-shadow: 1px 1px 3px #000;
-
-        }
-        .close:hover { 
-            background: #7092BE; 
-        }
-        input:focus,textarea:focus,select:focus{
-            border:2px solid #fafafa; 
-            box-shadow:0 0 10px #7DFDFE;
-            -webkit-box-shadow:0 0 10px #7DFDFE;
-            -moz-box-shadow:0 0 10px #7DFDFE;
-            outline: none;
-        }
-        .goods {
-
-            text-decoration: none;   
-            position: relative;
-            top: 140px;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #7092BE;
-            background-repeat:repeat;
-            background-position: right; 
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            width: 510px;
-            height: 30px;
-        }
-        .box {
-            text-decoration: none;   
-            position: relative;
-            top: 4px;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 5px 5px 5px 5px;
-            background-color: #7092BE;
-            background-repeat:repeat;
-            background-position: right; 
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            width: 500px;
-            height: 440px;
-
-        }
-    </style>
-    <script>
-        function show() {
-            if (document.getElementById('goods').style.display === 'none') {
-                document.getElementById('goods').style.display = 'block';
-            }
-            if (document.getElementById('goods1').style.display === 'none') {
-                document.getElementById('goods1').style.display = 'block';
-            }
-            if (document.getElementById('goods2').style.display === 'none') {
-                document.getElementById('goods2').style.display = 'block';
-            }
-            if (document.getElementById('goods3').style.display === 'none') {
-                document.getElementById('goods3').style.display = 'block';
-            }
-            if (document.getElementById('goods4').style.display === 'none') {
-                document.getElementById('goods4').style.display = 'block';
-            }
-            return false;
-        }
-        function hide() {
-            if (document.getElementById('goods').style.display === 'block') {
-                document.getElementById('goods').style.display = 'none';
-            }
-            return false;
-        }
-        function hide1() {
-            if (document.getElementById('goods1').style.display === 'block') {
-                document.getElementById('goods1').style.display = 'none';
-            }
-            return false;
-        }
-        function hide2() {
-            if (document.getElementById('goods2').style.display === 'block') {
-                document.getElementById('goods2').style.display = 'none';
-            }
-            return false;
-        }
-        function hide3() {
-            if (document.getElementById('goods3').style.display === 'block') {
-                document.getElementById('goods3').style.display = 'none';
-            }
-            return false;
-        }
-        function hide4() {
-            if (document.getElementById('goods4').style.display === 'block') {
-                document.getElementById('goods4').style.display = 'none';
-            }
-            return false;
-        }
-    </script> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type='text/css'></style>
+    <script src="script.js"></script> 
 </head>
 <body background ="http://i.imgur.com/D5HT75P.jpg">
     <div id="login" class="login">
@@ -282,40 +55,57 @@
             <a href="register.jsp" title="Register"style="text-decoration:none;" >
                 <font size="3"color="white" style="text-align:center;">Not Registered?<font></a></div>               
     </div>
+
+    <div id="cleaner1" class="cleaner1">
+        <div>
+            <a href="#close" title="Close"style="text-decoration:none;" class="close"><font color="white">X</font></a>
+            </br></br><font style="text-align:center;"size ="5"color="white"face="Bradley hand ITC">Cleaner 1</font>
+            </br></br>
+            <img style="width:60px;height:60px;"src="http://i.imgur.com/JthQdqx.jpg"/></br>
+            This option Is the basic package! </br></br>
+            <select>
+                <option selected>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+    </div>
     <div class="goods">   
         <p style="margin-top:3px;">
             <a  href="#1" name="1" onclick="show();
-            hide1();
-            hide2();
-            hide3();
-            hide4();"class="test"title="Register">
+                    hide1();
+                    hide2();
+                    hide3();
+                    hide4();"class="test"title="Register">
                 <font color="white" size ="5" face="Bradley hand ITC">All</font></a>
 
             <a href="#1" name="1" onclick="show();
-            hide();
-            hide2();
-            hide3();
-            hide4();"class="test"title="Login">
+                    hide();
+                    hide2();
+                    hide3();
+                    hide4();"class="test"title="Login">
                 <font color="white" size ="5" face="Bradley hand ITC">Hot Food</font></a>
 
             <a href="#1" name="1" onclick="show();
-            hide();
-            hide1();
-            hide3();
-            hide4();"class="test"title="Login">
+                    hide();
+                    hide1();
+                    hide3();
+                    hide4();"class="test"title="Login">
                 <font color="white" size ="5" face="Bradley hand ITC">Sweets</font></a>
 
             <a href="#1" name="1" onclick="show();
-            hide();
-            hide1();
-            hide2();
-            hide4();"class="test"href="#login" title="Login">
+                    hide();
+                    hide1();
+                    hide2();
+                    hide4();"class="test"href="#login" title="Login">
                 <font color="white" size ="5" face="Bradley hand ITC">Drinks</font></a>
             <a href="#1" name="1" onclick="show();
-            hide();
-            hide1();
-            hide2();
-            hide3();"class="test"href="#login" title="Login">
+                    hide();
+                    hide1();
+                    hide2();
+                    hide3();"class="test"href="#login" title="Login">
                 <font color="white" size ="5" face="Bradley hand ITC">Cleaners</font></a>
         </p>
         <div class="box" >
@@ -349,7 +139,9 @@
                     <option>4</option>
                 </select>
             </div> 
-            <div id="goods4" style="display:none;margin-top: 10px;">fsy
+            <div id="goods4" style="display:none;margin-top: 10px;">
+                <a href="#cleaner1">               
+                    <img style="width:60px;height:60px;"src="http://i.imgur.com/JthQdqx.jpg"/></a>
             </div> 
         </div>
 </body>
