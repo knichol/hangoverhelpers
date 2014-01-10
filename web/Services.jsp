@@ -21,7 +21,7 @@
                             <font color="white" size ="5" face="Bradley hand ITC">Services</font></a></td>
                     <td>&nbsp;</td>
                     <td><a href="About.jsp"title="About Us"class="test">
-                            <font color="white" size ="5" face="Bradley hand ITC">About Us</font></a></td>
+                            <font color="white" size ="5" face="Bradley hand ITC">About</font></a></td>
                     <td>&nbsp;</td>
                     <td><a title="Contact" href="Contact.jsp"class="test">
                             <font color="white" size ="5" face="Bradley hand ITC">Contact</font></a></td>
@@ -164,145 +164,127 @@
                 </select>
             </div> 
             <div id="goods3" style="display:none;margin-top: 20px; text-align: center;">           
-                <div class="drink1"></div>  
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <div class="drink2"></div> 
-                </br>
-                Powerade
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                Water
-                </br>
-                <select>
+                <div class="drink1">
+                    <p class="imgText1"><font color="#4C0B5F">Powerade</font></p>
+                </div> 
+                <select style="overflow-y: scroll;vertical-align:-55px;">
                     <option selected>0</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
+                    <option>5</option>
                 </select>
                 <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <select>
+                <div class="drink2">
+                    <p class="imgText1"><font color="#4C0B5F">Water</font></p>
+                </div> 
+                <select style="vertical-align:-55px;">
                     <option selected>0</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
+                    <option>5</option>
                 </select>
-                </br></br>
+                </br></br></br>
+                <div class="drink3">
+                    <p class="imgText1"><font color="#4C0B5F">Diet Coke</font></p>
+                </div>  
+                <select style="vertical-align:-55px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="drink4">
+                    <p class="imgText1"><font color="#4C0B5F">Coca Cola</font></p>
+                </div> 
+                <select style="vertical-align:-55px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>
+                <div class="drink5">
+                    <p class="imgText1"><font color="#4C0B5F">Lucozade</font></p>
+                </div>  
+                <select style="vertical-align:-55px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="drink6">
+                    <p class="imgText1"><font color="#4C0B5F">Lucozade Sport</font></p>
+                </div> 
+                <select style="vertical-align:-55px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>                
+                <div class="drink7">
+                    <p class="imgText1"><font color="#4C0B5F">7up</font></p>
+                </div>  
+                <select style="vertical-align:-55px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="drink8">
+                    <p class="imgText1"><font color="#4C0B5F">Fanta Orange</font></p>
+                </div> 
+                <select style="vertical-align:-55px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>                
+                <div class="drink9">
+                    <p class="imgText1"><font color="#4C0B5F">Green Tea</font></p>
+                </div>  
+                <select style="vertical-align:-55px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
 
-                <div class="drink3"></div>  
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <div class="drink4"></div> 
-                </br>        
-                Diet Coke
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                Coca Cola
-                </br>
-                <select>
+                <div class="drink10">
+                    <p class="imgText1"><font color="#4C0B5F">Tea</font></p>
+                </div> 
+                <select style="vertical-align:-55px;">
                     <option selected>0</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
+                    <option>5</option>
                 </select>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <select>
-                    <option selected>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-                </br></br>
-
-                <div class="drink5"></div>  
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <div class="drink6"></div> 
-                </br>
-                Lucozade
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                Lucozade Sport
-                </br>        
-                <select>
-                    <option selected>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <select>
-                    <option selected>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-                </br></br>
-                <div class="drink7"></div>  
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <div class="drink8"></div> 
-                </br>
-                7up
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                Fanta Orange
-                </br>          
-                <select>
-                    <option selected>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <select>
-                    <option selected>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select></br></br>
-                <div class="drink9"></div>  
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <div class="drink10"></div> 
-                </br>
-                Green Tea
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                Tea
-                </br>          
-                <select>
-                    <option selected>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <select>
-                    <option selected>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
+                </br></br></br>
             </div> 
 
             <div id="goods4" style="display:none; margin-top: 20px;">

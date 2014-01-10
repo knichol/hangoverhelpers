@@ -290,6 +290,13 @@ select {
     font-size:80%;
     display:inline-block;
 }
+.imgText1 { 
+    text-decoration: none;
+    margin:0; 
+    padding:25px 0 0 0; 
+    font-size:100%;
+     display:inline-block;
+}
 .cleaner {
     position: fixed;
     top: 0;
