@@ -164,7 +164,7 @@
                 </select>
             </div> 
             <div id="goods3" style="display:none;margin-top: 20px; text-align: center;">           
-                <div class="drink1"> <!-- 7092BE ADC0DA-->
+                <div class="drink drink1"> <!-- 7092BE ADC0DA-->
                     <p class="imgText1"><font color="#7092BE">Powerade</font></p>
                 </div> 
                 <select style="vertical-align:5px;">
@@ -176,7 +176,7 @@
                     <option>5</option>
                 </select>
                 <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <div class="drink2">
+                <div class="drink drink2">
                     <p class="imgText1"><font color="#7092BE">Water</font></p>
                 </div> 
                 <select style="vertical-align:5px;">
@@ -188,7 +188,7 @@
                     <option>5</option>
                 </select>
                 </br></br></br>
-                <div class="drink3">
+                <div class="drink drink3">
                     <p class="imgText1"><font color="#7092BE">Diet Coke</font></p>
                 </div>  
                 <select style="vertical-align:5px;">
@@ -200,7 +200,7 @@
                     <option>5</option>
                 </select>
                 <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <div class="drink4">
+                <div class="drink drink4">
                     <p class="imgText1"><font color="#7092BE">Coca Cola</font></p>
                 </div> 
                 <select style="vertical-align:5px;">
@@ -212,7 +212,7 @@
                     <option>5</option>
                 </select>
                 </br></br></br>
-                <div class="drink5">
+                <div class="drink drink5">
                     <p class="imgText1"><font color="#7092BE">Lucozade</font></p>
                 </div>  
                 <select style="vertical-align:5px;">
@@ -224,7 +224,7 @@
                     <option>5</option>
                 </select>
                 <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <div class="drink6">
+                <div class="drink drink6">
                     <p class="imgText1"><font color="#7092BE">Lucozade Sport</font></p>
                 </div> 
                 <select style="vertical-align:5px;">
@@ -236,7 +236,7 @@
                     <option>5</option>
                 </select>
                 </br></br></br>                
-                <div class="drink7">
+                <div class="drink drink7">
                     <p class="imgText1"><font color="#7092BE">7up</font></p>
                 </div>  
                 <select style="vertical-align:5px;">
@@ -248,7 +248,7 @@
                     <option>5</option>
                 </select>
                 <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                <div class="drink8">
+                <div class="drink drink8">
                     <p class="imgText1"><font color="#7092BE">Fanta Orange</font></p>
                 </div> 
                 <select style="vertical-align:5px;">
@@ -260,7 +260,7 @@
                     <option>5</option>
                 </select>
                 </br></br></br>                
-                <div class="drink9">
+                <div class="drink drink9">
                     <p class="imgText1"><font color="#7092BE">Green Tea</font></p>
                 </div>  
                 <select style="vertical-align:5px;">
@@ -273,7 +273,7 @@
                 </select>
                 <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
 
-                <div class="drink10">
+                <div class="drink drink10">
                     <p class="imgText1"><font color="#7092BE">Tea</font></p>
                 </div> 
                 <select style="vertical-align:5px;">
