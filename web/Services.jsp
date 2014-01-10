@@ -290,12 +290,12 @@
             <div id="goods4" style="display:none; margin-top: 20px;">
                 <a href="#cleaner1">
                     <div class="clean">
-                        <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
+                        <p class="imgText"><font color="#7092BE">Click for Details</font></p>
                     </div></a>
                 <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <a href="#cleaner2">
                     <div class="clean">
-                        <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
+                        <p class="imgText"><font color="#7092BE">Click for Details</font></p>
                     </div></a>
                 </br>
                 <font color="white">Package One</font>
@@ -307,12 +307,12 @@
 
                 <a href="#cleaner3">
                     <div class="clean">
-                        <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
+                        <p class="imgText"><font color="#7092BE">Click for Details</font></p>
                     </div></a>
                 <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <a href="#cleaner4">
                     <div class="clean">
-                        <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
+                        <p class="imgText"><font color="#7092BE">Click for Details</font></p>
                     </div></a>
                 </br>
                 <font color="white">Package Three</font>
@@ -324,7 +324,7 @@
 
                 <a href="#cleaner5" style="margin-top: 10px;text-decoration: none;text-align: center;">
                     <div class="clean">
-                        <p class="imgText"><font color="#4C0B5F">Click for Details</font></p>
+                        <p class="imgText"><font color="#7092BE">Click for Details</font></p>
                     </div></br>
                 </a><font color="white">Package Five</font>
                 </br></br>              
