@@ -143,7 +143,9 @@
                 <font color="white" size ="5" face="Bradley hand ITC">Cleaners</font></a>
         </p>
         <div class="box" >
-            <div id="goods" style="display:block;margin-top: 10px;">1 2 3 4 </div> 
+            <div id="goods" style="display:block;margin-top: 10px;">1 2 3 4 
+            <div ></div>
+            </div> 
             <div id="goods1" style="display:none;margin-top: 10px;">
                 <div class="food food1">
                     <p class="imgText1"><font color="#7092BE">Chicken Burger</font></p>
@@ -468,5 +470,7 @@
                 </br></br>              
             </div> 
         </div>
+        <div id = "first"style="display:none;">some details111</div>
+<div id = "second"style="display:none;">some details222</div>
 </body>
 </html>
