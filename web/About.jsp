@@ -11,7 +11,7 @@
             <p style="margin-top:-32px; margin-left:80px;"class="alignleft">
                 <a title="HangoverHelpers">
                     <font size="6" color="white" face="Bradley hand ITC" >HangoverHelpers</a></font></p>
-            <p style="margin-top:-54px;" class="aligncenter">
+            <p style="margin-top:-54px;margin-left:-50px;" class="aligncenter">
             <table border="0">
                 <tr>
                     <td><a title="Home"href="index.jsp"class="test">
@@ -23,7 +23,7 @@
                     <td><a href="About.jsp"title="About Us"class="test">
                             <font color="white" size ="5" face="Bradley hand ITC">About</font></a></td>
                     <td>&nbsp;</td>
-                    <td><a title="Contact" href="Contact.jsp"class="test">
+                    <td><a title="Contact Us" href="Contact.jsp"class="test">
                             <font color="white" size ="5" face="Bradley hand ITC">Contact</font></a></td>
                 </tr>
 
