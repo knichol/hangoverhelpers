@@ -29,9 +29,6 @@
     position:fixed;
     top:10%; right:1%
 }
-.tt {
-    overflow:auto;
-}
 .test{
     text-decoration: none;       
     padding-right:0;
