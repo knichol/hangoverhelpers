@@ -52,7 +52,7 @@
             <input type="text" title="Email" id="Email "name="Email" placeholder="Email" style="text-align: center; width:200px; height:30px;"></br></br>
             <input type="text" title="Address" id="Address" name="Address" placeholder="Address" style="text-align: center; width:200px; height:30px;"></br></br>
             <input type="text" title="Phone Number" id="Phone" name="Phone" placeholder="Phone Number" style="text-align: center; width:200px; height:30px;"></br></br>
-            <input class="btn" type="submit" id="CreateRecord" value="CreateRecord">
+            <input class="btn" type="submit" id="CreateRecord" value="Register" title="Register">
         </form>	
     </div>
     <div id="login" class="login">

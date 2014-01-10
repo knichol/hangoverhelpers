@@ -145,14 +145,128 @@
         <div class="box" >
             <div id="goods" style="display:block;margin-top: 10px;">1 2 3 4 </div> 
             <div id="goods1" style="display:none;margin-top: 10px;">
-                <img style="width:60px;height:60px;"src="http://i.imgur.com/sRsmHQ4.jpg"/>
-                <select>
+                <div class="food food1">
+                    <p class="imgText1"><font color="#7092BE">Chicken Burger</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
                     <option selected>0</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                </select></div> 
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="food food2">
+                    <p class="imgText1"><font color="#7092BE">HamBurger</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>
+                <div class="food food3">
+                    <p class="imgText1"><font color="#7092BE">Sausage Rolls</font></p>
+                </div>  
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="food food4">
+                    <p class="imgText1"><font color="#7092BE">Chicke Roll</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>
+                <div class="food food5">
+                    <p class="imgText1"><font color="#7092BE">Taco Fries</font></p>
+                </div>  
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="food food6">
+                    <p class="imgText1"><font color="#7092BE">Curry Chip</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>                
+                <div class="food food7">
+                    <p class="imgText1"><font color="#7092BE">Hawaiian Pizza</font></p>
+                </div>  
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="food food8">
+                    <p class="imgText1"><font color="#7092BE">Chicken Pizza</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>                
+                <div class="food food9">
+                    <p class="imgText1"><font color="#7092BE">Pepporoni Pizza</font></p>
+                </div>  
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+
+                <div class="food food10">
+                    <p class="imgText1"><font color="#7092BE">Vegatarian Pizza</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>
+            </div> 
             <div id="goods2" style="display:none;margin-top: 10px;">
                 <img style="width:60px;height:60px;"src="http://i.imgur.com/hM3UQcX.jpg"/>
                 <select>
@@ -164,7 +278,7 @@
                 </select>
             </div> 
             <div id="goods3" style="display:none;margin-top: 20px; text-align: center;">           
-                <div class="drink drink1"> <!-- 7092BE ADC0DA-->
+                <div class="drink drink1">
                     <p class="imgText1"><font color="#7092BE">Powerade</font></p>
                 </div> 
                 <select style="vertical-align:5px;">

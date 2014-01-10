@@ -358,3 +358,53 @@ select {
     background: white url(http://i.imgur.com/ZV10Ezr.jpg) no-repeat top left;
     background-size:100px 100px;
 }
+.food {
+    width:110px; 
+    height:110px;
+    display:inline-block;
+    border:2px solid #fafafa; 
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+    outline: none;
+}
+.food1 {
+    background: white url(http://i.imgur.com/o4ZYFA6.jpg) no-repeat top left;
+    background-size:100px 100px;
+}
+.food2 {
+    background: white url(http://i.imgur.com/mWS5yeO.jpg) no-repeat top left;
+    background-size:100px 100px;
+}
+.food3 {
+    background: white url(http://i.imgur.com/yBAg3NV.jpg) no-repeat top left;
+    background-size:100px 100px;
+}
+.food4 {
+    background: white url(http://i.imgur.com/xvZQEpU.jpg) no-repeat top left;
+    background-size:100px 100px;
+}
+.food5 {
+    background: white url(http://i.imgur.com/adVfLps.jpg) no-repeat top left;
+    background-size:100px 100px;
+}
+.food6 {
+    background: white url(http://i.imgur.com/hvtDyTz.jpg) no-repeat top left;
+    background-size:100px 100px;
+}
+.food7 {
+    background: white url(http://i.imgur.com/7etYqAq.jpg) no-repeat top left;
+    background-size:100px 100px;
+}
+.food8 {
+    background: white url(http://i.imgur.com/avXsHHB.jpg) no-repeat top left;
+    background-size:100px 100px;
+}
+.food9 {
+    background: white url(http://i.imgur.com/AvTqEqQ.jpg) no-repeat top left;
+    background-size:100px 100px;
+}
+.food10 {
+    background: white url(http://i.imgur.com/XkU7AFs.gif) no-repeat top left;
+    background-size:100px 100px;
+}
