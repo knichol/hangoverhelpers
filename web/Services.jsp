@@ -116,10 +116,10 @@
                     hide3();"class="test"href="#login" title="Login">Cleaners</a>
         </p>
         <div class="box" >
-              <div id="goods" style="display:block;margin-top: 10px;">
+<!--            <div id="goods" style="display:block;margin-top: 10px;">
 
-            </div> 
-            <div id="goods1" style="display:none;margin-top: 20px;text-align: center;">
+            </div> -->
+            <div id="goods1" style="display:block;margin-top: 20px;text-align: center;">
                 <div title="Chicken Burger"class="food food1">
                     <p class="imgText1">Chicken Burger</p>
                 </div> 
@@ -265,7 +265,7 @@
                 </select>
                 </br></br></br>
             </div> 
-			
+
             <div id="goods2" style="display:none;margin-top: 20px;text-align: center;">
                 <div class="sweet sweet1">
                     <p class="imgText1">Buffalo</p>
@@ -460,7 +460,7 @@
                 </select>
                 </br></br></br>
             </div> 
-			
+
             <div id="goods3"style="display:none;margin-top: 20px;text-align: center;">           
                 <div class="drink drink1">
                     <p class="imgText1">Powerade</p>

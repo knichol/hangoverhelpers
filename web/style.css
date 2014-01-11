@@ -4,7 +4,7 @@
     position: fixed; 
     left: 0px; 
     top: 0px;
-    z-index: 3; /* Ensure div tag stays behind content; -999 might work, too. */
+    z-index: 3;
     background-color: #7092BE;
     background-repeat:repeat;
 }
