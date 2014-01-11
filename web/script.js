@@ -1,7 +1,7 @@
 function show() {
-    if (document.getElementById('goods').style.display === 'none') {
-        document.getElementById('goods').style.display = 'block';
-    }
+//    if (document.getElementById('goods').style.display === 'none') {
+//        document.getElementById('goods').style.display = 'block';
+//    }
     if (document.getElementById('goods1').style.display === 'none') {
         document.getElementById('goods1').style.display = 'block';
     }
@@ -16,12 +16,12 @@ function show() {
     }
     return false;
 }
-function hide() {
-    if (document.getElementById('goods').style.display === 'block') {
-        document.getElementById('goods').style.display = 'none';
-    }
-    return false;
-}
+//function hide() {
+//    if (document.getElementById('goods').style.display === 'block') {
+//        document.getElementById('goods').style.display = 'none';
+//    }
+//    return false;
+//}
 function hide1() {
     if (document.getElementById('goods1').style.display === 'block') {
         document.getElementById('goods1').style.display = 'none';
