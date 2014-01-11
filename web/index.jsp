@@ -27,7 +27,7 @@
     <script src="script.js"></script> 
 </head>
 <body>
-    <p class="homeP">
+    <p class="homepage">
         <font size="7">Welcome to HangoverHelpers</font></br></br>
         <font size="5">&ensp;&ensp;A fast, friendly and intriguing delivery service</font>
     </p>
