@@ -144,7 +144,7 @@
         </p>
         <div class="box" >
             <div id="goods" style="display:block;margin-top: 10px;">1 2 3 4 
-            <div ></div>
+            
             </div> 
             <div id="goods1" style="display:none;margin-top: 10px;">
                 <div class="food food1">
@@ -294,14 +294,176 @@
                 </br></br></br>
             </div> 
             <div id="goods2" style="display:none;margin-top: 10px;">
-                <img style="width:60px;height:60px;"src="http://i.imgur.com/hM3UQcX.jpg"/>
-                <select>
+                <div class="sweet sweet1">
+                    <p class="imgText1"><font color="#7092BE">Buffalo</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
                     <option selected>0</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
+                    <option>5</option>
                 </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="sweet sweet2">
+                    <p class="imgText1"><font color="#7092BE">Cheese & Onion</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>
+                <div class="sweet sweet3">
+                    <p class="imgText1"><font color="#7092BE">Salt & Vinegar</font></p>
+                </div>  
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="sweet sweet4">
+                    <p class="imgText1"><font color="#7092BE">Popcorn</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>
+                <div class="sweet sweet5">
+                    <p class="imgText1"><font color="#7092BE">Onion Rings</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                 <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="sweet sweet6">
+                    <p class="imgText1"><font color="#7092BE">Thai Rings</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>
+                <div class="sweet sweet7">
+                    <p class="imgText1"><font color="#7092BE">Salted</font></p>
+                </div>  
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="sweet sweet8">
+                    <p class="imgText1"><font color="#7092BE">SC & Onion</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>                
+                <div class="sweet sweet9">
+                    <p class="imgText1"><font color="#7092BE">Salt & Vinegar</font></p>
+                </div>  
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="sweet sweet10">
+                    <p class="imgText1"><font color="#7092BE">Taytos</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>                
+                <div class="sweet sweet11">
+                    <p class="imgText1"><font color="#7092BE">Galaxy Caramel</font></p>
+                </div>  
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+
+                <div class="sweet sweet12">
+                    <p class="imgText1"><font color="#7092BE">Bournville</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>
+                <div class="sweet sweet13">
+                    <p class="imgText1"><font color="#7092BE">Golden Crisp</font></p>
+                </div>  
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+
+                <div class="sweet sweet14">
+                    <p class="imgText1"><font color="#7092BE">MilkyWay</font></p>
+                </div> 
+                <select style="vertical-align:5px;">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>
             </div> 
             <div id="goods3" style="display:none;margin-top: 20px; text-align: center;">           
                 <div class="drink drink1">
