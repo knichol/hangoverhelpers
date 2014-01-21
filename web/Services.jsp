@@ -86,39 +86,36 @@
     </div>
     <div class="goods">   
         <p style="margin-top:3px;">
-            <!--            <a  href="#1" name="1" onclick="show();
-                                hide1();
-                                hide2();
-                                hide3();
-                                hide4();"class="test"title="Register">All/a>-->
 
             <a href="#1" name="Hot Food" title="Hot Food"onclick="show();
-//                    hide();
+                    hide();
                     hide2();
                     hide3();
                     hide4();"class="test"title="Login">Hot Food</a>
 
             <a href="#2" name="Confectionery"title="Confectionery" onclick="show();
-//                    hide();
+                    hide();
                     hide1();
                     hide3();
                     hide4();"class="test"title="Login">Confectionery</a>
 
             <a href="#3" name="Drinks" title="Drinks"onclick="show();
-//                    hide();
+                    hide();
                     hide1();
                     hide2();
                     hide4();"class="test"href="#login" title="Login">Drinks</a>
+            <a  href="#1" name="1" onclick="show();
+                    hide1();
+                    hide2();
+                    hide3();
+                    hide4();"class="test"title="Register">Healthy Food</a>
             <a href="#4" name="Cleaners" title="Cleaners"onclick="show();
-//                    hide();
+                   hide();
                     hide1();
                     hide2();
                     hide3();"class="test"href="#login" title="Login">Cleaners</a>
         </p>
         <div class="box" >
-            <!--            <div id="goods" style="display:block;margin-top: 10px;">
-            
-                        </div> -->
             <div id="goods1" style="display:block;margin-top: 20px;text-align: center;">
                 <div title="Chicken Burger"class="food food1">
                     <p class="imgText1">Chicken Burger</p>
@@ -143,7 +140,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <div title="Sausage Rolls"class="food food3">
                     <p class="imgText1">Sausage Rolls</p>
                 </div>  
@@ -155,7 +152,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+               </br></br></br>
                 <div title="Snack Box"class="food food4">
                     <p class="imgText1">Snack Box</p>
                 </div> 
@@ -167,7 +164,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>
+               <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <div title="Chicken Roll"class="food food5">
                     <p class="imgText1">Chicken Roll</p>
                 </div> 
@@ -215,7 +212,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>                
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <div class="food food9">
                     <p class="imgText1">Hawaiian Pizza</p>
                 </div>  
@@ -226,8 +223,8 @@
                     <option>3</option>
                     <option>4</option>
                     <option>5</option>
-                </select>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                </select>           
+                </br></br></br>
                 <div class="food food10">
                     <p class="imgText1">Chicken Pizza</p>
                 </div> 
@@ -239,7 +236,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>                
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>                
                 <div class="food food11">
                     <p class="imgText1">Pepporoni Pizza</p>
                 </div>  
@@ -290,7 +287,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <div class="sweet sweet3">
                     <p class="imgText1">Salt & Vinegar</p>
                 </div>  
@@ -302,7 +299,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                </br></br></br>
                 <div class="sweet sweet4">
                     <p class="imgText1">Popcorn</p>
                 </div> 
@@ -314,7 +311,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>
+               <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <div class="sweet sweet5">
                     <p class="imgText1">Onion Rings</p>
                 </div> 
@@ -362,7 +359,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>               
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>              
                 <div class="sweet sweet9">
                     <p class="imgText1">Salt & Vinegar</p>
                 </div>  
@@ -374,7 +371,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                </br></br></br>
                 <div class="sweet sweet10">
                     <p class="imgText1">Prawn Cocktail</p>
                 </div>  
@@ -386,7 +383,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>   
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>   
                 <div class="sweet sweet11">
                     <p class="imgText1">Taytos</p>
                 </div> 
@@ -434,7 +431,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <div class="sweet sweet15">
                     <p class="imgText1">Golden Crisp</p>
                 </div>  
@@ -446,7 +443,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                </br></br></br>
                 <div class="sweet sweet16">
                     <p class="imgText1">MilkyWay</p>
                 </div> 
@@ -458,7 +455,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <div class="sweet sweet17">
                     <p class="imgText1">Cola Calippo</p>
                 </div>  
@@ -506,7 +503,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <div class="sweet sweet21">
                     <p class="imgText1">Red Slushie</p>
                 </div>  
@@ -518,7 +515,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                </br></br></br>
                 <div class="sweet sweet22">
                     <p class="imgText1">Blue Slushie</p>
                 </div> 
@@ -530,9 +527,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>
             </div> 
-
             <div id="goods3"style="display:none;margin-top: 20px;text-align: center;">           
                 <div class="drink drink1">
                     <p class="imgText1">Powerade</p>
@@ -557,7 +552,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <div class="drink drink3">
                     <p class="imgText1">Diet Coke</p>
                 </div>  
@@ -569,7 +564,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                </br></br></br>
                 <div class="drink drink4">
                     <p class="imgText1">Coca Cola</p>
                 </div> 
@@ -581,7 +576,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <div class="drink drink5">
                     <p class="imgText1">Lucozade</p>
                 </div>  
@@ -629,7 +624,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>                
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>               
                 <div class="drink drink9">
                     <p class="imgText1">Green Tea</p>
                 </div>  
@@ -641,8 +636,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-
+               </br></br></br>
                 <div class="drink drink10">
                     <p class="imgText1">Tea</p>
                 </div> 
@@ -654,7 +648,9 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                </br></br></br>
+            </div> 
+            <div id="goods" style="display:none;margin-top: 10px;text-align: center;">
+
             </div> 
             <div id="goods4"style="display:none;margin-top: 20px;text-align: center;">
                 <a href="#cleaner1">
@@ -668,19 +664,19 @@
                         <p class="imgText2">Package Two</p>
                         <p class="imgText">Click for Details</p>
                     </div></a>
-                </br></br></br>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <a href="#cleaner3">
                     <div class="clean">
                         <p class="imgText2">Package Three</p>
                         <p class="imgText">Click for Details</p>
                     </div></a>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+               </br></br></br>
                 <a href="#cleaner4">
                     <div class="clean">
                         <p class="imgText2">Package Four</p>
                         <p class="imgText">Click for Details</p>
                     </div></a>
-                </br></br></br>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <a href="#cleaner5">
                     <div class="clean">
                         <p class="imgText2">Package Five</p>
