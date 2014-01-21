@@ -1,8 +1,7 @@
 function show() {
     if (document.getElementById('goods').style.display === 'none') {
         document.getElementById('goods').style.display = 'block';
-    }
-    
+    }   
     if (document.getElementById('goods1').style.display === 'none') {
         document.getElementById('goods1').style.display = 'block';
     }

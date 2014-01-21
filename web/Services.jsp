@@ -648,9 +648,8 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-            </div> 
+            </div>         
             <div id="goods" style="display:none;margin-top: 10px;text-align: center;">
-
             </div> 
             <div id="goods4"style="display:none;margin-top: 20px;text-align: center;">
                 <a href="#cleaner1">
