@@ -88,11 +88,14 @@ body{
     -moz-box-shadow:0 0 10px #7DFDFE;
 }
 .btn1 {
-    width:60px; 
-    height:30px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    width:50px; 
+    height:24px;
     vertical-align:1px;  
     background: white url('http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons/blue-jelly-icons-business/078453-blue-jelly-icon-business-cart-solid.png') no-repeat center;
-    background-size: 40px 40px;
+    background-size: 30px 30px;
 }
 
 .stretch {
@@ -166,7 +169,12 @@ br {
     background: #7092BE; 
 }
 input:focus,textarea:focus,select:focus{
-    border:2px solid #fafafa; 
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+    outline: none !important;
+}
+input:hover,textarea:hover,select:hover{
     box-shadow:0 0 10px #7DFDFE;
     -webkit-box-shadow:0 0 10px #7DFDFE;
     -moz-box-shadow:0 0 10px #7DFDFE;
