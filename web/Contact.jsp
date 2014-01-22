@@ -26,13 +26,13 @@
     <style type='text/css'></style>
     <script src="script.js"></script> 
 </head>
-<body>
+<body onload="init();">
     <div class="help">
         <form method="post" action="mailto:ciansheehy92@gmail.com"></br>
             Contact Us</br>
             <input type="text" title="Name"  id="Name"  name="Name"  placeholder="Fullname"></br></br>
             <input type="text" title="Email" id="Email" name="Email" placeholder="Email"></br></br>
-            <textarea maxlength="400"placeholder="Dear Sir/Madam...(400 Characters Max)"></textarea>
+            <textarea id="text" maxlength="400"placeholder="Dear Sir/Madam...(400 Characters Max)"></textarea>
             <input class="btn"value="Send Email"type="submit"style="position: absolute;left: 0;right: 120px;bottom:10px;"/>          
             <input type="reset" class="btn" value="Reset" style="position: absolute;left: 120px;right: 0;bottom:10px;">
         </form>

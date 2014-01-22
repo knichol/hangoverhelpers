@@ -39,48 +39,42 @@
                 <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div>
     </div>
     <div id="cleaners">
-        <div id="cleaner1" class="cleaner">
+        <div id="cleaner1" class="login">
             <div>
                 <a href="#close" title="Close"class="close">X</a>
                 </br></br><font size ="5">Package One</font></br></br>
                 Cleaner comes in and cleans the rubbish in the house!</br></br>
-                <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
             </div>
         </div>
-
-        <div id="cleaner2" class="cleaner">
+        <div id="cleaner2" class="login">
             <div>
                 <a href="#close" title="Close"class="close">X</a>
                 </br></br><font size ="5">Package Two</font></br></br>
                 Cleaner comes in and cleans the rubbish in the house and the floor! </br></br>
-                <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
             </div>
         </div>
-        <div id="cleaner3" class="cleaner">
+        <div id="cleaner3" class="login">
             <div>
                 <a href="#close" title="Close"class="close">X</a>
                 </br></br><font size ="5">Package Three</font></br></br>
                 Cleaner comes in and cleans the rubbish in the house and the floor! 
                 They will also dispose of the rubbish is a healthy manner!</br></br>
-                <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
             </div>
         </div>
-        <div id="cleaner4" class="cleaner">
+        <div id="cleaner4" class="login">
             <div>
                 <a href="#close" title="Close"class="close">X</a>
                 </br></br><font size ="5">Package Four</font></br></br>
                 Cleaner comes in and cleans the rubbish in the house and the floor! 
                 They will also dispose of the rubbish is a healthy manner and clean the windows and any outside damage!</br></br>
-                <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
             </div>
         </div>        
-        <div id="cleaner5" class="cleaner">
+        <div id="cleaner5" class="login">
             <div>
                 <a href="#close" title="Close"class="close">X</a>
                 </br></br><font size ="5">Package Four</font></br></br>
                 The Ultimate Package</br>
                 The cleaners will clean the full house</br></br>
-                <input class="btn"type="submit" value="Add To Cart" title="Add To Cart"></br></br>
             </div>
         </div>
     </div>
@@ -110,7 +104,7 @@
                     hide3();
                     hide4();"class="test"title="Register">Healthy Food</a>
             <a href="#4" name="Cleaners" title="Cleaners"onclick="show();
-                   hide();
+                    hide();
                     hide1();
                     hide2();
                     hide3();"class="test"href="#login" title="Login">Cleaners</a>
@@ -140,7 +134,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <div title="Sausage Rolls"class="food food3">
                     <p class="imgText1">Sausage Rolls</p>
                 </div>  
@@ -152,7 +146,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-               </br></br></br>
+                </br></br></br>
                 <div title="Snack Box"class="food food4">
                     <p class="imgText1">Snack Box</p>
                 </div> 
@@ -164,7 +158,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-               <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <div title="Chicken Roll"class="food food5">
                     <p class="imgText1">Chicken Roll</p>
                 </div> 
@@ -311,7 +305,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-               <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <div class="sweet sweet5">
                     <p class="imgText1">Onion Rings</p>
                 </div> 
@@ -636,7 +630,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-               </br></br></br>
+                </br></br></br>
                 <div class="drink drink10">
                     <p class="imgText1">Tea</p>
                 </div> 
@@ -649,7 +643,186 @@
                     <option>5</option>
                 </select>
             </div>         
-            <div id="goods" style="display:none;margin-top: 10px;text-align: center;">
+            <div id="goods" style="display:none;margin-top: 20px;text-align: center;">
+                <div class="hfood hfood1">
+                    <p class="imgText1">Orange</p>
+                </div> 
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="hfood hfood2">
+                    <p class="imgText1">Apple</p>
+                </div> 
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="hfood hfood3">
+                    <p class="imgText1">Pineapple</p>
+                </div>  
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>
+                <div class="hfood hfood4">
+                    <p class="imgText1">Watermelon</p>
+                </div> 
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="hfood hfood5">
+                    <p class="imgText1">Grapes</p>
+                </div> 
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="hfood hfood6">
+                    <p class="imgText1">Bread Sticks</p>
+                </div> 
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>
+                <div class="hfood hfood7">
+                    <p class="imgText1">Rice Cakes</p>
+                </div>  
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="hfood hfood8">
+                    <p class="imgText1">Bombay Mix</p>
+                </div> 
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>              
+                <div class="hfood hfood9">
+                    <p class="imgText1">Sesame Sticks</p>
+                </div>  
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>
+                <div class="hfood hfood10">
+                    <p class="imgText1">Cream Crackers</p>
+                </div>  
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>   
+                <div class="hfood hfood11">
+                    <p class="imgText1">Ryvita Original</p>
+                </div> 
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="hfood hfood12">
+                    <p class="imgText1">Ryvita Fruit</p>
+                </div> 
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                </br></br></br>                
+                <div class="hfood hfood13">
+                    <p class="imgText1">Olives</p>
+                </div>  
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="hfood hfood14">
+                    <p class="imgText1">Feta Cheese</p>
+                </div> 
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                <div class="hfood hfood15">
+                    <p class="imgText1">Bread Sticks</p>
+                </div>  
+                <select>
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
             </div> 
             <div id="goods4"style="display:none;margin-top: 20px;text-align: center;">
                 <a href="#cleaner1">
@@ -657,31 +830,36 @@
                         <p class="imgText2">Package One</p>
                         <p class="imgText">Click for Details</p>
                     </div></a>
+                <input class="btn btn1"type="submit"title="Add To Cart"value="">
                 <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <a href="#cleaner2">
                     <div class="clean">
                         <p class="imgText2">Package Two</p>
                         <p class="imgText">Click for Details</p>
                     </div></a>
+                <input class="btn btn1"type="submit" title="Add To Cart"value="">
                 <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <a href="#cleaner3">
                     <div class="clean">
                         <p class="imgText2">Package Three</p>
                         <p class="imgText">Click for Details</p>
                     </div></a>
-               </br></br></br>
+                <input class="btn btn1"type="submit" title="Add To Cart"value="">
+                </br></br></br>
                 <a href="#cleaner4">
                     <div class="clean">
                         <p class="imgText2">Package Four</p>
                         <p class="imgText">Click for Details</p>
                     </div></a>
+                <input class="btn btn1"type="submit" title="Add To Cart"value="">
                 <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                 <a href="#cleaner5">
                     <div class="clean">
                         <p class="imgText2">Package Five</p>
                         <p class="imgText">Click for Details</p>
-                    </div>
-                    </br></br></br>             
+                    </div></a>
+                <input class="btn btn1"type="submit" title="Add To Cart"value="">
+                </br></br></br>             
             </div> 
         </div>
 </body>

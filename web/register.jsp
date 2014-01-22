@@ -29,7 +29,7 @@
 <body>
     <div class="register">
         <form  id ="register" action="Register" method="post" style="width:400px; text-align:center; "id ="register" action="Register" method="post"></br>
-            <font size="5">Register</br>
+            <font size="5">Register</br></br>
             <input type="text" id="Name" title="Name" name="Name" placeholder="Fullname"></br></br>
             <input type="password" title="Password" id="Password" name="Password" placeholder="Password"></br></br>
             <input type="text" title="Email" id="Email "name="Email" placeholder="Email"></br></br>

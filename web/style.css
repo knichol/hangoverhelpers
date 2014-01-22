@@ -72,24 +72,36 @@ body{
     -moz-border-radius: 5px;
     width:90px; 
     height:30px;
-    background-image:url('http://i.imgur.com/WvJjCS2.jpg');
-    color:white;
+    background-color: white;
+    color:#7092BE;
     border: none;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    font-family: Bradley hand ITC;
+    text-decoration: none; 
+    font-size: 16px;
 }
 .btn:hover {    
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+}
+.btn1 {
+    width:60px; 
+    height:30px;
+    vertical-align:1px;  
+    background: white url('http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons/blue-jelly-icons-business/078453-blue-jelly-icon-business-cart-solid.png') no-repeat center;
+    background-size: 40px 40px;
 }
 
 .stretch {
     width:100%;
     height:100%;
 }
-
+br {
+    line-height:4px;
+}
 .login {
     position: fixed;
     top: 0;
@@ -117,8 +129,8 @@ body{
     margin-right: auto;
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -251,6 +263,7 @@ input{
     width: 590px;
     height: 32px;
 }
+
 ::-webkit-scrollbar { 
     width: 14px; 
     border-radius: 10px;
@@ -296,7 +309,7 @@ input{
     content: url(http://i.imgur.com/O23t68w.jpg);
 }
 .clean  { 
-    background: white url(http://wp.hepb.org/wp-content/uploads/2011/08/cleaning-supplies1.jpg) no-repeat  center;
+    background: white url(http://i.imgur.com/RNNJW57.jpg) no-repeat  center;
     background-size:90px 90px;
     width:110px; 
     height:110px;
@@ -312,60 +325,18 @@ input{
     display:inline-block;
     font-weight:bolder;
 }
-.imgText2 { 
+.imgText1 { 
     text-decoration: none;
-    margin-top: -28px; 
+    margin-top: 70px; 
     text-align:center;
     padding:25px 0 0 0; 
     font-size:90%;
     display:inline-block;
     font-weight:bolder;
 }
-.cleaner {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.5);
-    z-index: 99999;
-    opacity:0;
-    -webkit-transition: opacity 300ms ease-in;
-    -moz-transition: opacity 300ms ease-in;
-    transition: opacity 300ms ease-in;
-    pointer-events: none;
-    color:white;
-    font-family: Bradley hand ITC;
-    text-align:center;
-}
-.cleaner:target {
-    opacity:1;
-    pointer-events: auto;
-}
-
-.cleaner > div {
-    position: relative;
-    top: 60px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 10% auto;
-    padding: 5px 20px 13px 20px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    background-color: #7092BE;
-    background-repeat:repeat;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-
-.imgText1 { 
+.imgText2 { 
     text-decoration: none;
-    margin-top: 70px; 
+    margin-top: -28px; 
     text-align:center;
     padding:25px 0 0 0; 
     font-size:90%;
@@ -384,44 +355,44 @@ input{
     color:#7092BE;
 }
 .drink1 {
-    background: white url(http://i.imgur.com/dBBbBo6.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/dBBbBo6.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .drink2 {
-    background: white url(http://i.imgur.com/azDIMfZ.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/azDIMfZ.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .drink3 {
-    background: white url(http://i.imgur.com/drPeNkv.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/drPeNkv.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .drink4 {
-    background: white url(http://i.imgur.com/fJ8zfBN.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/fJ8zfBN.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .drink5 {
-    background: white url(http://i.imgur.com/0R7zVVz.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/0R7zVVz.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .drink6 {
-    background: white url(http://i.imgur.com/Gx2pJxI.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/Gx2pJxI.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .drink7 {
-    background: white url(http://i.imgur.com/MXQugSn.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/MXQugSn.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .drink8 {
-    background: white url(http://i.imgur.com/Seswp0B.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/Seswp0B.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .drink9 {
-    background: white url(http://i.imgur.com/fZ5uwFC.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/fZ5uwFC.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .drink10 {
-    background: white url(http://i.imgur.com/ZV10Ezr.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/ZV10Ezr.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .food {
     width:110px; 
@@ -435,52 +406,52 @@ input{
     color:#7092BE;
 }
 .food1 {
-    background: white url(http://i.imgur.com/o4ZYFA6.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/o4ZYFA6.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .food2 {
-    background: white url(http://i.imgur.com/mWS5yeO.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/mWS5yeO.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .food3 {
-    background: white url(http://i.imgur.com/yBAg3NV.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/yBAg3NV.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .food4 {
-    background: white url(http://i.imgur.com/1qeYW70.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/1qeYW70.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .food5 {
-    background: white url(http://i.imgur.com/FrjkaEU.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/FrjkaEU.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .food6 {
-    background: white url(http://i.imgur.com/SRof8Ns.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/SRof8Ns.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .food7 {
-    background: white url(http://i.imgur.com/snlRMyS.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/snlRMyS.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .food8 {
-    background: white url(http://i.imgur.com/KEui6Np.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/KEui6Np.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .food9 {
-    background: white url(http://i.imgur.com/7etYqAq.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/7etYqAq.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .food10 {
-    background: white url(http://i.imgur.com/avXsHHB.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/avXsHHB.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .food11 {
-    background: white url(http://i.imgur.com/AvTqEqQ.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/AvTqEqQ.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .food12 {
-    background: white url(http://i.imgur.com/XkU7AFs.gif) no-repeat top left;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/XkU7AFs.gif) no-repeat center;
+    background-size:90px 90px;
 }
 
 .sweet {
@@ -496,63 +467,63 @@ input{
 }
 
 .sweet1 {
-    background: white url(http://i.imgur.com/zXHp81s.jpg) no-repeat top center;
+    background: white url(http://i.imgur.com/zXHp81s.jpg) no-repeat center;
     background-size:100px 100px;
 }
 .sweet2 {
-    background: white url(http://i.imgur.com/HXOaZ9a.jpg) no-repeat top center;
+    background: white url(http://i.imgur.com/HXOaZ9a.jpg) no-repeat center;
     background-size:100px 100px;
 }
 .sweet3 {
-    background: white url(http://i.imgur.com/yLqWE8M.jpg) no-repeat top center;
+    background: white url(http://i.imgur.com/yLqWE8M.jpg) no-repeat center;
     background-size:100px 100px;
 }
 .sweet4 {
-    background: white url(http://i.imgur.com/cvBpsN7.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/cvBpsN7.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .sweet5 {
-    background: white url(http://i.imgur.com/YTkAPnZ.jpg) no-repeat top center;
+    background: white url(http://i.imgur.com/YTkAPnZ.jpg) no-repeat center;
     background-size:100px 100px;
 }
 .sweet6 {
-    background: white url(http://i.imgur.com/hM3UQcX.jpg) no-repeat top center;
-    background-size:80px 90px;
+    background: white url(http://i.imgur.com/hM3UQcX.jpg) no-repeat center;
+    background-size:70px 80px;
 }
 .sweet7 {
-    background: white url(http://i.imgur.com/JMDKaQu.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/JMDKaQu.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .sweet8 {
-    background: white url(http://i.imgur.com/Mx7Ig3N.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/Mx7Ig3N.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .sweet9 {
-    background: white url(http://i.imgur.com/Am4xs3A.jpg) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/Am4xs3A.jpg) no-repeat center;
+    background-size:90px 90px;
 }
 .sweet10 {
-    background: white url(http://i.imgur.com/ngxSQQa.jpg ) no-repeat top center;
-    background-size:100px 100px;
+    background: white url(http://i.imgur.com/ngxSQQa.jpg ) no-repeat center;
+    background-size:90px 90px;
 }
 .sweet11 {
-    background: white url(http://i.imgur.com/PnFiv9C.jpg) no-repeat top center;
-    background-size:90px 90px;
+    background: white url(http://i.imgur.com/PnFiv9C.jpg) no-repeat center;
+    background-size:80px 80px;
 }
 .sweet12 {
-    background: white url(http://i.imgur.com/aWJhn4a.jpg) no-repeat top center;
-    background-size:90px 90px;
+    background: white url(http://i.imgur.com/aWJhn4a.jpg) no-repeat center;
+    background-size:80px 80px;
 }
 .sweet13 {
-    background: white url(http://i.imgur.com/vBVmXNO.jpg) no-repeat top center;
+    background: white url(http://i.imgur.com/vBVmXNO.jpg) no-repeat center;
     background-size:100px 100px;
 }
 .sweet14 {
-    background: white url(http://i.imgur.com/ebL80id.png) no-repeat top center;
+    background: white url(http://i.imgur.com/ebL80id.png) no-repeat center;
     background-size:100px 100px;
 }
 .sweet15 {
-    background: white url(http://i.imgur.com/hGSc8Nw.png) no-repeat top center;
+    background: white url(http://i.imgur.com/hGSc8Nw.png) no-repeat center;
     background-size:80px 80px;
 }
 .sweet16 {
@@ -560,26 +531,100 @@ input{
     background-size:80px 80px;
 }
 .sweet17 {
-    background: white url(http://i.imgur.com/190MDJU.jpg) no-repeat top center;
+    background: white url(http://i.imgur.com/190MDJU.jpg) no-repeat center;
     background-size:80px 90px;
 }
 .sweet18 {
-    background: white url(http://i.imgur.com/4PCxPmW.jpg) no-repeat top center;
+    background: white url(http://i.imgur.com/4PCxPmW.jpg) no-repeat center;
     background-size:80px 90px;
 }
 .sweet19 {
-    background: white url(http://i.imgur.com/ASWOVeK.png) no-repeat top center;
+    background: white url(http://i.imgur.com/ASWOVeK.png) no-repeat center;
     background-size:80px 90px;
 }
 .sweet20 {
-    background: white url(http://i.imgur.com/A5u3xCw.png) no-repeat top center;
+    background: white url(http://i.imgur.com/A5u3xCw.png) no-repeat center;
     background-size:80px 90px;
 }
 .sweet21 {
-    background: white url(http://i.imgur.com/GHtMn5D.jpg) no-repeat top center;
+    background: white url(http://i.imgur.com/GHtMn5D.jpg) no-repeat center;
     background-size:70px 90px;
 }
 .sweet22 {
-    background: white url(http://i.imgur.com/LcWuMoe.jpg) no-repeat top center;
+    background: white url(http://i.imgur.com/LcWuMoe.jpg) no-repeat center;
+    background-size:80px 90px;
+}
+
+
+.hfood {
+    width:110px; 
+    height:110px;
+    display:inline-block;
+    border:2px solid #fafafa; 
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+    outline: none;
+    color:#7092BE;
+}
+
+.hfood1 {
+    background: white url(http://i.imgur.com/KR2mMFt.jpg) no-repeat center;
+    background-size:100px 100px;
+}
+.hfood2 {
+    background: white url(http://i.imgur.com/FZLw5My.jpg) no-repeat center;
+    background-size:90px 90px;
+}
+.hfood3 {
+    background: white url(http://i.imgur.com/isIbtR0.jpg) no-repeat center;
+    background-size:100px 100px;
+}
+.hfood4 {
+    background: white url(http://i.imgur.com/5s5Op2i.jpg) no-repeat center;
+    background-size:100px 100px;
+}
+.hfood5 {
+    background: white url(http://i.imgur.com/Ft7oG6O.jpg) no-repeat center;
+    background-size:100px 100px;
+}
+.hfood6 {
+    background: white url(http://i.imgur.com/Va2oCNm.jpg) no-repeat center;
+    background-size:80px 90px;
+}
+.hfood7 {
+    background: white url(http://i.imgur.com/JRRJ9jJ.jpg) no-repeat center;
+    background-size:90px 90px;
+}
+.hfood8 {
+    background: white url(http://i.imgur.com/xfxYvC6.jpg) no-repeat center;
+    background-size:90px 90px;
+}
+.hfood9 {
+    background: white url(http://i.imgur.com/r04xVuf.jpg) no-repeat center;
+    background-size:90px 90px;
+}
+.hfood10 {
+    background: white url(http://i.imgur.com/BqHLP6H.jpg) no-repeat center;
+    background-size:90px 80px;
+}
+.hfood11 {
+    background: white url(http://i.imgur.com/d1Nvj3V.jpg) no-repeat center;
+    background-size:80px 80px;
+}
+.hfood12 {
+    background: white url(http://i.imgur.com/LxUJEZz.jpg) no-repeat center;
+    background-size:80px 80px;
+}
+.hfood13 {
+    background: white url(http://i.imgur.com/4JnY8qH.jpg) no-repeat center;
+    background-size:100px 100px;
+}
+.hfood14 {
+    background: white url(http://i.imgur.com/ojFYaY4.jpg) no-repeat center;
+    background-size:100px 100px;
+}
+.hfood15 {
+    background: white url(http://i.imgur.com/oK97DaZ.jpg) no-repeat center;
     background-size:80px 90px;
 }
