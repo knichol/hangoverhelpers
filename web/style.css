@@ -23,7 +23,7 @@ body{
     text-align:left;
     width:33.33333%;
     position:fixed;
-    top:10%; left:1%;
+    top:9%; left:1%;
     margin-top:-32px;
     margin-left:80px;
     text-decoration: none;
@@ -36,14 +36,14 @@ body{
     text-align:center;
     width:33.33333%;
     position:fixed;
-    top:10%;left: 40%;
+    top:9%;left: 40%;
 }
 .alignright {
     float: right;
     text-align:right;
     width:33.33333%;
     position:fixed;
-    top:10%; right:1%;
+    top:9%; right:1%;
     margin-top:-24px;
 }
 .test{
