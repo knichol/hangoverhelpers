@@ -78,37 +78,37 @@
             </div>
         </div>
     </div>
-    <div class="goods">   
-        <p style="margin-top:3px;">
-
+    <div class="goods">
+        <a>
             <a href="#1" name="Hot Food" title="Hot Food"onclick="show();
                     hide();
                     hide2();
                     hide3();
-                    hide4();"class="test"title="Login">Hot Food</a>
+                    hide4();"class="test test1">Hot Food</a>
 
             <a href="#2" name="Confectionery"title="Confectionery" onclick="show();
                     hide();
                     hide1();
                     hide3();
-                    hide4();"class="test"title="Login">Confectionery</a>
+                    hide4();"class="test test1">Confectionery</a>
 
             <a href="#3" name="Drinks" title="Drinks"onclick="show();
                     hide();
                     hide1();
                     hide2();
-                    hide4();"class="test"href="#login" title="Login">Drinks</a>
-            <a  href="#1" name="1" onclick="show();
+                    hide4();"class="test test1">Drinks</a>
+            <a  href="#1" name="1" title="Healthy Food" onclick="show();
                     hide1();
                     hide2();
                     hide3();
-                    hide4();"class="test"title="Register">Healthy Food</a>
+                    hide4();"class="test test1">Healthy Food</a>
             <a href="#4" name="Cleaners" title="Cleaners"onclick="show();
                     hide();
                     hide1();
                     hide2();
-                    hide3();"class="test"href="#login" title="Login">Cleaners</a>
-        </p>
+                    hide3();"class="test test1">Cleaners</a>
+                    </a>
+        </div>
         <div class="box" >
             <div id="goods1" style="display:block;margin-top: 20px;text-align: center;">
                 <div title="Chicken Burger"class="food food1">

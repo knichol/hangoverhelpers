@@ -9,7 +9,7 @@
     background-repeat:repeat;
 }
 body{
-    background:url('http://www.mycoolbackgrounds.com/backgrounds/23770/Peaceful%20Lagoon%20at%20Dusk,%20Moorea%20Island,%20French%20Polynesia.jpg');
+    background:url('http://i.imgur.com/j41R39S.jpg');
 }
 .homepage{
     text-align:left; 
@@ -23,13 +23,12 @@ body{
     text-align:left;
     width:33.33333%;
     position:fixed;
-    top:9%; left:1%;
-    margin-top:-32px;
-    margin-left:80px;
+    top:5%; left:7%;
     text-decoration: none;
     font-size:200%;
     color: white;
     font-family:Bradley hand ITC;
+    max-width: 100px;
 }
 .aligncenter {
     float: left;
@@ -43,8 +42,7 @@ body{
     text-align:right;
     width:33.33333%;
     position:fixed;
-    top:9%; right:1%;
-    margin-top:-24px;
+    top:4%; right:1%;
 }
 .test{
     text-decoration: none;       
@@ -61,6 +59,9 @@ body{
     box-shadow:0 0 10px #7DFDFE;
     -webkit-box-shadow:0 0 10px #7DFDFE;
     -moz-box-shadow:0 0 10px #7DFDFE;
+}
+.test1{
+     vertical-align: -7px;
 }
 .btn{
     padding-right:0;
@@ -92,7 +93,7 @@ body{
     width:50px; 
     height:24px;
     vertical-align:1px;  
-    background: white url('http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons/blue-jelly-icons-business/078453-blue-jelly-icon-business-cart-solid.png') no-repeat center;
+    background: white url('http://i.imgur.com/klvF7Kv.png') no-repeat center;
     background-size: 30px 30px;
 }
 
@@ -165,7 +166,7 @@ br {
 }
 .close:hover { 
     background: #7092BE; 
-       box-shadow:0 0 10px #7DFDFE;
+    box-shadow:0 0 10px #7DFDFE;
     -webkit-box-shadow:0 0 10px #7DFDFE;
     -moz-box-shadow:0 0 10px #7DFDFE;
 }
@@ -270,9 +271,8 @@ input{
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     width: 590px;
-    height: 32px;
+    height: 34px;
 }
-
 ::-webkit-scrollbar { 
     width: 14px; 
     border-radius: 10px;
@@ -291,7 +291,7 @@ input{
     overflow-y: auto;
     text-decoration: none;   
     position: relative;
-    top: 4px;
+    top: 160px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
