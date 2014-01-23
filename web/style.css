@@ -58,11 +58,9 @@ body{
     font-family:Bradley hand ITC;
 }
 .test:hover { 
-    background-color: #ADC0DA;
-    text-decoration: none;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
 }
 .btn{
     padding-right:0;
