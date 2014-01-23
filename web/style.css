@@ -9,7 +9,7 @@
     background-repeat:repeat;
 }
 body{
-    background-image:url('http://i.imgur.com/D5HT75P.jpg');
+    background:url('http://www.mycoolbackgrounds.com/backgrounds/23770/Peaceful%20Lagoon%20at%20Dusk,%20Moorea%20Island,%20French%20Polynesia.jpg');
 }
 .homepage{
     text-align:left; 
@@ -167,6 +167,9 @@ br {
 }
 .close:hover { 
     background: #7092BE; 
+       box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
 }
 input:focus,textarea:focus,select:focus{
     box-shadow:0 0 10px #7DFDFE;
