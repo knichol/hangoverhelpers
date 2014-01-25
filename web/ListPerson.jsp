@@ -1,7 +1,7 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
-<%--<jsp:forward page="index.jsp"/>--%>
+<jsp:forward page="index.jsp"/>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
