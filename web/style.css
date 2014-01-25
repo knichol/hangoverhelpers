@@ -61,7 +61,7 @@ body{
     -moz-box-shadow:0 0 10px #7DFDFE;
 }
 .test1{
-     vertical-align: -7px;
+    vertical-align: -7px;
 }
 .btn{
     padding-right:0;
@@ -102,7 +102,7 @@ body{
     height:100%;
 }
 br {
-    line-height:4px;
+    line-height:2px;
 }
 .login {
     position: fixed;
@@ -203,6 +203,7 @@ input:hover,textarea:hover,select:hover{
     height: 400px;
     font-family: Bradley hand ITC;
     color: white;
+    font-size: 150%;
 }
 .help {
     text-decoration: none;
@@ -324,6 +325,9 @@ input{
     height:110px;
     display:inline-block;
     color:#7092BE;
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
 }
 .imgText { 
     text-decoration: none;
