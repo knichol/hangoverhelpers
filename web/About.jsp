@@ -28,7 +28,7 @@
 </head>
 <body>
     <div class="help">
-        <form method="post" action="mailto:ciansheehy92@gmail.com"></br>
+        <form></br>
             About Us
             </br>
           </form>
