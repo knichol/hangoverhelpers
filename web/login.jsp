@@ -28,14 +28,13 @@
 </head>
 <body>
     <div class="help">
-        <form  id ="login" action="Validate" method="post" style="width:400px; text-align:center;"></br>
-            <font size="5">Login</br></br>
+            </br>Login</br></br>
             <input type="text" title="Email"id="Email "name="Email" placeholder="Email"></br></br>
             <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
-            <input class="btn"type="submit" id="login" value="login" title="Login"></br></br></form>
-        <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div>
-                </div>
+            <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
+            <a href="register.jsp" title="Register"style="text-decoration:none;" >
+                <font size="3"color="white" style="text-align:center;">Not Registered?</font></a>
+</div>
     <div id="login" class="login">
         <div>
             <a href="#close" title="Close" class="close">X</a>

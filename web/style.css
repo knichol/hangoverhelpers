@@ -357,6 +357,7 @@ input{
     font-weight:bolder;
 }
 .drink {
+      text-decoration: none;
     width:110px; 
     height:110px;
     display:inline-block;

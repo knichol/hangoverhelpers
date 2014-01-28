@@ -29,13 +29,13 @@
 <body>
     <div class="register">
         <form  id ="register" action="Register" method="post" style="width:400px; text-align:center; "id ="register" action="Register" method="post"></br>
-            <font size="5">Register</br></br>
+            Register</br>
             <input type="text" id="Name" title="Name" name="Name" placeholder="Fullname"></br></br>
             <input type="password" title="Password" id="Password" name="Password" placeholder="Password"></br></br>
             <input type="text" title="Email" id="Email "name="Email" placeholder="Email"></br></br>
             <input type="text" title="Address" id="Address" name="Address" placeholder="Address"></br></br>
             <input type="text" title="Phone Number" id="Phone" name="Phone" placeholder="Phone Number"></br></br>
-            <input class="btn" type="submit" id="CreateRecord" value="Register" title="Register"></font>
+            <input class="btn" type="submit" id="CreateRecord" value="Register" title="Register">
         </form>	
     </div>
     <div id="login" class="login">

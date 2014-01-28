@@ -856,7 +856,7 @@
             <a href="#cleaner5">
                 <div class="clean">
                     <p class="imgText2">Package Five</p>
-                    <p class="imgText">Click for Details</p>
+                    <p class="imgText">Click for Detail</p>
                 </div></a>
             <input class="btn btn1"type="submit" title="Add To Cart"value="">
             </br></br></br>             
