@@ -80,29 +80,29 @@
     </div>
     <div class="goods">
         <a>
-            <a href="#1" name="Hot Food" title="Hot Food"onclick="show();
+            <a href="#HotFood" name="Hot Food" title="Hot Food"onclick="show();
                     hide();
                     hide2();
                     hide3();
                     hide4();"class="test test1">Hot Food</a>
 
-            <a href="#2" name="Confectionery"title="Confectionery" onclick="show();
+            <a href="#Confectionery" name="Confectionery"title="Confectionery" onclick="show();
                     hide();
                     hide1();
                     hide3();
                     hide4();"class="test test1">Confectionery</a>
 
-            <a href="#3" name="Drinks" title="Drinks"onclick="show();
+            <a href="#Drinks" name="Drinks" title="Drinks"onclick="show();
                     hide();
                     hide1();
                     hide2();
                     hide4();"class="test test1">Drinks</a>
-            <a  href="#4" name="1" title="Healthy Food" onclick="show();
+            <a  href="#HealthyFood" name="1" title="Healthy Food" onclick="show();
                     hide1();
                     hide2();
                     hide3();
                     hide4();"class="test test1">Healthy Food</a>
-            <a href="#5" name="Cleaners" title="Cleaners"onclick="show();
+            <a href="#Cleaners" name="Cleaners" title="Cleaners"onclick="show();
                     hide();
                     hide1();
                     hide2();
