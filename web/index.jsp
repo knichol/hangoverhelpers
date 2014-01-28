@@ -1,3 +1,5 @@
+<%@page import="java.util.*"%>
+
 <html>
     <head>
         <title>HangoverHelpers - Home</title>
@@ -17,9 +19,18 @@
                     <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
                 </tr></table></p>
             <p class="alignright">
-                <a  class="test"href="register.jsp" title="Register">Register</font></a>
+                <% String name1 = (String)session.getAttribute("user");
+                String name2 = "";
+                String name3 = "Logout";
+                if (session.getAttribute("user")== null){
+                    name1 = "Register";
+                    name2 = "Login";
+                    name3 = "";}
+                %>   
+                <a  class="test"href="register.jsp" title="Register"><%=name1%></font></a>
             <td>&nbsp;</td>
-            <a class="test"href="login.jsp" title="Login">Login</a></p>
+             <a class="test" href="Logout"><%=name3%></a>
+            <a class="test"href="login.jsp" title="Login"><%=name2%></a></p>
         </div>
     </div>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -27,10 +38,15 @@
     <script src="script.js"></script> 
 </head>
 <body>
+    <% String name = (String)session.getAttribute("user"); %>
+    <% if (session.getAttribute("user")== null)
+        name = "";%>
+    
     <p class="homepage">
-        <font size="7">Welcome to HangoverHelpers</font></br></br>
+        <font size="7">Welcome to HangoverHelpers <%=name%></font></br></br>
         <font size="5">&ensp;&ensp;A fast, friendly and intriguing delivery service</font>
     </p>
+
     <div id="login" class="login">
         <div>
             <a href="#close" title="Close" class="close">X</a>

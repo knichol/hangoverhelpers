@@ -35,7 +35,7 @@ public class Validate extends HttpServlet {
                     session.setAttribute("user", email);
                     //send request to Welcome.jsp page
                     RequestDispatcher view
-                            = request.getRequestDispatcher("Welcome.jsp");
+                            = request.getRequestDispatcher("index.jsp");
 
                     view.forward(request, response);
                 } 
@@ -44,7 +44,7 @@ public class Validate extends HttpServlet {
                     out.println("<div style='font-size:30px; color:red'>"
                             + "Userid and password does not matched " + "</div>");
                     RequestDispatcher view
-                            = request.getRequestDispatcher("TestLogin.jsp");
+                            = request.getRequestDispatcher("login.jsp");
 
                     view.include(request, response);
                 }
@@ -53,7 +53,7 @@ public class Validate extends HttpServlet {
                 out.println("<div style='font-size:30px; color:red'>" +
                 "Please fill userid and password"+"</div >");
                 
-                RequestDispatcher view = request.getRequestDispatcher("TestLogin.jsp");
+                RequestDispatcher view = request.getRequestDispatcher("login.jsp");
                 view.include(request, response);
             }
         } catch (Exception e) {

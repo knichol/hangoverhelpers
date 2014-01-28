@@ -17,9 +17,14 @@ public class Logout extends HttpServlet {
         try {
             HttpSession session = request.getSession();
             session.invalidate();
-            out.println("<div style='float:left;font-size:25px;'>" + "click here to "
-                    + "<a href='TestLogin.jsp'>login</a></div>");
-            out.println("<h1 align='center'>" + "Logout Sucessfully..." + "</h1>");
+            
+            response.sendRedirect("index.jsp");
+            
+            // Might need later or not. Who knows? ^_^
+            /*out.println("<div style='float:left;font-size:25px;'>" + "click here to "
+                    + "<a href='index.jsp'>go to index</a></div>");
+            out.println("<h1 align='center'>" + "Logout Sucessfully..." + "</h1>");*/
+            
         } finally {
             out.close();
         }
