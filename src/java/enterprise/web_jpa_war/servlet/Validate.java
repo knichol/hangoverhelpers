@@ -23,18 +23,17 @@ public class Validate extends HttpServlet {
             Connection con = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127","mydb1127","mydb112739");
             Statement s = con.createStatement();
             ResultSet rs = s.executeQuery("select * from Customer where Email ='"+email+"'");
-            ResultSet rx = s.executeQuery("select * from Customer where Password ='"+pass+"' ");
+            //ResultSet rx = s.executeQuery("select * from Customer where Password ='"+pass+"' ");
             
             if (rs.next()) {
 
-                if ((email.equals(rs.getString(1))) && (pass.equals(rx.getString(1)))) {
+                if ((email.equals(rs.getString(3))) && (pass.equals(rs.getString(5)))) {
 
                     //New session creation
                     HttpSession session = request.getSession(true);
                     //setting attribute on session
                     session.setAttribute("user", email);
                     //send request to Welcome.jsp page
-
                     RequestDispatcher view
                             = request.getRequestDispatcher("Welcome.jsp");
 
@@ -45,7 +44,7 @@ public class Validate extends HttpServlet {
                     out.println("<div style='font-size:30px; color:red'>"
                             + "Userid and password does not matched " + "</div>");
                     RequestDispatcher view
-                            = request.getRequestDispatcher("TestLogin.html");
+                            = request.getRequestDispatcher("TestLogin.jsp");
 
                     view.include(request, response);
                 }
@@ -54,7 +53,7 @@ public class Validate extends HttpServlet {
                 out.println("<div style='font-size:30px; color:red'>" +
                 "Please fill userid and password"+"</div >");
                 
-                RequestDispatcher view = request.getRequestDispatcher("TestLogin.html");
+                RequestDispatcher view = request.getRequestDispatcher("TestLogin.jsp");
                 view.include(request, response);
             }
         } catch (Exception e) {
