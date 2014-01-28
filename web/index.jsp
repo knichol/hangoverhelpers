@@ -1,5 +1,5 @@
 <%@page import="java.util.*"%>
-
+<jsp:forward page="Home.jsp"/>
 <html>
     <head>
         <title>HangoverHelpers - Home</title>
@@ -46,17 +46,5 @@
         <font size="7">Welcome to HangoverHelpers <%=name%></font></br></br>
         <font size="5">&ensp;&ensp;A fast, friendly and intriguing delivery service</font>
     </p>
-
-    <div id="login" class="login">
-        <div>
-            <a href="#close" title="Close" class="close">X</a>
-            </br></br><font size ="5">Login</font>
-            </br></br>
-            <input type="text" title="Email"id="Email "name="Email" placeholder="Email"></br></br>
-            <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
-            <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
-            <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div>
-    </div>
 </body>
 </html>

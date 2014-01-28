@@ -17,23 +17,24 @@ function show() {
     return false;
 }
 function show1()
-{    if (document.getElementById('home1').style.display === 'none') {
-        document.getElementById('home1').style.display = 'block';
+{
+    if (document.getElementById('HomeD').style.display === 'none') {
+        document.getElementById('HomeD').style.display = 'block';
     }
-    if (document.getElementById('home2').style.display === 'none') {
-        document.getElementById('home2').style.display = 'block';
+    if (document.getElementById('ServicesD').style.display === 'none') {
+        document.getElementById('ServicesD').style.display = 'block';
     }
-    if (document.getElementById('home3').style.display === 'none') {
-        document.getElementById('home3').style.display = 'block';
+    if (document.getElementById('AboutUs').style.display === 'none') {
+        document.getElementById('AboutUs').style.display = 'block';
     }
-    if (document.getElementById('home4').style.display === 'none') {
-        document.getElementById('home4').style.display = 'block';
+    if (document.getElementById('Contact').style.display === 'none') {
+        document.getElementById('Contact').style.display = 'block';
     }
-    if (document.getElementById('home5').style.display === 'none') {
-        document.getElementById('home5').style.display = 'block';
+    if (document.getElementById('Login').style.display === 'none') {
+        document.getElementById('Login').style.display = 'block';
     }
-    if (document.getElementById('home6').style.display === 'none') {
-        document.getElementById('home6').style.display = 'block';
+    if (document.getElementById('RegisterD').style.display === 'none') {
+        document.getElementById('RegisterD').style.display = 'block';
     }
     return false;
 }
@@ -68,38 +69,38 @@ function hide4() {
     return false;
 }
 function hide5() {
-    if (document.getElementById('home1').style.display === 'block') {
-        document.getElementById('home1').style.display = 'none';
+    if (document.getElementById('HomeD').style.display === 'block') {
+        document.getElementById('HomeD').style.display = 'none';
     }
     return false;
 }
 function hide6() {
-    if (document.getElementById('home2').style.display === 'block') {
-        document.getElementById('home2').style.display = 'none';
+    if (document.getElementById('ServicesD').style.display === 'block') {
+        document.getElementById('ServicesD').style.display = 'none';
     }
     return false;
 }
 function hide7() {
-    if (document.getElementById('home3').style.display === 'block') {
-        document.getElementById('home3').style.display = 'none';
+    if (document.getElementById('AboutUs').style.display === 'block') {
+        document.getElementById('AboutUs').style.display = 'none';
     }
     return false;
 }
 function hide8() {
-    if (document.getElementById('home4').style.display === 'block') {
-        document.getElementById('home4').style.display = 'none';
+    if (document.getElementById('Contact').style.display === 'block') {
+        document.getElementById('Contact').style.display = 'none';
     }
     return false;
 }
 function hide9() {
-    if (document.getElementById('home5').style.display === 'block') {
-        document.getElementById('home5').style.display = 'none';
+    if (document.getElementById('Login').style.display === 'block') {
+        document.getElementById('Login').style.display = 'none';
     }
     return false;
 }
 function hide10() {
-    if (document.getElementById('home6').style.display === 'block') {
-        document.getElementById('home6').style.display = 'none';
+    if (document.getElementById('RegisterD').style.display === 'block') {
+        document.getElementById('RegisterD').style.display = 'none';
     }
     return false;
 }

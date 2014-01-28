@@ -1,57 +1,74 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.*;"%>
+<%@page import="javax.servlet.*;"%>
 <html>  
     <head>  
     <div id="background">
         <title>HangoverHelpers</title>
         <div title="HangoverHelpers" class="sloth"></div>
         <div style="margin-left: auto;margin-right:auto;">
-            <a title="HangoverHelpers" href="Home.jsp" class="alignleft">HangoverHelpers</a>
+            <a title="HangoverHelpers" href="#Home" class="alignleft"onclick="show1();
+                    hide6();
+                    hide7();
+                    hide8();
+                    hide9();
+                    hide10();">HangoverHelpers</a>
             <p style="margin-top:-54px; margin-left:-50px;" class="aligncenter">
             <table border="0">
                 <tr>
                     <td><a title="Home"href="#Home"class="test"onclick="show1();
-                            hide6();
-                            hide7();
-                            hide8();
-                            hide9();
-                            hide10();">Home</a></td>
+                    hide6();
+                    hide7();
+                    hide8();
+                    hide9();
+                    hide10();">Home</a></td>
                     <td>&nbsp;</td>
                     <td><a title="Services" href="#Services"class="test"onclick="show1();
-                            hide5();
-                            hide7();
-                            hide8();
-                            hide9();
-                            hide10();">Services</a></td>
+                    hide5();
+                    hide7();
+                    hide8();
+                    hide9();
+                    hide10();">Services</a></td>
                     <td>&nbsp;</td>
                     <td><a title="About Us"href="#AboutUs"class="test"onclick="show1();
-                            hide6();
-                            hide5();
-                            hide8();
-                            hide9();
-                            hide10();">About</a></td>
+                    hide6();
+                    hide5();
+                    hide8();
+                    hide9();
+                    hide10();">About</a></td>
                     <td>&nbsp;</td>
                     <td><a title="Contact Us" href="#ContactUs"class="test"onclick="show1();
-                            hide6();
-                            hide7();
-                            hide5();
-                            hide9();
-                            hide10();">Contact</a></td>
+                    hide6();
+                    hide7();
+                    hide5();
+                    hide9();
+                    hide10();">Contact</a></td>
                 </tr></table></p>
             <p class="alignright">
+                <%String name = (String) session.getAttribute("user");
+                String name1 = "";
+                 String name3 ="Logout";
+                 if (session.getAttribute("user") == null) {
+                    name="Register";
+                    name3="";
+                    name1="Login";
+                    }%>
                 <a  class="test"href="#Register" title="Register"onclick="show1();
-                            hide();
-                            hide6();
-                            hide7();
-                            hide8();
-                            hide5();
-                            hide10();">Register</font></a>
+                    hide();
+                    hide6();
+                    hide7();
+                    hide8();
+                    hide5();
+                    hide9();"><%=name%></font></a>
             <td>&nbsp;</td>
             <a class="test"href="#Login" title="Login"onclick="show1();
-                            hide();
-                            hide6();
-                            hide7();
-                            hide8();
-                            hide9();
-                            hide5();">Login</a></p>
+                    hide();
+                    hide6();
+                    hide7();
+                    hide8();
+                    hide10();
+                    hide5();"><%=name1%></a>
+                        <a href="logout"class="test"><%=name3%></a></p>
         </div>
     </div>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -59,35 +76,13 @@
     <script src="script.js"></script> 
 </head>
 <body>
-    <div id="home1" style="display:block;margin-top: 20px;text-align: center;">
+    <div id="HomeD" style="display:block;margin-top: 20px;text-align: center;">
         <p class="homepage">
             <font size="7">Welcome to HangoverHelpers</font></br></br>
             <font size="5">&ensp;&ensp;A fast, friendly and intriguing delivery service</font>
         </p>
-        <div id="login" class="login">
-            <div>
-                <a href="#close" title="Close" class="close">X</a>
-                </br></br><font size ="5">Login</font>
-                </br></br>
-                <input type="text" title="Email"id="Email "name="Email" placeholder="Email"></br></br>
-                <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
-                <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
-                <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div>
-        </div>
     </div>
-    <div id="home2" style="display:none;margin-top: 20px;text-align: center;">
-        <div id="login" class="login">
-            <div>
-                <a href="#close" title="Close" class="close">X</a>
-                </br></br><font size ="5">Login</font>
-                </br></br>
-                <input type="text" title="Email"id="Email "name="Email" placeholder="Email"></br></br>
-                <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
-                <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
-                <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div>
-        </div>
+    <div id="ServicesD" style="display:none;margin-top: 20px;text-align: center;">
         <div id="cleaners">
             <div id="cleaner1" class="login">
                 <div>
@@ -131,32 +126,32 @@
         <div class="goods">
             <a>
                 <a href="#HotFood" name="Hot Food" title="Hot Food"onclick="show();
-                            hide();
-                            hide2();
-                            hide3();
-                            hide4();"class="test test1">Hot Food</a>
+                    hide();
+                    hide2();
+                    hide3();
+                    hide4();"class="test test1">Hot Food</a>
 
                 <a href="#Confectionery" name="Confectionery"title="Confectionery" onclick="show();
-                            hide();
-                            hide1();
-                            hide3();
-                            hide4();"class="test test1">Confectionery</a>
+                    hide();
+                    hide1();
+                    hide3();
+                    hide4();"class="test test1">Confectionery</a>
 
                 <a href="#Drinks" name="Drinks" title="Drinks"onclick="show();
-                            hide();
-                            hide1();
-                            hide2();
-                            hide4();"class="test test1">Drinks</a>
+                    hide();
+                    hide1();
+                    hide2();
+                    hide4();"class="test test1">Drinks</a>
                 <a  href="#HealthyFood" name="1" title="Healthy Food" onclick="show();
-                            hide1();
-                            hide2();
-                            hide3();
-                            hide4();"class="test test1">Healthy Food</a>
+                    hide1();
+                    hide2();
+                    hide3();
+                    hide4();"class="test test1">Healthy Food</a>
                 <a href="#Cleaners" name="Cleaners" title="Cleaners"onclick="show();
-                            hide();
-                            hide1();
-                            hide2();
-                            hide3();"class="test test1">Cleaners</a>
+                    hide();
+                    hide1();
+                    hide2();
+                    hide3();"class="test test1">Cleaners</a>
             </a>
         </div>
         <div class="box" >
@@ -913,26 +908,15 @@
             </div> 
         </div>
     </div>
-    <div id="home3" style="display:none;margin-top: 20px;text-align: center;">
+    <div id="AboutUs" style="display:none;margin-top: 20px;text-align: center;">
         <div class="help">
             <form></br>
                 About Us
                 </br>
             </form>
         </div>
-        <div id="login" class="login">
-            <div>
-                <a href="#close" title="Close" class="close">X</a>
-                </br></br><font size ="5">Login</font>
-                </br></br>
-                <input type="text" title="Email"id="Email "name="Email" placeholder="Email"></br></br>
-                <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
-                <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
-                <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div>
-        </div>
     </div>
-    <div id="home4" style="display:none;margin-top: 20px;text-align: center;" onload="init();">
+    <div id="Contact" style="display:none;margin-top: 20px;text-align: center;" onload="init();">
         <div class="help">
             <form method="post" action="mailto:ciansheehy92@gmail.com"></br>
                 Contact Us</br>
@@ -943,40 +927,17 @@
                 <input type="reset" class="btn" value="Reset" style="position: absolute;left: 120px;right: 0;bottom:10px;">
             </form>
         </div>
-        <div id="login" class="login">
-            <div>
-                <a href="#close" title="Close" class="close">X</a>
-                </br></br><font size ="5">Login</font>
-                </br></br>
-                <input type="text" title="Email"id="Email "name="Email" placeholder="Email"></br></br>
-                <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
-                <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
-                <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div>
-        </div>
     </div>
-    <div id="home5" style="display:none;margin-top: 20px;text-align: center;">
-        <div class="help">
+    <div class="help" id="Login" style="display:none;margin-top: 20px;text-align: center;">
+        <form id="loginform" action="Validate"method="post">
             </br>Login</br></br>
             <input type="text" title="Email"id="Email "name="Email" placeholder="Email"></br></br>
             <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
             <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
             <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                <font size="3"color="white" style="text-align:center;">Not Registered?</font></a>
-        </div>
-        <div id="login" class="login">
-            <div>
-                <a href="#close" title="Close" class="close">X</a>
-                </br></br><font size ="5">Login</font>
-                </br></br>
-                <input type="text" title="Email"id="Email "name="Email" placeholder="Email"></br></br>
-                <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
-                <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
-                <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div>
-        </div>
+                <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></form>
     </div>
-    <div id="home6" style="display:none;margin-top: 20px;text-align: center;">
+    <div id="RegisterD" style="display:none;margin-top: 20px;text-align: center;">
         <div class="register">
             <form  id ="register" action="Register" method="post" style="width:400px; text-align:center; "id ="register" action="Register" method="post"></br>
                 Register</br>
@@ -987,17 +948,6 @@
                 <input type="text" title="Phone Number" id="Phone" name="Phone" placeholder="Phone Number"></br></br>
                 <input class="btn" type="submit" id="CreateRecord" value="Register" title="Register">
             </form>	
-        </div>
-        <div id="login" class="login">
-            <div>
-                <a href="#close" title="Close" class="close">X</a>
-                </br></br><font size ="5">Login</font>
-                </br></br>
-                <input type="text" title="Email"id="Email "name="Email" placeholder="Email"></br></br>
-                <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
-                <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
-                <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div>
         </div>
     </div>
 </body>
