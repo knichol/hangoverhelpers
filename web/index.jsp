@@ -1,5 +1,4 @@
 <%@page import="java.util.*"%>
-<jsp:forward page="Home.jsp"/>
 <html>
     <head>
         <title>HangoverHelpers - Home</title>
