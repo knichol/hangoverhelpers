@@ -29,11 +29,16 @@ public class Validate extends HttpServlet {
 
                 if ((email.equals(rs.getString(3))) && (pass.equals(rs.getString(5)))) {
 
-                    //New session creation
+                    // New session creation
                     HttpSession session = request.getSession(true);
-                    //setting attribute on session
+                    // Setting attribute on session
                     session.setAttribute("user", email);
-                    //send request to Welcome.jsp page
+                    
+                    // Creating new cart session
+                    ShoppingCart cart = new ShoppingCart();
+                    session.setAttribute("cart", cart);
+                    
+                    // Send request to Welcome.jsp page
                     RequestDispatcher view
                             = request.getRequestDispatcher("index.jsp");
 
