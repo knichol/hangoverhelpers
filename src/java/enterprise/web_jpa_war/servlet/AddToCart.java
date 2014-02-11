@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package enterprise.web_jpa_war.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,18 +18,21 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Kevin
  */
-
-@WebServlet(name="AddToCart", urlPatterns={"/AddToCart"})
+@WebServlet(name = "AddToCart", urlPatterns = {"/AddToCart"})
 
 public class AddToCart extends HttpServlet {
-    
+
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        
-        String productID = request.getParameter("PackageID");
-        
-        
-        
+
+        //String productID = request.getParameter("PackageID");
+
+        //send request to Welcome.jsp page
+        RequestDispatcher view
+                = request.getRequestDispatcher("index.jsp");
+
+        view.forward(request, response);
+
     }
 }

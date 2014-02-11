@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>HangoverHelpers - Services</title>
+        <title>HangoverHelpers - Register</title>
     <div id="background">
         <div title="HangoverHelpers" class="sloth"></div>
         <div style="margin-left: auto;margin-right:auto;">
@@ -103,7 +103,7 @@
             <div class="drink drink1">
                 <p class="imgText1">Powerade</p>             
             </div>  </a>
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
+            <input class="btn btn2" type="button" title="Add To Cart" onclick="window.location='Logout';" value="">
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
             <div class="drink drink2">
                 <p class="imgText1">Water</p>

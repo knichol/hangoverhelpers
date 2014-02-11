@@ -1,11 +1,8 @@
 /**
- *
  * @author Kevin
  */
 
-
 package enterprise.web_jpa_war.entity;
-import enterprise.web_jpa_war.entity.Packages;
 
 public class ShoppingCartItem {
 

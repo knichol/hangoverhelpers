@@ -32,7 +32,6 @@ public class ShoppingCart {
         for (ShoppingCartItem scItem : items) {
 
             if (scItem.getProduct().getPackageID() == product.getPackageID()) {
-
                 newItem = false;
                 scItem.incrementQuantity();
             }

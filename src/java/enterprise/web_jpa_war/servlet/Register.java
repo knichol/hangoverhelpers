@@ -64,6 +64,11 @@ public class Register extends HttpServlet {
             HttpSession session = request.getSession(true);
             //setting attribute on session
             session.setAttribute("user", email);
+            
+            // Creating new cart session
+            ShoppingCart cart = new ShoppingCart();
+            session.setAttribute("cart", cart);
+            
             //send request to Welcome.jsp page
             RequestDispatcher view
                     = request.getRequestDispatcher("index.jsp");

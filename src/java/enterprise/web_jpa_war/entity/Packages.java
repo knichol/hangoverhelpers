@@ -23,6 +23,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  *
  * @author Kevin
  */
+
 @Entity
 @Table(name = "Packages")
 @XmlRootElement
