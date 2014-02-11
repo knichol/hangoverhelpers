@@ -4,6 +4,14 @@
  * and open the template in the editor.
  */
 package enterprise.web_jpa_war.servlet;
+import enterprise.web_jpa_war.entity.*;
+import enterprise.web_jpa_war.servlet.*;
+
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.*;
+
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -22,15 +30,20 @@ import javax.servlet.http.HttpServletResponse;
 
 public class AddToCart extends HttpServlet {
 
-    public void doPost(HttpServletRequest request, HttpServletResponse response)
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-
-        //String productID = request.getParameter("PackageID");
-
+        
+        HttpSession session = request.getSession(true);
+        ShoppingCart cart = (ShoppingCart)session.getAttribute("cart");
+                
+        String productID = request.getParameter("product");
+        if("1".equals(productID)){
+            cart.addItem(new Packages(1));
+        }
+        
         //send request to Welcome.jsp page
         RequestDispatcher view
-                = request.getRequestDispatcher("index.jsp");
+                = request.getRequestDispatcher("Services.jsp");
 
         view.forward(request, response);
 

@@ -28,13 +28,13 @@
     <td>${cust.address}&nbsp;&nbsp;</td>
     <td>${cust.phone}&nbsp;&nbsp;</td>
     <td>${cust.password}&nbsp;&nbsp;</td>
-</tr> 
+</tr>
 
 </c:forEach>
 
 </table>
-<a href="CreatePerson.jsp"><strong>Create a Person Record</strong></a>
+<!--<a href="CreatePerson.jsp"><strong>Create a Person Record</strong></a>
 <a href="register.jsp"><strong>Register</strong></a>
-<a href="login.jsp"><strong>Login</strong></a>
+<a href="login.jsp"><strong>Login</strong></a>-->
 </body>
 </html>
