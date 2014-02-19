@@ -19,7 +19,7 @@
             <p class="alignright">
                 <a  class="test"href="register.jsp" title="Register">Register</font></a>
             <td>&nbsp;</td>
-            <a class="test"href="#login" title="Login">Login</a></p>
+            <a class="test"href="login.jsp" title="Login">Login</a></p>
         </div>
     </div>
     <link rel="stylesheet" type="text/css" href="style.css">
