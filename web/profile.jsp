@@ -18,44 +18,51 @@
                     <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
                 </tr></table></p>
             <p class="alignright">
-                <% String address = (String) session.getAttribute("address1");
-                    String email = (String) session.getAttribute("email1");
-                    String phone = (String) session.getAttribute("phone1");
+                <%  String address = (String) session.getAttribute("address");
+                    String email = (String) session.getAttribute("email");
+                    String phone = (String) session.getAttribute("phone");
                     String user = (String) session.getAttribute("user");
                     String uname = (String) session.getAttribute("uname");
-                    String name2 = "";
-                    String name3 = "Logout";
-                    String name1a = "";
-                    if (session.getAttribute("uname") == null) {
-                        name1a = "Register";
-                        name2 = "Login";
-                        name3 = "";
+                    String login = "";
+                    String logout = "Logout";
+                    String register = "";
+                    if (session.getAttribute("uname") ==null) {
+                        register = "Register";
+                        login = "Login";
+                        logout = "";
                         user = "";
                         uname="";
                     }
                 %>    
-                <a  class="test"href="profile.jsp" title="Cart"><%=uname%></font></a>
-               
-                <a  class="test"href="register.jsp" title="Register"><%=name1a%></font></a>
+                <a  class="test"href="profile.jsp" title="Cart"><%=uname%></font></a>             
+                <a  class="test"href="register.jsp" title="Register"><%=register%></font></a>
             <td>&nbsp;</td>
-             <a class="test" href="Logout"><%=name3%></a>
-            <a class="test"href="login.jsp" title="Login"><%=name2%></a></p>
+             <a class="test" href="Logout"><%=logout%></a>
+            <a class="test"href="login.jsp" title="Login"><%=login%></a></p>
         </div>
     </div>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style type='text/css'></style>
     <script src="script.js"></script> 
 </head>
-<body onload="init();">
-    <div class="help">
-        <form name="input"method="post" action="project.php"></br>
-            Contact Us</br>
-            <input type="text" title="Name"  id="Name"  name="Name"  placeholder="Fullname"></br></br>
-            <input type="text" title="Email" id="Email" name="Email" placeholder="Email"></br></br>
-            <textarea id="text"name="Mail" maxlength="400"placeholder="Dear Sir/Madam...(400 Characters Max)"></textarea>
-            <input class="btn"value="Send Email"type="submit"style="position: absolute;left: 0;right: 120px;bottom:10px;"/>          
-            <input type="reset" class="btn" value="Reset" style="position: absolute;left: 120px;right: 0;bottom:10px;">
+<body >
+    <div class="table">
+    <div class="row">
+    <div class="profile">
+        <form method="post" action=""></br>
+            <a class="profilePic"></a></br>
+            <a class="username"><%=user%></a>
+            </br>
+            Email: <%=email%></br>
+            Address: <%=address%></br>
+            Phone: <%=phone%></br>
         </form>
     </div>
+    <div class="cart">
+        <form name="input"method="post" action="project.php"></br>
+            Cart</br>
+        </form>
+    </div>
+    </div></div>
 </body>
 </html>

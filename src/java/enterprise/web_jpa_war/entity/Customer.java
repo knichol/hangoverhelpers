@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package enterprise.web_jpa_war.entity;
 
 import java.io.Serializable;
@@ -32,9 +31,11 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Customer.findByAddress", query = "SELECT c FROM Customer c WHERE c.address = :address"),
     @NamedQuery(name = "Customer.findByEmail", query = "SELECT c FROM Customer c WHERE c.email = :email"),
     @NamedQuery(name = "Customer.findByName", query = "SELECT c FROM Customer c WHERE c.name = :name"),
+    @NamedQuery(name = "Customer.findByuName", query = "SELECT c FROM Customer c WHERE c.uname = :uname"),
     @NamedQuery(name = "Customer.findByPassword", query = "SELECT c FROM Customer c WHERE c.password = :password"),
     @NamedQuery(name = "Customer.findByPhone", query = "SELECT c FROM Customer c WHERE c.phone = :phone")})
 public class Customer implements Serializable {
+
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -52,6 +53,9 @@ public class Customer implements Serializable {
     @Column(name = "Name")
     private String name;
     @Size(max = 255)
+    @Column(name = "uName")
+    private String uname;
+    @Size(max = 255)
     @Column(name = "Password")
     private String password;
     @Column(name = "Phone")
@@ -60,8 +64,9 @@ public class Customer implements Serializable {
     public Customer() {
     }
 
-    public Customer(String name, String password, String email, String address, String phone) {
+    public Customer(String uname, String name, String password, String email, String address, String phone) {
         //this.customerID = customerID;
+        this.uname = uname;
         this.name = name;
         this.password = password;
         this.email = email;
@@ -99,6 +104,14 @@ public class Customer implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getuName() {
+        return uname;
+    }
+
+    public void setuName(String uname) {
+        this.uname = uname;
     }
 
     public String getPassword() {
@@ -141,5 +154,4 @@ public class Customer implements Serializable {
     public String toString() {
         return "enterprise.web_jpa_war.entity.Customer[ customerID=" + customerID + " ]";
     }
-    
 }

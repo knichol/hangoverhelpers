@@ -18,15 +18,25 @@
                     <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
                 </tr></table></p>
             <p class="alignright">
-                <% String name1 = (String)session.getAttribute("user");
-                String name2 = "";
-                String name3 = "Logout";
-                if (session.getAttribute("user")== null){
-                    name1 = "Register";
-                    name2 = "Login";
-                    name3 = "";}
-                %>   
-                <a  class="test"href="register.jsp" title="Register"><%=name1%></font></a>
+                <% String address = (String) session.getAttribute("address1");
+                    String email = (String) session.getAttribute("email1");
+                    String phone = (String) session.getAttribute("phone1");
+                    String user = (String) session.getAttribute("user");
+                    String uname = (String) session.getAttribute("uname");
+                    String name2 = "";
+                    String name3 = "Logout";
+                    String name1a = "";
+                    if (session.getAttribute("uname") == null) {
+                        name1a = "Register";
+                        name2 = "Login";
+                        name3 = "";
+                        user = "";
+                        uname="";
+                    }
+                %>    
+                <a  class="test"href="profile.jsp" title="Cart"><%=uname%></font></a>
+               
+                <a  class="test"href="register.jsp" title="Register"><%=name1a%></font></a>
             <td>&nbsp;</td>
              <a class="test" href="Logout"><%=name3%></a>
             <a class="test"href="login.jsp" title="Login"><%=name2%></a></p>
@@ -41,7 +51,7 @@
         <form></br>
             About Us
             </br>
-          </form>
+        </form>
     </div>
     <div id="login" class="login">
         <div>

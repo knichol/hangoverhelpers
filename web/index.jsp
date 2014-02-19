@@ -18,15 +18,25 @@
                     <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
                 </tr></table></p>
             <p class="alignright">
-                <% String name1 = (String)session.getAttribute("user");
-                String name2 = "";
-                String name3 = "Logout";
-                if (session.getAttribute("user")== null){
-                    name1 = "Register";
-                    name2 = "Login";
-                    name3 = "";}
-                %>   
-                <a  class="test"href="register.jsp" title="Register"><%=name1%></font></a>
+                <% String address = (String) session.getAttribute("address1");
+                    String email = (String) session.getAttribute("email1");
+                    String phone = (String) session.getAttribute("phone1");
+                    String user = (String) session.getAttribute("user");
+                    String uname = (String) session.getAttribute("uname");
+                    String name2 = "";
+                    String name3 = "Logout";
+                    String name1a = "";
+                    if (session.getAttribute("uname") == null) {
+                        name1a = "Register";
+                        name2 = "Login";
+                        name3 = "";
+                        user = "";
+                        uname="";
+                    }
+                %>    
+                <a  class="test"href="profile.jsp" title="Cart"><%=uname%></font></a>
+               
+                <a  class="test"href="register.jsp" title="Register"><%=name1a%></font></a>
             <td>&nbsp;</td>
              <a class="test" href="Logout"><%=name3%></a>
             <a class="test"href="login.jsp" title="Login"><%=name2%></a></p>
@@ -36,13 +46,9 @@
     <style type='text/css'></style>
     <script src="script.js"></script> 
 </head>
-<body>
-    <% String name = (String)session.getAttribute("user"); %>
-    <% if (session.getAttribute("user")== null)
-        name = "";%>
-    
+<body>    
     <p class="homepage">
-        <font size="7">Welcome to HangoverHelpers <%=name%></font></br></br>
+        <font size="7">Welcome to HangoverHelpers <%=user%></font></br></br>
         <font size="5">&ensp;&ensp;A fast, friendly and intriguing delivery service</font>
     </p>
 </body>

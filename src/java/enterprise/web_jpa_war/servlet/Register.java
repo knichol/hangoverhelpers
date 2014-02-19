@@ -21,13 +21,13 @@ public class Register extends HttpServlet {
     @PersistenceUnit
     //The emf corresponding to 
     private EntityManagerFactory emf;
-
     @Resource
     private UserTransaction utx;
 
     /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
+     * Processes requests for both HTTP
+     * <code>GET</code> and
+     * <code>POST</code> methods.
      *
      * @param request servlet request
      * @param response servlet response
@@ -39,14 +39,15 @@ public class Register extends HttpServlet {
         try {
 
             //Get the data from user's form
+            String uname = (String) request.getParameter("uName");
             String name = (String) request.getParameter("Name");
-            String password = (String) request.getParameter("Password");
+            String pass = (String) request.getParameter("Password");
             String email = (String) request.getParameter("Email");
             String address = (String) request.getParameter("Address");
             String phone = (String) request.getParameter("Phone");
 
             //Create a person instance out of it
-            Customer cust = new Customer(name, password, email, address, phone);
+            Customer cust = new Customer(uname, name, pass, email, address, phone);
 
             //begin a transaction
             utx.begin();
@@ -63,15 +64,18 @@ public class Register extends HttpServlet {
             //New session creation
             HttpSession session = request.getSession(true);
             //setting attribute on session
-            session.setAttribute("user", email);
-            
+            session.setAttribute("uname", uname);
+            session.setAttribute("user", name);
+            session.setAttribute("email", email);
+            session.setAttribute("address", address);
+            session.setAttribute("phone", phone);
+
             // Creating new cart session
             ShoppingCart cart = new ShoppingCart();
             session.setAttribute("cart", cart);
-            
+
             //send request to Welcome.jsp page
-            RequestDispatcher view
-                    = request.getRequestDispatcher("index.jsp");
+            RequestDispatcher view = request.getRequestDispatcher("index.jsp");
 
             view.forward(request, response);
 
@@ -90,7 +94,8 @@ public class Register extends HttpServlet {
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
-     * Handles the HTTP <code>GET</code> method.
+     * Handles the HTTP
+     * <code>GET</code> method.
      *
      * @param request servlet request
      * @param response servlet response
@@ -101,7 +106,8 @@ public class Register extends HttpServlet {
     }
 
     /**
-     * Handles the HTTP <code>POST</code> method.
+     * Handles the HTTP
+     * <code>POST</code> method.
      *
      * @param request servlet request
      * @param response servlet response
