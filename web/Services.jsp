@@ -111,7 +111,7 @@
             <div class="drink drink1">
                 <p class="imgText1">Powerade</p>             
             </div>  </a>
-            <input class="btn btn2" type="button" title="Add To Cart" onclick="window.location='Logout';" value="">
+            <input class="btn btn2" type="submit" title="Add To Cart" id="product" ="1" onclick="window.location='AddToCart';">
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
             <div class="drink drink2">
                 <p class="imgText1">Water</p>
