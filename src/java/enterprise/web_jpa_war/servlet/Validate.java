@@ -29,7 +29,7 @@ public class Validate extends HttpServlet {
             //ResultSet rx = s.executeQuery("select * from Customer where Password ='"+pass+"' ");
 
             if (rs.next()) {
-                if ((uname.equals(rs.getString(5))) && (pass.equals(rs.getString(6)))) {
+                if ((uname.equals(rs.getString(7))) && (pass.equals(rs.getString(5)))) {
                         // New session creation
                         HttpSession session = request.getSession(true);
 //                       
