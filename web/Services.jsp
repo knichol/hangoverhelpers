@@ -38,8 +38,8 @@
                
                 <a  class="test"href="register.jsp" title="Register"><%=name1a%></font></a>
             <td>&nbsp;</td>
-             <a class="test" href="Logout"><%=name3%></a>
-            <a class="test"href="login.jsp" title="Login"><%=name2%></a></p>
+             <a class="test" title="Logout"href="Logout"><%=name3%></a>
+            <a class="test"href="#login" title="Login"><%=name2%></a></p>
         </div>
     </div>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -87,6 +87,7 @@
             </div>
         </div>
     </div>
+	<!--
         <div id="package1" class="login">
             <div>
                 <a href="#close" title="Close"class="close">X</a>
@@ -104,12 +105,12 @@
             <a href="#Cleaners" name="Cleaners" title="Cleaners"onclick="show();
                     hide1();"class="test test1">Cleaners</a>
         </a>
-    </div>
+    </div>-->
     <div class="box" >
         <div id="goods1"style="display:block;margin-top: 20px;text-align: center;">           
-            <a href="#package1">
+            <a >
             <div class="drink drink1">
-                <p class="imgText1">Powerade</p>             
+                <p class="imgText1">Package 1</p>             
             </div>  </a>
             <input class="btn btn2" type="submit" title="Add To Cart" id="product" ="1" onclick="window.location='AddToCart';">
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
@@ -117,8 +118,7 @@
                 <p class="imgText1">Water</p>
             </div> 
             <input class="btn btn2"type="submit" title="Add To Cart"value="">
-            </br></br></br>
-            
+               <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  
             <div class="drink drink3">
                 <p class="imgText1">Diet Coke</p>
             </div>  
@@ -139,7 +139,7 @@
                 <p class="imgText1">Lucozade Sport</p>
             </div> 
             <input class="btn btn2"type="submit" title="Add To Cart"value="">
-            </br></br></br>             
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>             
             
             <div class="drink drink7">
                 <p class="imgText1">7up</p>
@@ -160,9 +160,8 @@
             <div class="drink drink10">
                 <p class="imgText1">Tea</p>
             </div> 
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
-        </div>         
-        <div id="goods2"style="display:none;margin-top: 20px;text-align: center;">
+            <input class="btn btn2"type="submit" title="Add To Cart"value="">     
+ <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>			
             <a href="#cleaner1">
                 <div class="clean">
                     <p class="imgText2">Package One</p>
@@ -190,7 +189,7 @@
                     <p class="imgText">Click for Details</p>
                 </div></a>
             <input class="btn btn1"type="submit" title="Add To Cart"value="">
-            </br></br></br>
+             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
             <a href="#cleaner5">
                 <div class="clean">
                     <p class="imgText2">Package Five</p>
@@ -199,6 +198,18 @@
             <input class="btn btn1"type="submit" title="Add To Cart"value="">
             </br></br></br>             
         </div> 
+    </div>
+            <div id="login" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form id ="loginform" action="Validate"method="post">
+            </br></br><font size ="5">Login</font>
+            </br></br>
+            <input type="text" title="Username"id="uName"name="uName" placeholder="Username"></br></br>
+        <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
+        <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
+            <a href="register.jsp" title="Register"style="text-decoration:none;" >
+                <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div></form>
     </div>
 </body>
 </html>

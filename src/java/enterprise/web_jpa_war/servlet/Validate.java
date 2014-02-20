@@ -51,7 +51,7 @@ public class Validate extends HttpServlet {
                         view.forward(request, response);
                     
                 } else {
-                    out.println("<div style='font-size:30px; margin-top:600px;color:white'>"
+                    out.println("<div style='font-size:30px; margin-top:100px;color:white'>"
                             + "Username and password do not match!</div>");
                     RequestDispatcher view = request.getRequestDispatcher("login.jsp");
 

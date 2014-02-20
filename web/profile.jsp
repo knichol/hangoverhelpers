@@ -18,27 +18,28 @@
                     <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
                 </tr></table></p>
             <p class="alignright">
-                <%  String address = (String) session.getAttribute("address");
-                    String email = (String) session.getAttribute("email");
-                    String phone = (String) session.getAttribute("phone");
+                <% String address = (String) session.getAttribute("address1");
+                    String email = (String) session.getAttribute("email1");
+                    String phone = (String) session.getAttribute("phone1");
                     String user = (String) session.getAttribute("user");
                     String uname = (String) session.getAttribute("uname");
-                    String login = "";
-                    String logout = "Logout";
-                    String register = "";
-                    if (session.getAttribute("uname") ==null) {
-                        register = "Register";
-                        login = "Login";
-                        logout = "";
+                    String name2 = "";
+                    String name3 = "Logout";
+                    String name1a = "";
+                    if (session.getAttribute("uname") == null) {
+                        name1a = "Register";
+                        name2 = "Login";
+                        name3 = "";
                         user = "";
                         uname="";
                     }
                 %>    
-                <a  class="test"href="profile.jsp" title="Cart"><%=uname%></font></a>             
-                <a  class="test"href="register.jsp" title="Register"><%=register%></font></a>
+                <a  class="test"href="profile.jsp" title="Cart"><%=uname%></font></a>
+               
+                <a  class="test"href="register.jsp" title="Register"><%=name1a%></font></a>
             <td>&nbsp;</td>
-             <a class="test" href="Logout"><%=logout%></a>
-            <a class="test"href="login.jsp" title="Login"><%=login%></a></p>
+             <a class="test" href="Logout"><%=name3%></a>
+            <a class="test"href="#login" title="Login"><%=name2%></a></p>
         </div>
     </div>
     <link rel="stylesheet" type="text/css" href="style.css">
