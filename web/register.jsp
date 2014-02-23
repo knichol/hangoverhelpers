@@ -18,9 +18,9 @@
                     <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
                 </tr></table></p>
             <p class="alignright">
-                <% String address = (String) session.getAttribute("address1");
-                    String email = (String) session.getAttribute("email1");
-                    String phone = (String) session.getAttribute("phone1");
+                <% String address = (String) session.getAttribute("address");
+                    String email = (String) session.getAttribute("email");
+                    String phone = (String) session.getAttribute("phone");
                     String user = (String) session.getAttribute("user");
                     String uname = (String) session.getAttribute("uname");
                     String name2 = "";

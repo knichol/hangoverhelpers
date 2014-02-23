@@ -43,7 +43,7 @@ public class AddToCart extends HttpServlet {
         
         //send request to Welcome.jsp page
         RequestDispatcher view
-                = request.getRequestDispatcher("Services.jsp");
+                = request.getRequestDispatcher("profile.jsp");
 
         view.forward(request, response);
 

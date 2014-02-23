@@ -31,14 +31,14 @@
                         name2 = "Login";
                         name3 = "";
                         user = "";
-                        uname="";
+                        uname = "";
                     }
                 %>    
                 <a  class="test"href="profile.jsp" title="Cart"><%=uname%></font></a>
-               
+
                 <a  class="test"href="register.jsp" title="Register"><%=name1a%></font></a>
             <td>&nbsp;</td>
-             <a class="test" title="Logout"href="Logout"><%=name3%></a>
+            <a class="test" title="Logout"href="Logout"><%=name3%></a>
             <a class="test"href="#login" title="Login"><%=name2%></a></p>
         </div>
     </div>
@@ -78,138 +78,105 @@
                 They will also dispose of the rubbish is a healthy manner and clean the windows and any outside damage!</br></br>
             </div>
         </div>        
-        <div id="cleaner5" class="login">
-            <div>
-                <a href="#close" title="Close"class="close">X</a>
-                </br></br><font size ="5">Package Four</font></br></br>
-                The Ultimate Package</br>
-                The cleaners will clean the full house</br></br>
-            </div>
-        </div>
     </div>
-	<!--
-        <div id="package1" class="login">
-            <div>
-                <a href="#close" title="Close"class="close">X</a>
-                </br></br><font size ="5" ><a style="text-align: center;">Package One</a></font></br></br>
-                <a class="food food1"></a></br><a style="margin-left: -400px;">Chicken burger</a></br>
-                <a class="food food2"></a></br><a style="margin-left: -400px;">HamBurger</br></a>
-                <a class="food food3"></a></br><a style="margin-left: -400px;">Sausage Roll</a></br>
-                <a class="food food4"></a></br><a style="margin-left: -400px;">Snack Box</a></br>          
-            </div>
-        </div>
-    <div class="goods">
-        <a>
-            <a href="#Packages" name="Packages" title="Packages"onclick="show();
-                    hide2();"class="test test1">Food Packages</tr></a>
-            <a href="#Cleaners" name="Cleaners" title="Cleaners"onclick="show();
-                    hide1();"class="test test1">Cleaners</a>
-        </a>
-    </div>-->
     <div class="box" >
-        <div id="goods1"style="display:block;margin-top: 20px;text-align: center;">           
-            <a >
-            <div class="drink drink1">
-                <p class="imgText1">Package 1</p>             
-            </div>  </a>
-            <input class="btn btn2" type="submit" title="Add To Cart" id="product" ="1" onclick="window.location='AddToCart';">
+        <div id="goods1"style="display:block;margin-top: 80px;text-align: center;">           
+            <a><div class="drink drink1"><p class="imgText1">Package 1</p></div></a>
+            <input class="btn btn2" type="submit"value="" title="Add To Cart" 
+                   id="product" onclick="window.location = 'AddToCart';">
+
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            <div class="drink drink2">
-                <p class="imgText1">Water</p>
-            </div> 
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
-               <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  
-            <div class="drink drink3">
-                <p class="imgText1">Diet Coke</p>
-            </div>  
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  
-            <div class="drink drink4">
-                <p class="imgText1">Coca Cola</p>
-            </div> 
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
-            </br></br></br>
-            
-            <div class="drink drink5">
-                <p class="imgText1">Lucozade</p>
-            </div>  
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  
-            <div class="drink drink6">
-                <p class="imgText1">Lucozade Sport</p>
-            </div> 
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>             
-            
-            <div class="drink drink7">
-                <p class="imgText1">7up</p>
-            </div>  
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            <div class="drink drink8">
-                <p class="imgText1">Fanta Orange</p>
-            </div> 
+
+            <a><div class="drink drink2"><p class="imgText1">Package 2</p></div></a>
             <input class="btn btn2"type="submit" title="Add To Cart"value="">
-            </br></br></br>
-            
-            <div class="drink drink9">
-                <p class="imgText1">Green Tea</p>
-            </div>  
+
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td> 
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+
+            <a><div class="drink drink3"><p class="imgText1">Package 3</p></div></a>
             <input class="btn btn2"type="submit" title="Add To Cart"value="">
+
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  
-            <div class="drink drink10">
-                <p class="imgText1">Tea</p>
-            </div> 
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">     
- <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>			
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+
+            <a><div class="drink drink4"><p class="imgText1">Package 4</p></div></a>
+            <input class="btn btn2"type="submit" title="Add To Cart"value="">
+
+            </br></br></br>
+
+            <a><div class="drink drink5"><p class="imgText1">Package 5</p></div></a> 
+            <input class="btn btn2"type="submit" title="Add To Cart"value="">
+
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+
+            <a><div class="drink drink6"><p class="imgText1">Package 6</p></div></a>
+            <input class="btn btn2"type="submit" title="Add To Cart"value="">
+
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+
+            <a><div class="drink drink7"><p class="imgText1">Package 7</p></div></a>
+            <input class="btn btn2"type="submit" title="Add To Cart"value="">
+
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+
+            <a><div class="drink drink8"><p class="imgText1">Package 8</p></div></a>
+            <input class="btn btn2"type="submit" title="Add To Cart"value="">
+
+            </br></br></br>
+
             <a href="#cleaner1">
-                <div class="clean">
+                <div class="clean clean1">
                     <p class="imgText2">Package One</p>
                     <p class="imgText">Click for Details</p>
                 </div></a>
             <input class="btn btn1"type="submit"title="Add To Cart"value="">
+
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+
             <a href="#cleaner2">
-                <div class="clean">
+                <div class="clean clean2">
                     <p class="imgText2">Package Two</p>
                     <p class="imgText">Click for Details</p>
                 </div></a>
             <input class="btn btn1"type="submit" title="Add To Cart"value="">
-            </br></br></br>
+
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+
             <a href="#cleaner3">
-                <div class="clean">
+                <div class="clean clean3">
                     <p class="imgText2">Package Three</p>
                     <p class="imgText">Click for Details</p>
                 </div></a>
             <input class="btn btn1"type="submit" title="Add To Cart"value="">
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  
+
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+
             <a href="#cleaner4">
-                <div class="clean">
+                <div class="clean clean4">
                     <p class="imgText2">Package Four</p>
                     <p class="imgText">Click for Details</p>
                 </div></a>
-            <input class="btn btn1"type="submit" title="Add To Cart"value="">
-             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            <a href="#cleaner5">
-                <div class="clean">
-                    <p class="imgText2">Package Five</p>
-                    <p class="imgText">Click for Detail</p>
-                </div></a>
-            <input class="btn btn1"type="submit" title="Add To Cart"value="">
-            </br></br></br>             
+            <input class="btn btn1"type="submit" title="Add To Cart"value="">           
         </div> 
     </div>
-            <div id="login" class="login">
+    <div id="login" class="login">
         <div>
             <a href="#close" title="Close" class="close">X</a>
             <form id ="loginform" action="Validate"method="post">
-            </br></br><font size ="5">Login</font>
-            </br></br>
-            <input type="text" title="Username"id="uName"name="uName" placeholder="Username"></br></br>
-        <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
-        <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
-            <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div></form>
-    </div>
+                </br></br><font size ="5">Login</font>
+                </br></br>
+                <input type="text" title="Username"id="uName"name="uName" placeholder="Username"></br></br>
+                <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
+                <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
+                <a href="register.jsp" title="Register"style="text-decoration:none;" >
+                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div></form>
+</div>
 </body>
 </html>
