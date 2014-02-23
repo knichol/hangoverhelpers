@@ -79,8 +79,9 @@
             </div>
         </div>        
     </div>
-    <div class="box" >
-        <div id="goods1"style="display:block;margin-top: 80px;text-align: center;">           
+    <div class="box" ></br><font style="color:white;font-size:200%; font-family:Bradley hand ITC;">Services</font>
+        <div id="goods1"style="display:block;margin-top: 40px;text-align: center;">  
+            
             <a><div class="drink drink1"><p class="imgText1">Package 1</p></div></a>
             <input class="btn btn2" type="submit"value="" title="Add To Cart" 
                    id="product" onclick="window.location = 'AddToCart';">
