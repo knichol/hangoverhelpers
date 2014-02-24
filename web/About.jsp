@@ -47,10 +47,15 @@
     <script src="script.js"></script> 
 </head>
 <body>
-    <div class="help">
+    <div class="about">
         <form></br>
-            About Us
-            </br>
+            <font style="font-size: 150%;">About Us</font>
+            </br></br>
+            Hangover Helpers is a quick and simple service which came about when the three creators were deathly hung-over and in need of a saviour. </br>
+            Cravings and laziness were not our friends that day and we were dying for a service which we could simply go and send someone to cure us.</br>
+Hangover Helpers is designed for those who have lost the will to move or function after a heavy night out.</br> Our simple website allows the most novice technological user to quickly and easily choose products from our site. We offer a wide range from hot food to ice pops so whatever you are feeling it can be delivered to your door in seconds!
+ We also offer the option of cleaner packages, for those days where the load is just too much. </br></br>We can send as many helpers as you need to help you with your deathly "rattledness".  
+
         </form>
     </div>
     <div id="login" class="login">
