@@ -38,7 +38,7 @@ public class AddToCart extends HttpServlet {
                 
         String productID = request.getParameter("product");
         if("1".equals(productID)){
-            cart.addItem(new Packages(1));
+      
         }
         
         //send request to Welcome.jsp page
