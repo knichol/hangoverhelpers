@@ -232,6 +232,33 @@ input:hover,textarea:hover,select:hover{
     -webkit-box-shadow:0 0 10px #7DFDFE;
     -moz-box-shadow:0 0 10px #7DFDFE;
 }
+.about {
+    text-decoration: none;
+    padding-right:0;
+    position: relative;
+    top: 140px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 5px 5px 5px;
+    background-color: #7092BE;
+    background-repeat:repeat;
+    background-position: right; 
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    width: 500px;
+    height: 500px;
+    font-family: Bradley hand ITC;
+    color:white;
+    font-size:110%;
+    box-shadow:0 0 10px #7DFDFE;
+    -webkit-box-shadow:0 0 10px #7DFDFE;
+    -moz-box-shadow:0 0 10px #7DFDFE;
+}
 .help {
     text-decoration: none;
     padding-right:0;

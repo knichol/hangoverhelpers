@@ -82,9 +82,9 @@
     <div class="box" ></br><font style="color:white;font-size:200%; font-family:Bradley hand ITC;">Services</font>
         <div id="goods1"style="display:block;margin-top: 40px;text-align: center;">  
             
-            <a><div class="drink drink1"><p class="imgText1">Package 1</p></div></a>
+           <form> <a><div class="drink drink1"><p class="imgText1">Package 1</p></div></a>
             <input class="btn btn2" type="submit"value="" title="Add To Cart" 
-                   id="product" onclick="window.location = 'AddToCart';">
+                   id="product" onclick="window.location = 'AddToCart';"></form>
 
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
