@@ -84,7 +84,7 @@
 
             <form action="EntryServlet"> <a><div class="drink drink1"><p class="imgText1">Package 1</p></div></a>
                 <input class="btn btn2" type="submit"value="" title="Add To Cart" 
-                       id="product"></form>
+                       id="1"></form>
 
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>

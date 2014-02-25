@@ -1,13 +1,7 @@
 <%@page import="java.util.*"%>
 <%@page import="java.sql.*"%>
 <%@page import="javax.servlet.*;"%>
-
-
-<!--import java.util.logging.*;
-import javax.servlet.*;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
-import javax.sql.DataSource;-->
+<%--<jsp:include page="Services.jsp" />--%>
 <html>
     <head>
         <title>HangoverHelpers - Cart</title><link  rel="shortcut icon" href="favicon.ico"/>
@@ -45,6 +39,7 @@ import javax.sql.DataSource;-->
                         email = "";
                         phone = "";
                     }
+                  
                     Statement stmt = null;
                     Class.forName("com.mysql.jdbc.Driver");
                     Connection conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
@@ -52,18 +47,12 @@ import javax.sql.DataSource;-->
                     stmt = conn.createStatement();
                     String sqlStr = "SELECT * FROM Packages";
                     ResultSet rset = stmt.executeQuery(sqlStr);
-                   
-                    String Id=null;
-                    String Name=null;
-                    String Price=null;
+
+                    String Id = null;
+                    String Name = null;
+                    String Price = null;
                     String Stock = null;
-                    
-                    while (rset.next()) {
-                        Id = rset.getString("Package_ID");
-                        Name = rset.getString("Name");
-                        Price = rset.getString("Price");
-                        Stock = rset.getString("Stock");
-                      }
+
                 %>    
                 <a  class="test"href="profile.jsp" title="Cart"><%=uname%></font></a>
 
@@ -91,12 +80,18 @@ import javax.sql.DataSource;-->
                 </form>
             </div>
             <div class="cart">
-                <form name="input"method="post" action="project.php"></br>
+                <form></br>
                     Cart</br>
-                    <%=Id%></br>
-                    <%=Name%></br>
-                    <%=Price%></br>
-                    <%=Stock%>
+                    <%
+                        while (rset.next()) {
+                            Id = rset.getString("Package_ID");
+                            Name = rset.getString("Name");
+                            Price = rset.getString("Price");
+                            Stock = rset.getString("Stock");
+                            out.println("ID: " + Id + "Name: "
+                                    + Name + "Price: "
+                                    + Price + "Stock: " + Stock + "</br>");
+                        }%>
                 </form>
             </div>
         </div></div>
