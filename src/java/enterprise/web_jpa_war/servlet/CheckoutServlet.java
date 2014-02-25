@@ -19,7 +19,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import javax.sql.*;
 
-@WebServlet(name = "CheckoutServlet", urlPatterns = {"/CheckoutServlet"})
+@WebServlet(name = "CheckoutServlet", urlPatterns = {"/checkout"})
 public class CheckoutServlet extends HttpServlet {
 
 //   private DataSource pool;  // Database connection pool
@@ -43,7 +43,7 @@ public class CheckoutServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
 
-        //  Connection conn = null;
+        Connection conn = null;
         Statement stmt = null;
         ResultSet rset = null;
         String sqlStr = null;
@@ -52,7 +52,7 @@ public class CheckoutServlet extends HttpServlet {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
+            conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
             // conn = pool.getConnection("mydb1127", "mydb112739");  // Get a connection from the pool
             stmt = conn.createStatement();
 
@@ -163,7 +163,9 @@ public class CheckoutServlet extends HttpServlet {
                 if (stmt != null) {
                     stmt.close();
                 }
-                //  if (conn != null) conn.close();  // Return the connection to the pool
+                if (conn != null) {
+                    conn.close();
+                }  // Return the connection to the pool
             } catch (SQLException ex) {
                 Logger.getLogger(CheckoutServlet.class.getName()).log(Level.SEVERE, null, ex);
             }

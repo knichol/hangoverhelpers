@@ -31,11 +31,11 @@ public class ShoppingCart {
    }
  
    // Update the quantity for the given id
-   public boolean update(int id, int newQty) {
+   public boolean update(int Package_ID, int newQty) {
       Iterator<ShoppingCartItem> iter = cart.iterator();
       while (iter.hasNext()) {
          ShoppingCartItem item = iter.next();
-         if (item.getId() == id) {
+         if (item.getId() == Package_ID) {
             // id found, increase qtyOrdered
             item.setStock(newQty);
             return true;
@@ -45,11 +45,11 @@ public class ShoppingCart {
    }
  
    // Remove a CartItem given its id
-   public void remove(int id) {
+   public void remove(int Package_ID) {
       Iterator<ShoppingCartItem> iter = cart.iterator();
       while (iter.hasNext()) {
          ShoppingCartItem item = iter.next();
-         if (item.getId() == id) {
+         if (item.getId() == Package_ID) {
             cart.remove(item);
             return;
          }
