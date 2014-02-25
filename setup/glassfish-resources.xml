@@ -12,4 +12,5 @@
     </jdbc-connection-pool>
     <jdbc-resource enabled="true" jndi-name="DB" object-type="user" pool-name="mysql_mydb1127_mydb1127Pool"/>
     <jdbc-resource enabled="true" jndi-name="DB1" object-type="user" pool-name="mysql_mydb1127_mydb1127Pool"/>
+    <jdbc-resource enabled="true" jndi-name="Database" object-type="user" pool-name="mysql_mydb1127_mydb1127Pool"/>
 </resources>

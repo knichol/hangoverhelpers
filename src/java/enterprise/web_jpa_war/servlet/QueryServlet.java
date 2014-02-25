@@ -73,7 +73,7 @@ public class QueryServlet extends HttpServlet {
                     }
                     sqlStr.append("Name LIKE '%").append(searchWord);
                 }
-                sqlStr.append(") ORDER BY Name");
+                sqlStr.append("') ORDER BY Name");
                 //System.out.println(sqlStr);  // for debugging
                 ResultSet rset = stmt.executeQuery(sqlStr.toString());
 
@@ -97,10 +97,10 @@ public class QueryServlet extends HttpServlet {
                         // Print each row with a checkbox identified by book's id
                         String id = rset.getString("Package_ID");
                         out.println("<tr>");
-                        out.println("<td><input type='checkbox' name='Package_ID' value='" + id + "' /></td>");
+                        out.println("<td><input type='checkbox' name='id' value='" + id + "' /></td>");
                         out.println("<td>" + rset.getString("Name") + "</td>");
                         out.println("<td>$" + rset.getString("Price") + "</td>");
-                        out.println("<td><input type='text' size='3' value='1' name='qty" + id + "' /></td>");
+                        out.println("<td><input type='text' size='3' value='1' name='Stock" + id + "' /></td>");
                         out.println("</tr>");
                     } while (rset.next());
                     out.println("</table><br />");

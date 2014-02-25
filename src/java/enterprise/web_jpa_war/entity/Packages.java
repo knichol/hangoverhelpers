@@ -44,7 +44,7 @@ public class Packages implements Serializable {
     @Column(name = "Name")
     private String name;
     @Column(name = "Price")
-    private BigInteger price;
+    private Float price;
     @Column(name = "Stock")
     private Integer stock;
 
@@ -71,11 +71,11 @@ public class Packages implements Serializable {
         this.name = name;
     }
 
-    public BigInteger getPrice() {
+    public Float getPrice() {
         return price;
     }
 
-    public void setPrice(BigInteger price) {
+    public void setPrice(Float price) {
         this.price = price;
     }
 

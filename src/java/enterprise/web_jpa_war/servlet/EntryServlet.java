@@ -75,7 +75,7 @@ public class EntryServlet extends HttpServlet {
 
             // Submit and reset buttons
             out.println("<br /><br />");
-            out.println("<input type='submit' action='QueryServlet'value='SEARCH' />");
+            out.println("<input type='submit' 'value='SEARCH' />");
             out.println("<input type='reset' value='CLEAR' />");
             out.println("</form>");
 

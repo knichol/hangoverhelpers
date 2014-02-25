@@ -4,39 +4,37 @@
  */
 package enterprise.web_jpa_war.servlet;
 
-/**
- *
- * @author Cian
- */
+import enterprise.web_jpa_war.entity.*;
+import enterprise.web_jpa_war.servlet.*;
 import java.io.*;
 import java.sql.*;
 import java.util.logging.*;
 import javax.naming.*;
 import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import javax.sql.DataSource;
-import enterprise.web_jpa_war.entity.*;
-import enterprise.web_jpa_war.servlet.*;
-import javax.servlet.annotation.WebServlet;
 
 @WebServlet(name = "CartServlet", urlPatterns = {"/cart"})
 public class CartServlet extends HttpServlet {
+//
+//    private DataSource pool;  // Database connection pool
+//
+//    @Override
+//    public void init(ServletConfig config) throws ServletException {
+//        try {
+//            // Create a JNDI Initial context to be able to lookup the DataSource
+//            InitialContext ctx = new InitialContext();
+//            // Lookup the DataSource.
+//            pool = (DataSource) ctx.lookup("java:comp/env/jdbc/mysql_ebookshop");
+//            if (pool == null) {
+//                throw new ServletException("Unknown DataSource 'jdbc/mysql_ebookshop'");
+//            }
+//        } catch (NamingException ex) {
+//            Logger.getLogger(EntryServlet.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
 
-//   private DataSource pool;  // Database connection pool
-// 
-//   @Override
-//   public void init(ServletConfig config) throws ServletException {
-//      try {
-//         // Create a JNDI Initial context to be able to lookup the DataSource
-//         InitialContext ctx = new InitialContext();
-//         // Lookup the DataSource.
-//         pool = (DataSource)ctx.lookup("java:comp/env/jdbc/mysql_ebookshop");
-//         if (pool == null)
-//            throw new ServletException("Unknown DataSource 'jdbc/mysql_ebookshop'");
-//      } catch (NamingException ex) {
-//         Logger.getLogger(EntryServlet.class.getName()).log(Level.SEVERE, null, ex);
-//      }
-//   }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -55,17 +53,17 @@ public class CartServlet extends HttpServlet {
             }
         }
 
-        //Connection conn   = null;
+        Connection conn = null;
         Statement stmt = null;
         ResultSet rset = null;
         String sqlStr = null;
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
+            conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
             // conn = pool.getConnection("mydb1127", "mydb112739");  // Get a connection from the pool
+            stmt = conn.createStatement();  // Get a connection from the pool
             stmt = conn.createStatement();
-
 
             out.println("<html><head><title>Shopping Cart</title></head><body>");
             out.println("<h2>YAEBS - Your Shopping Cart</h2>");
@@ -75,7 +73,6 @@ public class CartServlet extends HttpServlet {
             // (2) todo=update id=1001 qty1001=5
             // (3) todo=remove id=1001
             // (4) todo=view
-
             String todo = request.getParameter("todo");
             if (todo == null) {
                 todo = "view";  // to prevent null pointer
@@ -83,26 +80,26 @@ public class CartServlet extends HttpServlet {
             if (todo.equals("add") || todo.equals("update")) {
                 // (1) todo=add id=1001 qty1001=5 [id=1002 qty1002=1 ...]
                 // (2) todo=update id=1001 qty1001=5
-                String[] ids = request.getParameterValues("Package_ID");
+                String[] ids = request.getParameterValues("id");
                 if (ids == null) {
                     out.println("<h3>Please Select a Book!</h3></body></html>");
                     return;
                 }
-                for (String Package_ID : ids) {
-                    sqlStr = "SELECT * FROM Packages WHERE Package_ID = " + Package_ID;
+                for (String id : ids) {
+                    sqlStr = "SELECT * FROM Packages WHERE Package_ID = " + id;
                     //System.out.println(sqlStr);  // for debugging
                     rset = stmt.executeQuery(sqlStr);
                     rset.next(); // Expect only one row in ResultSet
-                    String Name = rset.getString("Name");
-                    float Price = rset.getFloat("Price");
+                    String title = rset.getString("Name");
+                    float price = rset.getFloat("Price");
 
                     // Get quantity ordered - no error check!
-                    int Stock = Integer.parseInt(request.getParameter("Stock" + Package_ID));
-                    int idInt = Integer.parseInt(Package_ID);
+                    int qtyOrdered = Integer.parseInt(request.getParameter("Stock" + id));
+                    int idInt = Integer.parseInt(id);
                     if (todo.equals("add")) {
-                        cart.add(idInt, Name, Price, Stock);
+                        cart.add(idInt, title, price, qtyOrdered);
                     } else if (todo.equals("update")) {
-                        cart.update(idInt, Stock);
+                        cart.update(idInt, qtyOrdered);
                     }
                 }
 
@@ -125,20 +122,18 @@ public class CartServlet extends HttpServlet {
                 float totalPrice = 0f;
                 for (ShoppingCartItem item : cart.getItems()) {
                     int id = item.getId();
-                    String Name = item.getName();
-                    float Price = item.getPrice();
-                    int Stock = item.getStock();
+                    String title = item.getName();
+                    float price = item.getPrice();
+                    int qtyOrdered = item.getStock();
 
                     out.println("<tr>");
-                    out.println("<td>" + Name + "</td>");
-                    out.println("<td>" + Price + "</td>");
-                    out.println("<td>" + Stock + "</td>");
+                    out.println("<td>" + title + "</td>");
+                    out.println("<td>" + price + "</td>");
 
                     out.println("<td><form method='get'>");
                     out.println("<input type='hidden' name='todo' value='update' />");
                     out.println("<input type='hidden' name='id' value='" + id + "' />");
-                    out.println("<input type='text' size='3' name='qty"
-                            + id + "' value='" + Stock + "' />");
+                    out.println("<input type='text' size='3' name='Stock"+ id + "' value='" + qtyOrdered + "'/>");
                     out.println("<input type='submit' value='Update' />");
                     out.println("</form></td>");
 
@@ -148,7 +143,7 @@ public class CartServlet extends HttpServlet {
                     out.println("<input type='hidden' name='id' value='" + id + "'>");
                     out.println("</form></td>");
                     out.println("</tr>");
-                    totalPrice += Price * Stock;
+                    totalPrice += price * qtyOrdered;
                 }
                 out.println("<tr><td colspan='5' align='right'>Total Price: $");
                 out.printf("%.2f</td></tr>", totalPrice);
@@ -166,7 +161,7 @@ public class CartServlet extends HttpServlet {
                 out.println("<table>");
                 out.println("<tr>");
                 out.println("<td>Enter your Name:</td>");
-                out.println("<td><input type='text' name='Name' /></td></tr>");
+                out.println("<td><input type='text' name='cust_name' /></td></tr>");
                 out.println("<tr>");
                 out.println("<td>Enter your Email:</td>");
                 out.println("<td><input type='text' name='cust_email' /></td></tr>");
@@ -190,7 +185,9 @@ public class CartServlet extends HttpServlet {
                 if (stmt != null) {
                     stmt.close();
                 }
-                //  if (conn != null) conn.close();  // return the connection to the pool
+                if (conn != null) {
+                    conn.close();  // return the connection to the pool
+                }
             } catch (SQLException ex) {
                 Logger.getLogger(CartServlet.class.getName()).log(Level.SEVERE, null, ex);
             }
