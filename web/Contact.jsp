@@ -18,10 +18,7 @@
                     <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
                 </tr></table></p>
             <p class="alignright">
-                <% String address = (String) session.getAttribute("address1");
-                    String email = (String) session.getAttribute("email1");
-                    String phone = (String) session.getAttribute("phone1");
-                    String user = (String) session.getAttribute("user");
+                <%  String user = (String) session.getAttribute("user");
                     String uname = (String) session.getAttribute("uname");
                     String name2 = "";
                     String name3 = "Logout";
@@ -48,12 +45,12 @@
 </head>
 <body onload="init();">
     <div class="help">
-        <form name="input"method="post" action="project.php"></br>
+        <form name="input"method="post" action="ContactMessage"></br>
             Contact Us</br>
             <input type="text" title="Name"  id="Name"  name="Name"  placeholder="Fullname"></br></br>
             <input type="text" title="Email" id="Email" name="Email" placeholder="Email"></br></br>
-            <textarea id="text"name="Mail" maxlength="400"placeholder="Dear Sir/Madam...(400 Characters Max)"></textarea>
-            <input class="btn"value="Send Email"type="submit"style="position: absolute;left: 0;right: 120px;bottom:10px;"/>          
+            <textarea type="text" id="Mail"name="Mail" maxlength="400"placeholder="Dear Sir/Madam...(400 Characters Max)"></textarea>
+            <input class="btn"value="Submit"type="submit" style="position: absolute;left: 0;right: 120px;bottom:10px;"/>          
             <input type="reset" class="btn" value="Reset" style="position: absolute;left: 120px;right: 0;bottom:10px;">
         </form>
     </div>
