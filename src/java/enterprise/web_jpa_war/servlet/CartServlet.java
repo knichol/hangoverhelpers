@@ -133,14 +133,14 @@ public class CartServlet extends HttpServlet {
                     out.println("<td><form method='get'>");
                     out.println("<input type='hidden' name='todo' value='update' />");
                     out.println("<input type='hidden' name='id' value='" + id + "' />");
-                    out.println("<input type='text' size='3' name='Stock"+ id + "' value='" + qtyOrdered + "'/>");
+                    out.println("<input type='text' size='3' name='Stock" + id + "' value='" + qtyOrdered + "'/>");
                     out.println("<input type='submit' value='Update' />");
                     out.println("</form></td>");
 
                     out.println("<td><form method='get'>");
-                    out.println("<input type='hidden' name='todo' value='remove'");
-                    out.println("<input type='hidden' name='id' value='" + id + "'>");
-                    out.println("<input type='submit' value='Remove'>");
+                    out.println("<input type='hidden' name='todo' value='remove'/>");
+                    out.println("<input type='hidden' name='id' value='" + id + "'/>");
+                    out.println("<input type='submit' value='Remove'/>");
                     out.println("</form></td>");
                     out.println("</tr>");
                     totalPrice += price * qtyOrdered;
