@@ -113,7 +113,7 @@ public class CartServlet extends HttpServlet {
 
             // All cases - Always display the shopping cart
             if (cart.isEmpty()) {
-               // out.println("<p>Your shopping cart is empty</p>");
+ //               out.println("<p>Your shopping cart is empty</p>");
             } else {
 //                out.println("<table style='text-align:center;'border='1' cellpadding='6'>");
 //                out.println("<tr>");
@@ -124,10 +124,10 @@ public class CartServlet extends HttpServlet {
 
                 float totalPrice = 0f;
                 for (ShoppingCartItem item : cart.getItems()) {
-                    int id = item.getId();
-                    String title = item.getName();
-                    float price = item.getPrice();
-                    int qtyOrdered = item.getStock();
+//                    int id = item.getId();
+//                    String title = item.getName();
+//                    float price = item.getPrice();
+//                    int qtyOrdered = item.getStock();
 //
 //                    out.println("<tr>");
 //                    out.println("<td>" + title + "</td>");

@@ -14,13 +14,13 @@
             <p style="margin-top:-54px; margin-left:-50px;" class="aligncenter">
             <table border="0">
                 <tr>
-                    <td><a title="Home"href="index.jsp"class="test">Home</a></td>
-                    <td>&nbsp;</td>
-                    <td><a title="Services" href="Services.jsp"class="test">Services</a></td>
-                    <td>&nbsp;</td>
-                    <td><a href="About.jsp"title="About Us"class="test">About</a></td>
-                    <td>&nbsp;</td>
-                    <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
+                <td><a title="Home"href="index.jsp"class="test">Home</a></td>
+                <td>&nbsp;</td>
+                <td><a title="Services" href="Services.jsp"class="test">Services</a></td>
+                <td>&nbsp;</td>
+                <td><a href="About.jsp"title="About Us"class="test">About</a></td>
+                <td>&nbsp;</td>
+                <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
                 </tr></table></p>
             <p class="alignright">
                 <% String address = (String) session.getAttribute("address");
@@ -54,7 +54,7 @@
     <style type='text/css'></style>
     <script src="script.js"></script> 
 </head>
-<body >
+<body>
     <div class="table">
         <div class="row">
             <div class="profile">
@@ -68,7 +68,7 @@
                 </form>
             </div>
             <div class="cart">
-                <form></br>
+                <form>
                     <%
                         session = request.getSession(true);
                         ShoppingCart cart;
@@ -85,36 +85,23 @@
                         Statement stmt = null;
                         ResultSet rset = null;
                         String sqlStr = null;
-
                         Class.forName("com.mysql.jdbc.Driver");
                         conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
-                        // conn = pool.getConnection("mydb1127", "mydb112739");  // Get a connection from the pool
                         stmt = conn.createStatement();  // Get a connection from the pool
-                        stmt = conn.createStatement();
+                        out.println("<h2 style='text-align:center;'>Shopping Cart</h2>");
 
-                        // out.println("<html><head><title>Shopping Cart</title></head><body>");
-                        out.println("<h2>HangoverHelpers - Your Shopping Cart</h2>");
-
-                        // This servlet handles 4 cases:
-                        // (1) todo=add id=1001 qty1001=5 [id=1002 qty1002=1 ...]
-                        // (2) todo=update id=1001 qty1001=5
-                        // (3) todo=remove id=1001
-                        // (4) todo=view
                         String todo = request.getParameter("todo");
                         if (todo == null) {
                             todo = "view";  // to prevent null pointer
                         }
                         if (todo.equals("add") || todo.equals("update")) {
-                            // (1) todo=add id=1001 qty1001=5 [id=1002 qty1002=1 ...]
-                            // (2) todo=update id=1001 qty1001=5
                             String[] ids = request.getParameterValues("id");
                             if (ids == null) {
                                 out.println("<h3>Please Select a Package!</h3></body></html>");
                                 return;
                             }
                             for (String id : ids) {
-                                sqlStr = "SELECT * FROM Packages WHERE Package_ID = " + id;
-                                //System.out.println(sqlStr);  // for debugging
+                                sqlStr = "SELECT * FROM Packages WHERE Package_ID = " + id;// for debugging
                                 rset = stmt.executeQuery(sqlStr);
                                 rset.next(); // Expect only one row in ResultSet
                                 String title = rset.getString("Name");
@@ -137,87 +124,85 @@
 
                         // All cases - Always display the shopping cart
                         if (cart.isEmpty()) {
-                            out.println("<p>Your shopping cart is empty</p>");
+                            out.println("<p style='text-align:center;'>Your shopping cart is empty</p>");
                         } else {
                             out.println("<table style='color:white;'align='center'  >");
                             out.println("<tr>");
-                            out.println("<th>Name</th>");
-                    %><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><%
-                        out.println("<th>Price</th>");
-                    %><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><%
-                        out.println("<th>Quantity</th>");
-                    %><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><%
-                        out.println("<th>Remove</th></tr>");
+                            out.println("<th>Name</th> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
+                            out.println("<th>Price</th> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
 
-                        float totalPrice = 0f;
-                        for (ShoppingCartItem item : cart.getItems()) {
-                            int id = item.getId();
-                            String title = item.getName();
-                            float price = item.getPrice();
-                            int qtyOrdered = item.getStock();
+                            out.println("<th>Quantity</th> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
 
-                            out.println("<tr>");
-                            out.println("<td>" + title + "</td>");
-                    %><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><%
-                        out.println("<td>" + price + "</td>");
-                    %><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><%
-                        out.println("<td><form method='get'>");
-                        out.println("<input type='hidden' name='todo' value='update' />");
-                        out.println("<input type='hidden' name='id' value='" + id + "' />");
-                        out.println("<input style='width:50px;height:30px;'type='text' size='3' name='Stock" + id + "' value='" + qtyOrdered + "'/>");
-                        out.println("<input class='btn'type='submit' value='Update' />");
-                        out.println("</form></td>");
-                        
-                    %><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><%
-                        
-                            out.println("<td><form style='margin-top: 14px;'method='get'>");
-                            out.println("<input class='btn'type='submit' value='Remove'/>");
-                            out.println("<input type='hidden' name='todo' value='remove'/>");
-                            out.println("<input type='hidden' name='id' value='" + id + "'/>");
-                            out.println("</form></td>");
-                            out.println("</tr>");
-                            totalPrice += price * qtyOrdered;
-                        }
-                    %><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><%
-                            out.println("<tr><td colspan='5' align='right'>Total Price: $");
+                            out.println("<th>Remove</th></tr> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
+
+                            float totalPrice = 0f;
+                            for (ShoppingCartItem item : cart.getItems()) {
+                                int id = item.getId();
+                                String title = item.getName();
+                                float price = item.getPrice();
+                                int qtyOrdered = item.getStock();
+
+                                out.println("<tr>");
+                                out.println("<td>" + title + "</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
+
+                                out.println("<td>&#8364;" + price + "</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
+
+                                out.println("<td><form method='get'>");
+                                out.println("<input type='hidden' name='todo' value='update' />");
+                                out.println("<input type='hidden' name='id' value='" + id + "' />");
+                                out.println("<input style='width:50px;height:30px;'type='text' size='3' name='Stock" + id + "' value='" + qtyOrdered + "'/>");
+                                out.println("<input class='btn'type='submit' value='Update' />");
+                                out.println("</form></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
+
+                                out.println("<td><form method='get'>");
+                                out.println("<input class='btn'type='submit' value='Remove'/>");
+                                out.println("<input type='hidden' name='todo' value='remove'/>");
+                                out.println("<input type='hidden' name='id' value='" + id + "'/>");
+                                out.println("</form></td>");
+                                out.println("</tr>");
+                                totalPrice += price * qtyOrdered;
+                            }
                             String strAmount = String.valueOf(totalPrice);
-                            out.println(strAmount);
+                            out.println("<tr><td colspan='8' align='right'>Total Price: &#8364;" + strAmount + "</td></tr>");
+
                             out.println("</table>");
                         }
 
-                              //  out.println("<p><a href='start'>Select More Packages</a></p>");
                         // Display the Checkout
                         if (!cart.isEmpty()) {
-                    //                out.println("<br /><br />");
-                                    out.println("<form method='get' action='checkout'>");
-                                      out.println("<input class='btn'type='submit' value='CheckOut'/>");
-                    //                out.println("<p>Please fill in your particular before checking out:</p>");
-                    //                out.println("<table>");
-                    //                out.println("<tr>");
-                    //                out.println("<td>Enter your Name:</td>");
-                    //                out.println("<td><input type='text' name='cust_name' /></td></tr>");
-                    //                out.println("<tr>");
-                    //                out.println("<td>Enter your Email:</td>");
-                    //                out.println("<td><input type='text' name='cust_email' /></td></tr>");
-                    //                out.println("<tr>");
-                    //                out.println("<td>Enter your Phone Number:</td>");
-                    //                out.println("<td><input type='text' name='cust_phone' /></td></tr>");
-                    //                out.println("</table>");
-                                    out.println("</form>");
+                            //                out.println("<br /><br />");
+                            out.println("<form style='text-align:center;'method='get' action='Welcome.jsp'>");
+                            out.println("<input class='btn'type='submit' value='CheckOut'/>");
+                            //                out.println("<p>Please fill in your particular before checking out:</p>");
+                            //                out.println("<table>");
+                            //                out.println("<tr>");
+                            //                out.println("<td>Enter your Name:</td>");
+                            //                out.println("<td><input type='text' name='cust_name' /></td></tr>");
+                            //                out.println("<tr>");
+                            //                out.println("<td>Enter your Email:</td>");
+                            //                out.println("<td><input type='text' name='cust_email' /></td></tr>");
+                            //                out.println("<tr>");
+                            //                out.println("<td>Enter your Phone Number:</td>");
+                            //                out.println("<td><input type='text' name='cust_phone' /></td></tr>");
+                            //                out.println("</table>");
+                            out.println("</form>");
                         }
-
-                        out.println("</body></html>");
+                        out.println("<p style='text-align:center;'><a style='color:white;text-decoration:none;'href='Welcome.jsp'>Select More Packages</a></p>");
 
                     %>
                 </form>
             </div>
-        </div></div>
-</body>
-</html>
+            <div id="login" class="login">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <form id ="loginform" action="Validate"method="post">
+                        </br></br><font size ="5">Login</font>
+                        </br></br>
+                        <input type="text" title="Username"id="uName"name="uName" placeholder="Username"></br></br>
+                        <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
+                        <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
+                        <a href="register.jsp" title="Register"style="text-decoration:none;" >
+                            <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div></form>
+            </div>
+            </body>
+            </html>
