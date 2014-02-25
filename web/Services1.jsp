@@ -1,3 +1,5 @@
+<%@page import="java.sql.*"%>
+<%@page import="enterprise.web_jpa_war.servlet.ShoppingCart"%>
 <%@page import="java.util.*"%>
 <html>
     <head>
@@ -18,10 +20,49 @@
                     <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
                 </tr></table></p>
             <p class="alignright">
-                <% String address = (String) session.getAttribute("address1");
-                    String email = (String) session.getAttribute("email1");
-                    String phone = (String) session.getAttribute("phone1");
-                    String user = (String) session.getAttribute("user");
+        <%
+            Connection conn = null;
+            Statement stmt = null;
+            Class.forName("com.mysql.jdbc.Driver");
+            conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
+
+            stmt = conn.createStatement();
+            String sqlStr = "SELECT * FROM Packages";
+            ResultSet rset = stmt.executeQuery(sqlStr);
+            if (rset.next()) {
+                // ResultSet's cursor now pointing at first row
+                do {
+                    out.println("<form method='get' action='cart'>");
+                    out.println("<input type='hidden' name='todo' value='add' />");
+                    // Print each row with a checkbox identified by book's id
+                    String id = rset.getString("Package_ID");
+                    out.println("<tr>");
+                    out.println("<td><input type='checkbox' name='id' value='" + id + "' /></td>");
+                    out.println("<td>" + rset.getString("Name") + "</td>");
+                    out.println("<td>$" + rset.getString("Price") + "</td>");
+                    out.println("<td><input type='text' size='3' value='1' name='Stock" + id + "' /></td>");
+                    out.println("</br>");
+                    out.println("</table><br />");
+                    // Submit and reset buttons
+
+                } while (rset.next());
+                out.println("<input type='submit' value='Add to My Shopping Cart' />");
+                out.println("<input type='reset' value='CLEAR' /></form>");
+            }
+            // Show "View Shopping Cart" if the cart is not empty
+            session = request.getSession(false); // check if session exists
+            if (session != null) {
+                ShoppingCart cart;
+                synchronized (session) {
+                    // Retrieve the shopping cart for this session, if any. Otherwise, create one.
+                    cart = (ShoppingCart) session.getAttribute("cart");
+                    if (cart != null && !cart.isEmpty()) {
+                        // out.println("<P><a href='cart?todo=view'>View Shopping Cart</a></p>");
+                    }
+                }
+            }
+
+           // out.println("</body></html>");
                     String uname = (String) session.getAttribute("uname");
                     String name2 = "";
                     String name3 = "Logout";
@@ -30,7 +71,7 @@
                         name1a = "Register";
                         name2 = "Login";
                         name3 = "";
-                        user = "";
+                        //user = "";
                         uname = "";
                     }
                 %>    
@@ -79,52 +120,53 @@
             </div>
         </div>        
     </div>
-    <div class="box" ></br><font style="color:white;font-size:200%; font-family:Bradley hand ITC;">Services</font>
+    <form class="box" method="get" action="cart"></br><font style="color:white;font-size:200%; font-family:Bradley hand ITC;">Services</font>
         <div id="goods1"style="display:block;margin-top: 40px;text-align: center;">  
 
             <a><div class="drink drink1"><p class="imgText1">Package 1</p></div></a>
-                <input class="btn btn2" type="submit"value="" title="Add To Cart" id="1">
+            <input class="btn3" name="id" type="checkbox" name="1" />
+            <input type="text" size="3" value="1" name="Stock" <%=id%> />
 
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
 
             <a><div class="drink drink2"><p class="imgText1">Package 2</p></div></a>
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
+            <input class="btn3" name='id' type="checkbox" name="<%=id%>" />
 
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td> 
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
 
             <a><div class="drink drink3"><p class="imgText1">Package 3</p></div></a>
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
+            <input class="btn3" name='id' type="checkbox" name="<%=id%>" />
 
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
 
             <a><div class="drink drink4"><p class="imgText1">Package 4</p></div></a>
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
+            <input class="btn3" name='id' type="checkbox" name="<%=id%>" />
 
             </br></br></br>
 
             <a><div class="drink drink5"><p class="imgText1">Package 5</p></div></a> 
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
+            <input class="btn3" name='id' type="checkbox" name="<%=id%>" />
 
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
 
             <a><div class="drink drink6"><p class="imgText1">Package 6</p></div></a>
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
+            <input class="btn3" name='id' type="checkbox" name="<%=id%>" />
 
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
 
             <a><div class="drink drink7"><p class="imgText1">Package 7</p></div></a>
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
+            <input class="btn3" name='id' type="checkbox" name="<%=id%>" />
 
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
 
             <a><div class="drink drink8"><p class="imgText1">Package 8</p></div></a>
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
+            <input class="btn3" name='id' type="checkbox" name="<%=id%>" />
 
             </br></br></br>
 
@@ -133,7 +175,7 @@
                     <p class="imgText2">Package One</p>
                     <p class="imgText">Click for Details</p>
                 </div></a>
-            <input class="btn btn1"type="submit"title="Add To Cart"value="">
+            <input class="btn2" name='id' type="checkbox" name="<%=id%>" />
 
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
@@ -143,7 +185,7 @@
                     <p class="imgText2">Package Two</p>
                     <p class="imgText">Click for Details</p>
                 </div></a>
-            <input class="btn btn1"type="submit" title="Add To Cart"value="">
+            <input class="btn2" name='id' type="checkbox" name="<%=id%>" />
 
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
@@ -153,7 +195,7 @@
                     <p class="imgText2">Package Three</p>
                     <p class="imgText">Click for Details</p>
                 </div></a>
-            <input class="btn btn1"type="submit" title="Add To Cart"value="">
+            <input class="btn2" name='id' type="checkbox" name="<%=id%>" />
 
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
@@ -163,9 +205,11 @@
                     <p class="imgText2">Package Four</p>
                     <p class="imgText">Click for Details</p>
                 </div></a>
-            <input class="btn btn1"type="submit" title="Add To Cart"value="">           
+            <input class="btn2" name='id' type="checkbox" name="<%=id%>" />     
         </div> 
-    </div>
+        <input class="btn"type="submit" value='Add to Cart' />
+        <input class="btn"type="reset" value="Reset" />
+    </form>
     <div id="login" class="login">
         <div>
             <a href="#close" title="Close" class="close">X</a>
