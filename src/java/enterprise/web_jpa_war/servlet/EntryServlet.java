@@ -46,11 +46,11 @@ public class EntryServlet extends HttpServlet {
 
         // ResultSet rset = stmt.executeQuery(sqlStr);
 
-        //  Connection conn = null;
+          Connection conn = null;
         Statement stmt = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
+             conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
             // conn = pool.getConnection();  // Get a connection from the pool
             stmt = conn.createStatement();
             String sqlStr = "SELECT * FROM Packages";
@@ -105,9 +105,9 @@ public class EntryServlet extends HttpServlet {
                 if (stmt != null) {
                     stmt.close();
                 }
-//                if (conn != null) {
-//                    conn.close();  // Return the connection to the pool
-//                }
+                if (conn != null) {
+                    conn.close();  // Return the connection to the pool
+                }
             } catch (SQLException ex) {
                 Logger.getLogger(EntryServlet.class.getName()).log(Level.SEVERE, null, ex);
             }
