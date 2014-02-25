@@ -1,5 +1,4 @@
 <%@page import="java.util.*"%>
-<jsp:forward page="Welcome.jsp"/>
 <html>
     <head>
         <title>HangoverHelpers - Home</title><link  rel="shortcut icon" href="favicon.ico"/>

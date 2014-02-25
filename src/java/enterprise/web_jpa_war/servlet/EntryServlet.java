@@ -39,47 +39,49 @@ public class EntryServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
 
-
-
         // conn = pool.getConnection("mydb1127", "mydb112739");  // Get a connection from the pool
         //stmt = conn.createStatement();
-
         // ResultSet rset = stmt.executeQuery(sqlStr);
-
-          Connection conn = null;
+        Connection conn = null;
         Statement stmt = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
              conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
-            // conn = pool.getConnection();  // Get a connection from the pool
+         
             stmt = conn.createStatement();
             String sqlStr = "SELECT * FROM Packages";
             ResultSet rset = stmt.executeQuery(sqlStr);
+            if (!rset.next()) {  // Check for empty ResultSet (no book found)
+                out.println("<h3>No book found. Please try again!</h3>");
+                out.println("<p><a href='start'>Back to Select Menu</a></p>");
+            } else {
+                // Print the result in an HTML form inside a table
+                out.println("<form method='get' action='cart'>");
+                out.println("<input type='hidden' name='todo' value='add' />");
+                out.println("<table border='1' cellpadding='6'>");
+                out.println("<tr>");
+                out.println("<th>&nbsp;</th>");
+                out.println("<th>TITLE</th>");
+                out.println("<th>PRICE</th>");
+                out.println("<th>QTY</th>");
+                out.println("</tr>");
 
-            out.println("<html><head><title>Welcome to YaEshop</title></head><body>");
-            out.println("<h2>Welcome to Yet Another E-BookShop</h2>");
-            out.println("<form method='get' action='search'>");
-
-            // A pull-down menu of all the authors with a no-selection option
-            out.println("Choose an Author: <select name='Name' size='1'>");
-            out.println("<option value=''>Select...</option>");  // no-selection
-            while (rset.next()) {  // list all the authors
-                String Name = rset.getString("Name");
-                out.println("<option value='" + Name + "'>" + Name + "</option>");
+                // ResultSet's cursor now pointing at first row
+                do {
+                    // Print each row with a checkbox identified by book's id
+                    String id = rset.getString("Package_ID");
+                    out.println("<tr>");
+                    out.println("<td><input type='checkbox' name='id' value='" + id + "' /></td>");
+                    out.println("<td>" + rset.getString("Name") + "</td>");
+                    out.println("<td>$" + rset.getString("Price") + "</td>");
+                    out.println("<td><input type='text' size='3' value='1' name='Stock" + id + "' /></td>");
+                    out.println("</tr>");
+                } while (rset.next());
+                out.println("</table><br />");
+                // Submit and reset buttons
+                out.println("<input type='submit' value='Add to My Shopping Cart' />");
+                out.println("<input type='reset' value='CLEAR' /></form>");
             }
-            out.println("</select><br />");
-            out.println("<p>OR</p>");
-
-            // A text field for entering search word for pattern matching
-            out.println("Search \"Title\" or \"Author\": <input type='text' name='Price' />");
-
-            // Submit and reset buttons
-            out.println("<br /><br />");
-            out.println("<input type='submit' 'value='SEARCH' />");
-            out.println("<input type='reset' value='CLEAR' />");
-            out.println("</form>");
-
-
             // Show "View Shopping Cart" if the cart is not empty
             HttpSession session = request.getSession(false); // check if session exists
             if (session != null) {
