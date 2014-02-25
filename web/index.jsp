@@ -45,7 +45,7 @@
 </head>
 <body>    
     <p class="homepage">
-        <font size="7">Welcome to HangoverHelpers <%=uname%></font></br></br>
+        <font size="7">Welcome to HangoverHelpers <%=user%></font></br></br>
         <font size="5">&ensp;&ensp;A fast, friendly and intriguing delivery service</font>
     </p>
     <div id="login" class="login">
