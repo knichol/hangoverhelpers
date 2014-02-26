@@ -2,22 +2,20 @@
 <jsp:forward page="Welcome.jsp"/>
 <html>
     <head>
-        <title>HangoverHelpers - Services</title><link  rel="shortcut icon" href="favicon.ico"/>
+        <title>HangoverHelpers - Home</title><link  rel="shortcut icon" href="favicon.ico"/>
     <div id="background">
         <div title="HangoverHelpers" class="sloth"></div>
         <div style="margin-left: auto;margin-right:auto;">
             <a title="HangoverHelpers" href="index.jsp" class="alignleft">HangoverHelpers</a>
-            <p style="margin-top:-54px; margin-left:-50px;" class="aligncenter">
-            <table border="0">
-                <tr>
-                    <td><a title="Home"href="index.jsp"class="test">Home</a></td>
-                    <td>&nbsp;</td>
-                    <td><a title="Services" href="Services.jsp"class="test">Services</a></td>
-                    <td>&nbsp;</td>
-                    <td><a href="About.jsp"title="About Us"class="test">About</a></td>
-                    <td>&nbsp;</td>
-                    <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
-                </tr></table></p>
+            <p class="aligncenter">
+            <td><a title="Home"href="index.jsp"class="test">Home</a></td>
+            <td>&nbsp;</td>
+            <td><a title="Services" href="Services.jsp"class="test">Services</a></td>
+            <td>&nbsp;</td>
+            <td><a href="About.jsp"title="About Us"class="test">About</a></td>
+            <td>&nbsp;</td>
+            <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
+            </p>
             <p class="alignright">
                 <% String address = (String) session.getAttribute("address1");
                     String email = (String) session.getAttribute("email1");

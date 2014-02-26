@@ -45,9 +45,9 @@ body{
 .aligncenter {
     float: left;
     text-align:center;
-    width:33.33333%;
-    position:fixed;
-    top:9%;left: 40%;
+    width:60%;
+    position:relative;
+    top:9%;left: 18%;
 }
 .alignright {
     float: right;
