@@ -16,7 +16,7 @@
             <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
             </p>
             <p class="alignright">
-                <%  String user = (String) session.getAttribute("user");
+                <%  String Fullname = (String) session.getAttribute("user");
                     String uname = (String) session.getAttribute("uname");
                     String name2 = "";
                     String name3 = "Logout";
@@ -25,7 +25,7 @@
                         name1a = "Register";
                         name2 = "Login";
                         name3 = "";
-                        user = "";
+                        Fullname = "";
                         uname = "";
                     }
                 %>    
@@ -43,7 +43,7 @@
 </head>
 <body>    
     <p class="homepage">
-        <font size="7">Welcome to HangoverHelpers <%=user%></font></br></br>
+        <font size="7">Welcome to HangoverHelpers <%=Fullname%></font></br></br>
         <font size="5">&ensp;&ensp;A fast, friendly and intriguing delivery service</font>
     </p>
     <div id="login" class="login">

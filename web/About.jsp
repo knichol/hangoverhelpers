@@ -16,11 +16,7 @@
             <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
             </p>
             <p class="alignright">
-                <% String address = (String) session.getAttribute("address1");
-                    String email = (String) session.getAttribute("email1");
-                    String phone = (String) session.getAttribute("phone1");
-                    String user = (String) session.getAttribute("user");
-                    String uname = (String) session.getAttribute("uname");
+                <%  String uname = (String) session.getAttribute("uname");
                     String name2 = "";
                     String name3 = "Logout";
                     String name1a = "";
@@ -28,7 +24,6 @@
                         name1a = "Register";
                         name2 = "Login";
                         name3 = "";
-                        user = "";
                         uname = "";
                     }
                 %>    
