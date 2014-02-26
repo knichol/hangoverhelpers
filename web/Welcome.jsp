@@ -7,7 +7,7 @@
 <%@page import="java.util.*"%>
 <html>
     <head>
-        <title>HangoverHelpers - Home</title><link  rel="shortcut icon" href="favicon.ico"/>
+        <title>HangoverHelpers - TESTING!!</title><link  rel="shortcut icon" href="favicon.ico"/>
     <div id="background">
         <div title="HangoverHelpers" class="sloth"></div>
         <div style="margin-left: auto;margin-right:auto;">
@@ -22,13 +22,23 @@
             <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
             </p>
             <p class="alignright">
+                <%  String uname = (String) session.getAttribute("uname");
+                    String name2 = "";
+                    String name3 = "Logout";
+                    String name1a = "";
+                    if (session.getAttribute("uname") == null) {
+                        name1a = "Register";
+                        name2 = "Login";
+                        name3 = "";
+                        uname = "";
+                    }
+                %> 
+                <a  class="test"href="profile.jsp" title="Cart"><%=uname%></font></a>
 
-                <a  class="test"href="profile.jsp" title="Cart"></font></a>
-
-                <a  class="test"href="register.jsp" title="Register"></font></a>
+                <a  class="test"href="register.jsp" title="Register"><%=name1a%></font></a>
             <td>&nbsp;</td>
-            <a class="test" title="Logout"href="Logout"></a>
-            <a class="test"href="#login" title="Login"></a></p>
+            <a class="test" href="Logout"><%=name3%></a>
+            <a class="test"href="#login" title="Login"><%=name2%></a></p>
         </div>
     </div>
     <link rel="stylesheet" type="text/css" href="style.css">

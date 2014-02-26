@@ -1,7 +1,7 @@
 <%@page import="java.util.*"%>
 <html>
     <head>
-        <title>HangoverHelpers - Home</title><link  rel="shortcut icon" href="favicon.ico"/>
+        <title>HangoverHelpers - Contact</title><link  rel="shortcut icon" href="favicon.ico"/>
     <div id="background">
         <div title="HangoverHelpers" class="sloth"></div>
         <div style="margin-left: auto;margin-right:auto;">

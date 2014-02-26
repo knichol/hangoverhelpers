@@ -344,7 +344,8 @@ input:hover,textarea:hover,select:hover{
     outline: none;
     color:#7092BE;
 }*/
-.cart { overflow:auto;
+.cart { 
+    overflow:auto;
         text-decoration: none;
         position: relative;
         top: 140px;
@@ -393,8 +394,8 @@ input{
     border:0; 
 }
 ::-webkit-scrollbar { 
-    width: 14px; 
-    border-radius: 10px;
+    width: 10px; 
+    border-radius: 6px;
 }  
 ::-webkit-scrollbar-track {  
     background-color: #7092BE;
