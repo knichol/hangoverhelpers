@@ -52,21 +52,16 @@
                 // conn = pool.getConnection("mydb1127", "mydb112739");  // Get a connection from the pool
                 stmt = conn.createStatement();
                 out.println("<h2 align='center'>Receipt</h2>");
-
-//                if (cart.isEmpty()){
-//                     RequestDispatcher view = request.getRequestDispatcher("Welcome.jsp");
-//                        view.forward(request, response);
-//                }
                 // Retrieve the Cart
                 session = request.getSession(false);
                 if (session == null) {
-                    RequestDispatcher view = request.getRequestDispatcher("Welcome.jsp");
+                    RequestDispatcher view = request.getRequestDispatcher("Services.jsp");
                     view.include(request, response);
                 }
                 synchronized (session) {
                     cart = (ShoppingCart) session.getAttribute("cart");
                     if (cart == null) {
-                        RequestDispatcher view = request.getRequestDispatcher("Welcome.jsp");
+                        RequestDispatcher view = request.getRequestDispatcher("Services.jsp");
                         view.include(request, response);
                     }
                 }
