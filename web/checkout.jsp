@@ -38,7 +38,7 @@
     <script src="script.js"></script> 
 </head>
 <body>    
-    <div class="cart">
+    <div class="receipt">
         <form style="text-align: center;color:white;">
             <%
 
@@ -110,8 +110,8 @@
             <a href="Services.jsp"style="text-decoration: none;">Back to Services</a>
 
         </form>
-            <form action="Receipt" method="post">
-                <input type="submit" value="Get Receipt">
+            <form style="float: right;"action="Receipt" method="post">
+                <input class="btn"type="submit" value="Save Receipt">
             </form>
     </div>
 </body>

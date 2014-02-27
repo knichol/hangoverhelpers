@@ -54,13 +54,15 @@
     <div class="table">
         <div class="row">
             <div class="profile">
-                <form method="post" action=""></br>
+                <form method="post"></br>
                     <a class="profilePic"></a></br>
                     <a class="username"><%=user%></a>
                     </br>
                     Email: <%=email%></br>
                     Address: <%=address%></br>
-                    Phone: <%=phone%></br>
+                    Phone: <%=phone%></br></br>
+                    <a href="#receipt" style="width: 60px;"class="btn"title="Receipt"style="text-decoration:none;" >
+                        <font size="3"style="text-align:center;">View Previous Receipts</font></a>
                 </form>
             </div>
             <div class="cart">
@@ -174,5 +176,41 @@
                     %>
                 </form>
             </div>
-                </body>
-                </html>
+            <div id="receipt" class="receipt">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <form  style="overflow: auto;"method="post">
+                        <table align="center"style="color:white;text-align: center;">
+                            <tr>
+                            <th>Message ID</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>
+                            <th>Name</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>
+                            <th>Email</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>
+                            <th>Message Details</th>  <th>&nbsp;</th><th>&nbsp;</th>  <th>&nbsp;</th><th>&nbsp;</th>
+                            </tr>
+                            <%
+                                Class.forName("com.mysql.jdbc.Driver");
+                                Connection con = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
+                                Statement s = con.createStatement();
+                                ResultSet rs = s.executeQuery("select * from Contact");
+
+                                while (rs.next()) {
+                            %>
+                            <tr>
+                            <td><%=rs.getString("message_ID")%></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                            <td><%=rs.getString("Name")%></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                            <td><%=rs.getString("Email")%></td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                            <td><%=rs.getString("Mail")%></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                            </tr>
+                            <%
+                                }
+                            %>
+                        </table>
+                        <%
+                            rs.close();
+                            s.close();
+                            con.close();
+                        %>
+
+                    </form> </div></div>
+            </body>
+            </html>
