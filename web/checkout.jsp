@@ -39,7 +39,7 @@
 </head>
 <body>    
     <div class="cart">
-        <form>
+        <form style="text-align: center;color:white;">
             <%
 
                 Connection conn = null;
@@ -53,17 +53,21 @@
                 stmt = conn.createStatement();
                 out.println("<h2 align='center'>Receipt</h2>");
 
+//                if (cart.isEmpty()){
+//                     RequestDispatcher view = request.getRequestDispatcher("Welcome.jsp");
+//                        view.forward(request, response);
+//                }
                 // Retrieve the Cart
                 session = request.getSession(false);
                 if (session == null) {
-                    out.println("<h3 align='center'>Your Shopping cart is empty!</h3></body></html>");
-                    return;
+                    RequestDispatcher view = request.getRequestDispatcher("Welcome.jsp");
+                    view.include(request, response);
                 }
                 synchronized (session) {
                     cart = (ShoppingCart) session.getAttribute("cart");
                     if (cart == null) {
-                        out.println("<h3 align='center'>Your Shopping cart is empty!</h3></body></html>");
-                        return;
+                        RequestDispatcher view = request.getRequestDispatcher("Welcome.jsp");
+                        view.include(request, response);
                     }
                 }
 
@@ -100,13 +104,12 @@
                     totalPrice += Price * Stock;
                 }
                 String strAmount = String.valueOf(totalPrice);
-                out.println("<tr><td colspan='8' align='right'>Total Price: &#8364;" + strAmount + "</td></tr>");
+                out.println("</br><tr><td colspan='28'align='center'></br></br></br>Total Price: &#8364;" + strAmount + "</td></tr>");
                 out.println("</table>");
-                out.println("<h3 align='center'>Thank you.</h3>");
-                //out.println("<p style='text-align:center;text-decoration:none;'href='Welcome.jsp'>Back to Packages</p>");
                 cart.clear();   // empty cart
-%>
-            <a style='text-align:center;text-decoration:none;'href='Welcome.jsp'>Back to Packages</a>
+            %>
+            <h3 align='center'>Thank you.</h3>               
+            <a href="Services.jsp"style="text-decoration: none;">Back to Services</a>
 
         </form>
     </div>
