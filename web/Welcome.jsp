@@ -50,7 +50,7 @@
 <body>
     <div class="box">
         </br>
-        <font style="color:white;font-family: Bradley hand ITC;font-size:200%;"> Cart</font></br>
+        <font style="color:white;font-family: Bradley hand ITC;font-size:200%;"> Packages</font></br>
             <%
                 Connection conn = null;
                 Statement stmt = null;
