@@ -58,20 +58,22 @@
                 stmt = conn.createStatement();
                 String sqlStr = "SELECT * FROM Packages";
                 ResultSet rset = stmt.executeQuery(sqlStr);
+               
                 if (rset.next()) {
-                    // ResultSet's cursor now pointing at first row
+                    // ResultSet's cursor now pointing at first row 
+                   
                     do {
                         out.println("<td><form style='color:white;font-family: Bradley hand ITC;'method='get' action='cart'>");
                         out.println("<input type='hidden' name='todo' value='add' />");
                         // Print each row with a checkbox identified by book's id
-                        String id = rset.getString("Package_ID");
+                         String id = rset.getString("Package_ID");
                         //   out.println("<tr>");
             %> 
             <%out.println("<a><div style='margin-top:20px;'class='drink drink1'><p class='imgText1'>Package 1</p></div></a>");%>
         <input class="btn3"type="checkbox" name="id" value="<%=id%>"/>
         <% out.println(rset.getString("Name"));%>
         <% out.println("&#8364;" + rset.getString("Price"));%>
-        <% out.println("<input style='width:30px;height:30ps;'type='text' size='3' value='1' name='Stock" + id + "'/>");%>
+        <% out.println("<input style='width:30px;height:30ps;'type='text' value='1'name='Stock" + id + "'/>");%>
         <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         <%              } while (rset.next());
             out.println("</br></br><input class='btn'type='submit' value='Add to Cart' />");
