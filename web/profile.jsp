@@ -26,12 +26,8 @@
                     String phone = (String) session.getAttribute("phone");
                     String user = (String) session.getAttribute("user");
                     String uname = (String) session.getAttribute("uname");
-                    String name2 = "";
                     String name3 = "Logout";
-                    String name1a = "";
                     if (session.getAttribute("uname") == null) {
-                        name1a = "Register";
-                        name2 = "Login";
                         name3 = "";
                         user = "";
                         uname = "";
@@ -41,11 +37,8 @@
                     }
                 %>    
                 <a  class="test"href="profile.jsp" title="Cart"><%=uname%></font></a>
-
-                <a  class="test"href="register.jsp" title="Register"><%=name1a%></font></a>
             <td>&nbsp;</td>
             <a class="test" href="Logout"><%=name3%></a>
-            <a class="test"href="#login" title="Login"><%=name2%></a></p>
         </div>
     </div>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -106,12 +99,12 @@
                                 float price = rset.getFloat("Price");
 
                                 // Get quantity ordered - no error check!
-                                int qtyOrdered = Integer.parseInt(request.getParameter("Stock" + id));
+                                int Stock = Integer.parseInt(request.getParameter("Stock" + id));
                                 int idInt = Integer.parseInt(id);
                                 if (todo.equals("add")) {
-                                    cart.add(idInt, title, price, qtyOrdered);
+                                    cart.add(idInt, title, price, Stock);
                                 } else if (todo.equals("update")) {
-                                    cart.update(idInt, qtyOrdered);
+                                    cart.update(idInt, Stock);
                                 }
                             }
 
@@ -138,7 +131,7 @@
                                 int id = item.getId();
                                 String title = item.getName();
                                 float price = item.getPrice();
-                                int qtyOrdered = item.getStock();
+                                int Stock = item.getStock();
 
                                 out.println("<tr>");
                                 out.println("<td>" + title + "</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
@@ -148,7 +141,7 @@
                                 out.println("<td><form method='get'>");
                                 out.println("<input type='hidden' name='todo' value='update' />");
                                 out.println("<input type='hidden' name='id' value='" + id + "' />");
-                                out.println("<input style='width:50px;height:30px;'type='text' size='3' name='Stock" + id + "' value='" + qtyOrdered + "'/>");
+                                out.println("<input style='width:50px;height:30px;'type='text' size='3' name='Stock" + id + "' value='" + Stock + "'/>");
                                 out.println("<input class='btn'type='submit' value='Update' />");
                                 out.println("</form></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
 
@@ -158,7 +151,7 @@
                                 out.println("<input type='hidden' name='id' value='" + id + "'/>");
                                 out.println("</form></td>");
                                 out.println("</tr>");
-                                totalPrice += price * qtyOrdered;
+                                totalPrice += price * Stock;
                             }
                             String strAmount = String.valueOf(totalPrice);
                             out.println("<tr><td colspan='8' align='right'>Total Price: &#8364;" + strAmount + "</td></tr>");
@@ -169,38 +162,26 @@
                         // Display the Checkout
                         if (!cart.isEmpty()) {
                             //                out.println("<br /><br />");
-                            out.println("<form style='text-align:center;'method='get' action='Welcome.jsp'>");
+                            out.println("<form style='text-align:center;'method='get' action='checkout'>");
                             out.println("<input class='btn'type='submit' value='CheckOut'/>");
-                            //                out.println("<p>Please fill in your particular before checking out:</p>");
-                            //                out.println("<table>");
-                            //                out.println("<tr>");
-                            //                out.println("<td>Enter your Name:</td>");
-                            //                out.println("<td><input type='text' name='cust_name' /></td></tr>");
-                            //                out.println("<tr>");
-                            //                out.println("<td>Enter your Email:</td>");
-                            //                out.println("<td><input type='text' name='cust_email' /></td></tr>");
-                            //                out.println("<tr>");
-                            //                out.println("<td>Enter your Phone Number:</td>");
-                            //                out.println("<td><input type='text' name='cust_phone' /></td></tr>");
-                            //                out.println("</table>");
+                                            out.println("<p>Please fill in your particular before checking out:</p>");
+                                            out.println("<table>");
+                                            out.println("<tr>");
+                                            out.println("<td>Enter your Name:</td>");
+                                            out.println("<td><input type='text' name='cust_name' /></td></tr>");
+                                            out.println("<tr>");
+                                            out.println("<td>Enter your Email:</td>");
+                                            out.println("<td><input type='text' name='cust_email' /></td></tr>");
+                                            out.println("<tr>");
+                                            out.println("<td>Enter your Phone Number:</td>");
+                                            out.println("<td><input type='text' name='cust_phone' /></td></tr>");
+                                            out.println("</table>");
                             out.println("</form>");
                         }
                         out.println("<p style='text-align:center;'><a style='color:white;text-decoration:none;'href='Welcome.jsp'>Select More Packages</a></p>");
 
                     %>
                 </form>
-            </div>
-            <div id="login" class="login">
-                <div>
-                    <a href="#close" title="Close" class="close">X</a>
-                    <form id ="loginform" action="Validate"method="post">
-                        </br></br><font size ="5">Login</font>
-                        </br></br>
-                        <input type="text" title="Username"id="uName"name="uName" placeholder="Username"></br></br>
-                        <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
-                        <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
-                        <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                            <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div></form>
             </div>
             </body>
             </html>

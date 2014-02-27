@@ -47,6 +47,7 @@ public class CheckoutServlet extends HttpServlet {
         Statement stmt = null;
         ResultSet rset = null;
         String sqlStr = null;
+        String sqlStr1 = null;
         HttpSession session = null;
         ShoppingCart cart = null;
 
@@ -109,13 +110,12 @@ public class CheckoutServlet extends HttpServlet {
 
             // Print the book(s) ordered in a table
             out.println("<br />");
-            out.println("<table border='1' cellpadding='6'>");
+            out.println("<table border='1' cellpadding='5'>");
             out.println("<tr>");
-            out.println("<th>AUTHOR</th>");
-            out.println("<th>TITLE</th>");
-            out.println("<th>PRICE</th>");
-            out.println("<th>QTY</th></tr>");
-
+            out.println("<th>Name</th>");
+            out.println("<th>Price</th>");
+            out.println("<th>Quantity</th></tr>");
+            
             float totalPrice = 0f;
             for (ShoppingCartItem item : cart.getItems()) {
                 int id = item.getId();
@@ -129,12 +129,9 @@ public class CheckoutServlet extends HttpServlet {
                 //System.out.println(sqlStr);  // for debugging
                 stmt.executeUpdate(sqlStr);
 
-                sqlStr = "INSERT INTO order_packages values ("
-                        + id + ", " + Stock + ", '" + custName + "', '"
-                        + custEmail + "', '" + custPhone + "')";
+                sqlStr1 = "INSERT INTO Order_Package VALUES ("+Stock+","+custName+","+id+")";
                 //System.out.println(sqlStr);  // for debugging
-                stmt.executeUpdate(sqlStr);
-
+                stmt.executeUpdate(sqlStr1);
                 // Show the book ordered
                 out.println("<tr>");
                 out.println("<td>" + Name + "</td>");
@@ -147,7 +144,7 @@ public class CheckoutServlet extends HttpServlet {
             out.println("</table>");
 
             out.println("<h3>Thank you.</h3>");
-            out.println("<a href='start'>Back to Search Menu</a>");
+            out.println("<a href='welcome.jsp'>Back to Search Menu</a>");
             out.println("</body></html>");
 
             cart.clear();   // empty the cart

@@ -97,12 +97,12 @@ public class CartServlet extends HttpServlet {
                     float price = rset.getFloat("Price");
 
                     // Get quantity ordered - no error check!
-                    int qtyOrdered = Integer.parseInt(request.getParameter("Stock" + id));
+                    int Stock = Integer.parseInt(request.getParameter("Stock" + id));
                     int idInt = Integer.parseInt(id);
                     if (todo.equals("add")) {
-                        cart.add(idInt, title, price, qtyOrdered);
+                        cart.add(idInt, title, price, Stock);
                     } else if (todo.equals("update")) {
-                        cart.update(idInt, qtyOrdered);
+                        cart.update(idInt, Stock);
                     }
                 }
 
@@ -127,7 +127,7 @@ public class CartServlet extends HttpServlet {
 //                    int id = item.getId();
 //                    String title = item.getName();
 //                    float price = item.getPrice();
-//                    int qtyOrdered = item.getStock();
+//                    int Stock = item.getStock();
 //
 //                    out.println("<tr>");
 //                    out.println("<td>" + title + "</td>");
@@ -136,7 +136,7 @@ public class CartServlet extends HttpServlet {
 //                    out.println("<td><form method='get'>");
 //                    out.println("<input type='hidden' name='todo' value='update' />");
 //                    out.println("<input type='hidden' name='id' value='" + id + "' />");
-//                    out.println("<input type='text' size='3' name='Stock" + id + "' value='" + qtyOrdered + "'/>");
+//                    out.println("<input type='text' size='3' name='Stock" + id + "' value='" + Stock + "'/>");
 //                    out.println("<input type='submit' value='Update' />");
 //                    out.println("</form></td>");
 //
@@ -146,7 +146,7 @@ public class CartServlet extends HttpServlet {
 //                    out.println("<input type='submit' value='Remove'/>");
 //                    out.println("</form></td>");
 //                    out.println("</tr>");
-//                    totalPrice += price * qtyOrdered;
+//                    totalPrice += price * Stock;
                 }
 //                out.println("<tr><td colspan='5' align='right'>Total Price: $");
 //                out.printf("%.2f</td></tr>", totalPrice);

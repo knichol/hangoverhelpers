@@ -21,7 +21,6 @@ body{
     width:70px; 
     height:60px;
     content: url(http://i.imgur.com/O23t68w.jpg);
-
 }
 .homepage{
     text-align:left; 
@@ -46,9 +45,10 @@ body{
     float: left;
     text-align:center;
     width:60%;
-    position:relative;
+    position:fixed;
     top:9%;left: 18%;
 }
+
 .alignright {
     float: right;
     text-align:right;
@@ -138,7 +138,7 @@ body{
     height:100%;
 }
 br {
-    line-height:2px;
+    line-height:10px;
 } 
 .login {
     position: fixed;
