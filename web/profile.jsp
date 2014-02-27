@@ -11,14 +11,16 @@
         <div title="HangoverHelpers" class="sloth"></div>
         <div style="margin-left: auto;margin-right:auto;">
             <a title="HangoverHelpers" href="index.jsp" class="alignleft">HangoverHelpers</a>
-            <p style="margin-top: -50px;margin-left: -50px;"class="aligncenter">
-            <td><a title="Home"href="index.jsp"class="test">Home</a></td>
-            <td>&nbsp;</td>
-            <td><a title="Services" href="Services.jsp"class="test">Services</a></td>
-            <td>&nbsp;</td>
-            <td><a href="About.jsp"title="About Us"class="test">About</a></td>
-            <td>&nbsp;</td>
-            <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
+            <p style="margin-top:-54px;" class="aligncenter">
+            <table align="center">
+            <th><a title="Home"href="index.jsp"class="test">Home</a></th>
+            <th>&nbsp;</th>
+            <th><a title="Services" href="Services.jsp"class="test">Services</a></th>
+            <th>&nbsp;</th>
+            <th><a href="About.jsp"title="About Us"class="test">About</a></td>
+            <th>&nbsp;</th>
+            <th><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></th>
+            </table>
             </p>
             <p class="alignright">
                 <% 
@@ -169,18 +171,18 @@
                             //                out.println("<br /><br />");
                             out.println("<form style='text-align:center;'method='get' action='checkout'>");
                             out.println("<input class='btn'type='submit' value='CheckOut'/>");
-                                            out.println("<p>Please fill in your particular before checking out:</p>");
-                                            out.println("<table>");
-                                            out.println("<tr>");
-                                            out.println("<td>Enter your Name:</td>");
-                                            out.println("<td><input type='text' name='cust_name' /></td></tr>");
-                                            out.println("<tr>");
-                                            out.println("<td>Enter your Email:</td>");
-                                            out.println("<td><input type='text' name='cust_email' /></td></tr>");
-                                            out.println("<tr>");
-                                            out.println("<td>Enter your Phone Number:</td>");
-                                            out.println("<td><input type='text' name='cust_phone' /></td></tr>");
-                                            out.println("</table>");
+                            out.println("<p>Please fill in your particular before checking out:</p>");
+                            out.println("<table>");
+                            out.println("<tr>");
+                            out.println("<td>Enter your Name:</td>");
+                            out.println("<td><input type='text' name='cust_name' /></td></tr>");
+                            out.println("<tr>");
+                            out.println("<td>Enter your Email:</td>");
+                            out.println("<td><input type='text' name='cust_email' /></td></tr>");
+                            out.println("<tr>");
+                            out.println("<td>Enter your Phone Number:</td>");
+                            out.println("<td><input type='text' name='cust_phone' /></td></tr>");
+                            out.println("</table>");
                             out.println("</form>");
                         }
                         out.println("<p style='text-align:center;'><a style='color:white;text-decoration:none;'href='Welcome.jsp'>Select More Packages</a></p>");
