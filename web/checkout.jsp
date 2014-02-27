@@ -107,11 +107,17 @@
                 out.println("</br><tr><td colspan='28'align='center'></br></br></br>Total Price: &#8364;" + strAmount + "</td></tr>");
                 out.println("</table>");
                 cart.clear();   // empty cart
+                session.setAttribute("total", strAmount);
             %>
-            <h3 align='center'>Thank you.</h3>               
+            
+            <h3 align='center'>Thank you.</h3>  
+            
             <a href="Services.jsp"style="text-decoration: none;">Back to Services</a>
 
         </form>
+            <form action="Receipt" method="post">
+                <input type="submit" value="Get Receipt">
+            </form>
     </div>
 </body>
 </html>
