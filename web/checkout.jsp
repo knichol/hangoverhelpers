@@ -42,79 +42,72 @@
         <form>
             <%
 
-                    Connection conn = null;
-                    Statement stmt = null;
-                    String sqlStr = null;
-                    session = null;
-                    ShoppingCart cart = null;
-                    Class.forName("com.mysql.jdbc.Driver");
-                    conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
-                    // conn = pool.getConnection("mydb1127", "mydb112739");  // Get a connection from the pool
-                    stmt = conn.createStatement();
-                    out.println("<h2 align='center'>Receipt</h2>");
+                Connection conn = null;
+                Statement stmt = null;
+                String sqlStr = null;
+                session = null;
+                ShoppingCart cart = null;
+                Class.forName("com.mysql.jdbc.Driver");
+                conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
+                // conn = pool.getConnection("mydb1127", "mydb112739");  // Get a connection from the pool
+                stmt = conn.createStatement();
+                out.println("<h2 align='center'>Receipt</h2>");
 
-                    // Retrieve the Cart
-                    session = request.getSession(false);
-                    if (session == null) {
+                // Retrieve the Cart
+                session = request.getSession(false);
+                if (session == null) {
+                    out.println("<h3 align='center'>Your Shopping cart is empty!</h3></body></html>");
+                    return;
+                }
+                synchronized (session) {
+                    cart = (ShoppingCart) session.getAttribute("cart");
+                    if (cart == null) {
                         out.println("<h3 align='center'>Your Shopping cart is empty!</h3></body></html>");
                         return;
                     }
-                    synchronized (session) {
-                        cart = (ShoppingCart) session.getAttribute("cart");
-                        if (cart == null) {
-                            out.println("<h3 align='center'>Your Shopping cart is empty!</h3></body></html>");
-                            return;
-                        }
-                    }
+                }
 
-                    String name = (String) session.getAttribute("user");
-                    String address = (String) session.getAttribute("address");
-                    String phone = (String) session.getAttribute("phone");
+                String name = (String) session.getAttribute("user");
+                String address = (String) session.getAttribute("address");
+                String phone = (String) session.getAttribute("phone");
 
-                    // Display the name, email and phone (arranged in a table)
-                    out.println("<table style='color:white;'align='center'>");
+                out.println("<table style='color:white;'align='center'>");
+                out.println("<tr>");
+                out.println("<th>Name:</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>");
+                out.println("<th>Address:</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>");
+                out.println("<th>Phone Number:</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>");
+                out.println("<th>Package</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>");
+                out.println("<th>Price</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>");
+                out.println("<th>Quantity</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr>");
+
+                float totalPrice = 0f;
+                for (ShoppingCartItem item : cart.getItems()) {
+                    int id = item.getId();
+                    String Name = item.getName();
+                    int Stock = item.getStock();
+                    float Price = item.getPrice();
+
+                    sqlStr = "UPDATE Packages SET Stock = Stock - " + Stock + " WHERE Package_ID = " + id;
+                    stmt.executeUpdate(sqlStr);
+
                     out.println("<tr>");
-                    out.println("<td>Customer Name:</td>");
-                    out.println("<td>" + name + "</td></tr>");
-                    out.println("<tr>");
-                    out.println("<td>Customer Address:</td>");
-                    out.println("<td>" + address + "</td></tr>");
-                    out.println("<tr>");
-                    out.println("<td>Customer Phone Number:</td>");
-                    out.println("<td>" + phone + "</td></tr>");
-                    out.println("</table></br>");
+                    out.println("<td>" + name + "</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
+                    out.println("<td>" + address + "</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
+                    out.println("<td>" + phone + "</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
+                    out.println("<td>" + Name + "</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
+                    out.println("<td>" + Price + "</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
+                    out.println("<td>" + Stock + "</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>");
+                    totalPrice += Price * Stock;
+                }
+                String strAmount = String.valueOf(totalPrice);
+                out.println("<tr><td colspan='8' align='right'>Total Price: &#8364;" + strAmount + "</td></tr>");
+                out.println("</table>");
+                out.println("<h3 align='center'>Thank you.</h3>");
+                //out.println("<p style='text-align:center;text-decoration:none;'href='Welcome.jsp'>Back to Packages</p>");
+                cart.clear();   // empty cart
+%>
+            <a style='text-align:center;text-decoration:none;'href='Welcome.jsp'>Back to Packages</a>
 
-                    out.println("<table style='color:white;'align='center'>");
-                    out.println("<tr>");
-                    out.println("<th>Package</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>");
-                    out.println("<th>Price</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>");
-                    out.println("<th>Quantity</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr>");
-
-                    float totalPrice = 0f;
-                    for (ShoppingCartItem item : cart.getItems()) {
-                        int id = item.getId();
-                        String Name = item.getName();
-                        int Stock = item.getStock();
-                        float Price = item.getPrice();
-
-                        sqlStr = "UPDATE Packages SET Stock = Stock - " + Stock + " WHERE Package_ID = " + id;
-                        stmt.executeUpdate(sqlStr);
-                        
-                        out.println("<tr>");
-                        out.println("<td>" + Name + "</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
-                        out.println("<td>" + Price + "</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
-                        out.println("<td>" + Stock + "</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>");
-                        totalPrice += Price * Stock;
-                    }
-                    String strAmount = String.valueOf(totalPrice);
-                    out.println("<tr><td colspan='8' align='right'>Total Price: &#8364;" + strAmount + "</td></tr>");
-                    out.println("</table>");
-                    out.println("<h3 align='center'>Thank you.</h3>");
-                    //out.println("<p style='text-align:center;text-decoration:none;'href='Welcome.jsp'>Back to Packages</p>");
-                    cart.clear();   // empty cart
-            %>
-           <p style='text-align:center;text-decoration:none;'href='Welcome.jsp'>Back to Packages</p>
-                    
         </form>
     </div>
 </body>
