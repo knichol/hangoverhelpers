@@ -60,7 +60,20 @@
                 <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
                 <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
                 <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div></form>
-</div>
+                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a><div>
+                    <a href="#AdminLogin" title="AdminLogin"style="text-decoration:none;" >
+                        <font size="3"color="white" style="text-align:center;">Admin Login</font></a></div></form>
+        </div></div>
+       <div id="AdminLogin" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+           <form id =""action="AdminValidate"method="post">
+                </br></br><font size ="5">Admin Login</font></br></br>
+                <input type="text" title="Admin"id="aName"name="aName" placeholder="Admin Name"></br></br>
+                <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
+                <input class="btn"type="submit" value="Login" title="Login"></br></br>
+                <a href="register.jsp" title="Register"style="text-decoration:none;" >
+                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></form>
+        </div></div>
 </body>
 </html>

@@ -1,13 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package enterprise.web_jpa_war.servlet;
-
-/**
- *
- * @author Cian
- */
 import enterprise.web_jpa_war.entity.*;
 import enterprise.web_jpa_war.servlet.*;
 import java.io.*;
@@ -20,22 +11,6 @@ import javax.servlet.http.*;
 
 @WebServlet(name = "CheckoutServlet", urlPatterns = {"/checkout"})
 public class CheckoutServlet extends HttpServlet {
-
-//   private DataSource pool;  // Database connection pool
-// 
-//   @Override
-//   public void init(ServletConfig config) throws ServletException {
-//      try {
-//         // Create a JNDI Initial context to be able to lookup the DataSource
-//         InitialContext ctx = new InitialContext();
-//         // Lookup the DataSource.
-//         pool = (DataSource)ctx.lookup("java:comp/env/jdbc/mysql_ebookshop");
-//         if (pool == null)
-//            throw new ServletException("Unknown DataSource 'jdbc/mysql_ebookshop'");
-//      } catch (NamingException ex) {
-//         Logger.getLogger(EntryServlet.class.getName()).log(Level.SEVERE, null, ex);
-//      }
-//   }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
