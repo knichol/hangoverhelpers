@@ -15,7 +15,6 @@
             <th>&nbsp;</th>
             <th><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></th>
             </table>
-            
             <p class="alignright">
                 <%  String Fullname = (String) session.getAttribute("user");
                     String uname = (String) session.getAttribute("uname");
