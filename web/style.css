@@ -45,7 +45,7 @@ body{
     float: left;
     text-align:center;
     width:60%;
-    position:fixed;
+    position:relative;
     top:9%;left: 18%;
 }
 
