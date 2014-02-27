@@ -11,7 +11,7 @@
 
     <h1>List of Persons currently in Database</h1>
     
-<table id="personListTable" border="3">
+<table id="personList" border="3">
 <tr >
     <th bgcolor=>ID Number</th>
     <th bgcolor=>Name</th>
