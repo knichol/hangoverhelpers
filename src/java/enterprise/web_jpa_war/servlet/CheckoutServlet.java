@@ -129,9 +129,9 @@ public class CheckoutServlet extends HttpServlet {
                 //System.out.println(sqlStr);  // for debugging
                 stmt.executeUpdate(sqlStr);
 
-                sqlStr1 = "INSERT INTO Order_Package VALUES ("+Stock+","+custName+","+id+")";
+           //     sqlStr1 = "INSERT INTO Order_Package VALUES ("+Stock+","+custName+","+id+")";
                 //System.out.println(sqlStr);  // for debugging
-                stmt.executeUpdate(sqlStr1);
+             //   stmt.executeUpdate(sqlStr1);
                 // Show the book ordered
                 out.println("<tr>");
                 out.println("<td>" + Name + "</td>");
