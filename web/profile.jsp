@@ -11,7 +11,7 @@
         <div title="HangoverHelpers" class="sloth"></div>
         <div style="margin-left: auto;margin-right:auto;">
             <a title="HangoverHelpers" href="index.jsp" class="alignleft">HangoverHelpers</a>
-            <p class="aligncenter">
+            <p style="margin-top: -50px;margin-left: 40px;"class="aligncenter">
             <td><a title="Home"href="index.jsp"class="test">Home</a></td>
             <td>&nbsp;</td>
             <td><a title="Services" href="Services.jsp"class="test">Services</a></td>
