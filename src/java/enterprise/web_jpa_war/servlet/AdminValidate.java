@@ -34,14 +34,14 @@ public class AdminValidate extends HttpServlet {
                     view.forward(request, response);
 
                 } else {
-                    out.println("<div style='font-size:30px; color:red'>"
+                    out.println("<div style='font-size:30px; color:red; text-align: center;'>"
                             + "Admin name and password do not match!" + "</div>");
                     RequestDispatcher view = request.getRequestDispatcher("AdminLogin.jsp");
 
                     view.include(request, response);
                 }
             } else {
-                out.println("<div style='font-size:30px; color:red'>"
+                out.println("<div style='font-size:30px; color:red; text-align: center;'>"
                         + "Please enter admin name and password" + "</div >");
 
                 RequestDispatcher view = request.getRequestDispatcher("AdminLogin.jsp");
