@@ -43,12 +43,11 @@
 <%
     }
 %>
-    </table>
+</table>
 <%
     rs.close();
     s.close();
     con.close();
 %>
-
 </form>
 </html>

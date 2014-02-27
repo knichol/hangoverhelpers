@@ -6,14 +6,22 @@
         <title>Admin Page</title>
     </head>
     <body>
-        <%  String admin = "";
+        <%  if(session.getAttribute("admin")==null)
+            {
+                // If not logged in as admin
+                RequestDispatcher view = request.getRequestDispatcher("index.jsp");
+                view.forward(request, response);
+            }
+        
+            String admin = "";
             admin = (String) session.getAttribute("admin");%>
                    
         
         <h1>Hello Admin! <%=admin%></h1>
-        <a href="CustAdmin.jsp" title="cAdmin"style="text-decoration:none;" >
+        <a href="AdminCust.jsp" title="cAdmin"style="text-decoration:none;" >
             View/Edit Customers</a><div>
-        <a href="PackageAdmin.jsp" title="pAdmin"style="text-decoration:none;" >
-            View/Edit Packages</a><div
+        <a href="AdminPackage.jsp" title="pAdmin"style="text-decoration:none;" >
+            View/Edit Packages</a><div><div>
+        <a href="Logout" title="AdminLogout"style="text-decoration:none;">Logout</a>
     </body>
 </html>
