@@ -1,17 +1,61 @@
 <%-- 
-    Document   : AdminContact
-    Created on : Feb 27, 2014, 4:13:20 PM
+    Document   : Admin
+    Created on : Feb 27, 2014, 12:38:22 PM
     Author     : Kevin
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<%@page import="java.sql.*"%>
 <html>
     <head>
+    <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Admin - Contact Messages List</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+
+        <% if (session.getAttribute("admin") == null) {
+                // If not logged in as admin
+                RequestDispatcher view = request.getRequestDispatcher("index.jsp");
+                view.forward(request, response);
+            }
+        %>
+
+        <h1>List of Contact Messages Currently in Database</h1>
+        <div><a href="Admin.jsp" title="cAdmin"style="text-decoration:none;" >
+                Back To Admin Panel</a></div><br>
     </body>
+    <form method="post">
+
+        <table border="2">
+            <tr>
+            <td>MESSAGE ID</td>
+            <td>NAME</td>
+            <td>EMAIL</td>
+            <td>MESSAGE</td>    
+            </tr>
+            <%
+                Class.forName("com.mysql.jdbc.Driver");
+                Connection con = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
+                Statement s = con.createStatement();
+                ResultSet rs = s.executeQuery("select * from Contact");
+
+                while (rs.next()) {
+            %>
+            <tr>
+            <td><%=rs.getString("message_ID")%></td>
+            <td><%=rs.getString("Name")%></td>
+            <td><%=rs.getString("Email")%></td> 
+            <td><%=rs.getString("Mail")%></td>
+            </tr>
+            <%
+                }
+            %>
+        </table>
+        <%
+            rs.close();
+            s.close();
+            con.close();
+        %>
+
+    </form>
 </html>

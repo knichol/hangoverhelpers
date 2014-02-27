@@ -6,7 +6,6 @@
         <div title="HangoverHelpers" class="sloth"></div>
         <div style="margin-left: auto;margin-right:auto;">
             <a title="HangoverHelpers" href="index.jsp" class="alignleft">HangoverHelpers</a>
-            <p style="margin-top:-54px;" class="aligncenter">
             <table align="center">
             <th><a title="Home"href="index.jsp"class="test">Home</a></th>
             <th>&nbsp;</th>
@@ -16,7 +15,7 @@
             <th>&nbsp;</th>
             <th><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></th>
             </table>
-            </p>
+            
             <p class="alignright">
                 <%  String Fullname = (String) session.getAttribute("user");
                     String uname = (String) session.getAttribute("uname");
@@ -58,7 +57,9 @@
                 <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
                 <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
                 <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></div></form>
+                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a><div>
+                <a href="AdminLogin.jsp" title="AdminLogin"style="text-decoration:none;" >
+                    <font size="3"color="white" style="text-align:center;">Admin Login</font></a></div></form>
 </div>
 </body>
 </html>
