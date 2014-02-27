@@ -12,7 +12,7 @@
         <title>Admin - Package List</title>
     </head>
     <body>
-
+<div style="text-align: center;">
         <% if (session.getAttribute("admin") == null) {
                 // If not logged in as admin
                 RequestDispatcher view = request.getRequestDispatcher("index.jsp");
@@ -25,22 +25,18 @@
     </body>
     <form method="post">
 
-        <table border="2">
+        <table align="center"style="text-align: center;"border="2">
             <tr>
-            <td>ID</td>
-            <td>NAME</td>
-            <td>PRICE</td>
-            <td>STOCK</td>    
+            <th>Package ID</th>
+            <th>Package Name</th>
+            <th>Package Price</th>
+            <th>Remaining Stock</th>    
             </tr>
             <%
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection con = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
                 Statement s = con.createStatement();
                 ResultSet rs = s.executeQuery("select * from Packages");
-                
-// Query to update stock
-// s.executeUpdate("update Packages set Stock = '30' where Package_ID = '3'");
-               
                 while (rs.next()) {
             %>
             <tr>
@@ -60,10 +56,11 @@
         %>
     </form>
     
-    <form id ="UpdateStock" action="UpdatePackage" method="post">
+    <form style="text-align: center;"id ="UpdateStock" action="UpdatePackage" method="post">
             Update Stock</br>
             <input type="text" id="ID" title="StockID" name="Package_ID" placeholder="Stock ID"></br>
             <input type="text" id="newStock" title="nStock" name="Stock" placeholder="New Stock Amount"></br>
-            <input class="btn" type="submit" value="Update" title="Update">
+            <input type="submit" value="Update" title="Update">
     </form>	
+    </div>
 </html>

@@ -12,6 +12,7 @@
         <title>Admin - Customer List</title>
     </head>
     <body>
+        <div style="text-align: center;">
         <% if (session.getAttribute("admin") == null) {
                 // If not logged in as admin
                 RequestDispatcher view = request.getRequestDispatcher("index.jsp");
@@ -24,15 +25,15 @@
     </body>
     <form method="post">
 
-        <table border="2">
+        <table align="center"style="text-align: center;"border="2">
             <tr>
             <td>ID</td>
-            <td>USERNAME</td>
-            <td>PASSWORD</td>
-            <td>FULLNAME</td>
-            <td>EMAIL</td>
-            <td>ADDRESS</td>
-            <td>PHONE</td>
+            <td>Username</td>
+            <td>Password</td>
+            <td>Fullname</td>
+            <td>Email</td>
+            <td>Address</td>
+            <td>Phone</td>
             </tr>
             <%
                 Class.forName("com.mysql.jdbc.Driver");
@@ -69,8 +70,8 @@
         <input class="btn" type="submit" value="Update" title="Update">
     </form>
     
-    <div class="register">
-        <form style=""id ="register" action="Register" method="post">
+    <div style="text-align: center;"class="register">
+        <form style="text-align: center;"id ="register" action="Register" method="post">
             Add New User</br>
             <input type="text" id="Name" title="Name" name="Name" placeholder="Fullname"></br>
             <input type="text" id="uName" title="Username" name="uName" placeholder="Username"></br>
@@ -80,5 +81,6 @@
             <input type="text" title="Phone Number" id="Phone" name="Phone" placeholder="Phone Number"></br>
             <input class="btn" type="submit" id="CreateRecord" value="Add New User" title="Register">
         </form>	
+    </div>
     </div>
 </html>

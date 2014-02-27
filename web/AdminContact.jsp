@@ -12,7 +12,7 @@
         <title>Admin - Contact Messages List</title>
     </head>
     <body>
-
+<div style="text-align: center;">
         <% if (session.getAttribute("admin") == null) {
                 // If not logged in as admin
                 RequestDispatcher view = request.getRequestDispatcher("index.jsp");
@@ -23,15 +23,15 @@
         <h1>List of Contact Messages Currently in Database</h1>
         <div><a href="Admin.jsp" title="cAdmin"style="text-decoration:none;" >
                 Back To Admin Panel</a></div><br>
-    </body>
-    <form method="post">
 
-        <table border="2">
+    <form  method="post">
+
+        <table align="center"style="text-align: center;" border="2">
             <tr>
-            <td>MESSAGE ID</td>
-            <td>NAME</td>
-            <td>EMAIL</td>
-            <td>MESSAGE</td>    
+            <th>Message ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message Details</th>    
             </tr>
             <%
                 Class.forName("com.mysql.jdbc.Driver");
@@ -56,6 +56,8 @@
             s.close();
             con.close();
         %>
-
-    </form>
+   
+    </form> 
+</div>
+</body>
 </html>
