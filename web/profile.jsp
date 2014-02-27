@@ -11,7 +11,6 @@
         <div title="HangoverHelpers" class="sloth"></div>
         <div style="margin-left: auto;margin-right:auto;">
             <a title="HangoverHelpers" href="index.jsp" class="alignleft">HangoverHelpers</a>
-            <p style="margin-top:-54px;" class="aligncenter">
             <table align="center">
             <th><a title="Home"href="index.jsp"class="test">Home</a></th>
             <th>&nbsp;</th>
@@ -21,7 +20,6 @@
             <th>&nbsp;</th>
             <th><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></th>
             </table>
-            </p>
             <p class="alignright">
                 <% 
                     String address = (String) session.getAttribute("address");
