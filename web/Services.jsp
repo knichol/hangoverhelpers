@@ -1,13 +1,17 @@
+<%@page import="java.io.PrintWriter"%>
+<%@page import="java.util.logging.Logger"%>
+<%@page import="java.util.logging.Level"%>
+<%@page import="java.sql.*"%>
+<%@page import="enterprise.web_jpa_war.entity.*"%>
+<%@page import="enterprise.web_jpa_war.servlet.*"%>
 <%@page import="java.util.*"%>
-<jsp:forward page="Welcome.jsp"/>
 <html>
     <head>
-        <title>HangoverHelpers - Home</title><link  rel="shortcut icon" href="favicon.ico"/>
+        <title>HangoverHelpers - Services</title><link  rel="shortcut icon" href="favicon.ico"/>
     <div id="background">
         <div title="HangoverHelpers" class="sloth"></div>
         <div style="margin-left: auto;margin-right:auto;">
             <a title="HangoverHelpers" href="index.jsp" class="alignleft">HangoverHelpers</a>
-            <p style="margin-top:-54px;" class="aligncenter">
             <table align="center">
                 <th><a title="Home"href="index.jsp"class="test">Home</a></th>
                 <th>&nbsp;</th>
@@ -17,7 +21,6 @@
                 <th>&nbsp;</th>
                 <th><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></th>
             </table>
-            </p>
             <p class="alignright">
                 <%  String uname = (String) session.getAttribute("uname");
                     String name2 = "";
@@ -29,12 +32,12 @@
                         name3 = "";
                         uname = "";
                     }
-                %>    
+                %> 
                 <a  class="test"href="profile.jsp" title="Cart"><%=uname%></font></a>
 
                 <a  class="test"href="register.jsp" title="Register"><%=name1a%></font></a>
             <td>&nbsp;</td>
-            <a class="test" title="Logout"href="Logout"><%=name3%></a>
+            <a class="test" href="Logout"><%=name3%></a>
             <a class="test"href="#login" title="Login"><%=name2%></a></p>
         </div>
     </div>
@@ -43,138 +46,64 @@
     <script src="script.js"></script> 
 </head>
 <body>
-    <div id="cleaners">
-        <div id="cleaner1" class="login">
-            <div>
-                <a href="#close" title="Close"class="close">X</a>
-                </br></br><font size ="5">Package One</font></br></br>
-                Cleaner comes in and cleans the rubbish in the house!</br></br>
-            </div>
-        </div>
-        <div id="cleaner2" class="login">
-            <div>
-                <a href="#close" title="Close"class="close">X</a>
-                </br></br><font size ="5">Package Two</font></br></br>
-                Cleaner comes in and cleans the rubbish in the house and the floor! </br></br>
-            </div>
-        </div>
-        <div id="cleaner3" class="login">
-            <div>
-                <a href="#close" title="Close"class="close">X</a>
-                </br></br><font size ="5">Package Three</font></br></br>
-                Cleaner comes in and cleans the rubbish in the house and the floor! 
-                They will also dispose of the rubbish is a healthy manner!</br></br>
-            </div>
-        </div>
-        <div id="cleaner4" class="login">
-            <div>
-                <a href="#close" title="Close"class="close">X</a>
-                </br></br><font size ="5">Package Four</font></br></br>
-                Cleaner comes in and cleans the rubbish in the house and the floor! 
-                They will also dispose of the rubbish is a healthy manner and clean the windows and any outside damage!</br></br>
-            </div>
-        </div>        
+    <div class="box">
+        </br>
+        <font style="color:white;font-family: Bradley hand ITC;font-size:200%;"> Packages</font></br>
+            <%
+                Connection conn = null;
+                Statement stmt = null;
+                Class.forName("com.mysql.jdbc.Driver");
+                conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
+
+                stmt = conn.createStatement();
+                String sqlStr = "SELECT * FROM Packages where Stock > '0'";
+                ResultSet rset = stmt.executeQuery(sqlStr);
+
+                if (rset.next()) {
+                    // ResultSet's cursor now pointing at first row 
+
+                    do {
+                        out.println("<td><form style='color:white;font-family: Bradley hand ITC;'method='get' action='cart'>");
+                        out.println("<input type='hidden' name='todo' value='add' />");
+                        // Print each row with a checkbox identified by book's id
+                        String id = rset.getString("Package_ID");
+                        //   out.println("<tr>");
+            %> 
+            <%out.println("<a><div style='margin-top:20px;'class='drink drink1'><p class='imgText1'>Package 1</p></div></a>");%>
+        <input class="btn3"type="checkbox" name="id" value="<%=id%>"/>
+        <% out.println(rset.getString("Name"));%>
+        <% out.println("&#8364;" + rset.getString("Price"));%>
+        <% out.println("<input style='width:30px;height:30ps;'type='text' value='1'name='Stock" + id + "'/>");%>
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <%              } while (rset.next());
+            String cart1 = "submit";
+            String cart2 = "submit";
+            String cart3 = "";
+            if (session.getAttribute("uname") == null) {
+                cart1 = "hidden";
+                cart2 = "hidden";
+                cart3 = "Login in to add Packages to Cart";
+            }
+            out.println("</br></br><input class='btn'type='" + cart1 + "' value='Add to Cart' />");
+        %>  <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <%
+                out.println("<input class='btn'type='" + cart2 + "' value='Clear' /><a href='#login'style='color:white;text-decoration:none;font-size:200%;'>" + cart3 + "</a>");
+                out.println("</form></td>");
+            }
+            // Show "View Shopping Cart" if the cart is not empty
+            session = request.getSession(false); // check if session exists
+            if (session != null) {
+                ShoppingCart cart;
+                synchronized (session) {
+                    // Retrieve the shopping cart for this session, if any. Otherwise, create one.
+                    cart = (ShoppingCart) session.getAttribute("cart");
+                    if (cart != null && !cart.isEmpty()) {
+                        // out.println("<P><a href='cart?todo=view'>View Shopping Cart</a></p>");
+                    }
+                }
+            }
+        %>
     </div>
-    <div class="box" ></br><font style="color:white;font-size:200%; font-family:Bradley hand ITC;">Services</font>
-        <div id="goods1"style="display:block;margin-top: 40px;text-align: center;">  
-
-            <a><div class="drink drink1"><p class="imgText1">Package 1</p></div></a>
-            <input class="btn btn2" type="submit"value="" title="Add To Cart" id="1">
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-
-            <a><div class="drink drink2"><p class="imgText1">Package 2</p></div></a>
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
-
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td> 
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-
-            <a><div class="drink drink3"><p class="imgText1">Package 3</p></div></a>
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
-
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-
-            <a><div class="drink drink4"><p class="imgText1">Package 4</p></div></a>
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
-
-            </br></br></br>
-
-            <a><div class="drink drink5"><p class="imgText1">Package 5</p></div></a> 
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
-
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-
-            <a><div class="drink drink6"><p class="imgText1">Package 6</p></div></a>
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
-
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-
-            <a><div class="drink drink7"><p class="imgText1">Package 7</p></div></a>
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
-
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-
-            <a><div class="drink drink8"><p class="imgText1">Package 8</p></div></a>
-            <input class="btn btn2"type="submit" title="Add To Cart"value="">
-
-            </br></br></br>
-
-            <a href="#cleaner1">
-                <div class="clean clean1">
-                    <p class="imgText2">Package One</p>
-                    <p class="imgText">Click for Details</p>
-                </div></a>
-            <input class="btn btn1"type="submit"title="Add To Cart"value="">
-
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-
-            <a href="#cleaner2">
-                <div class="clean clean2">
-                    <p class="imgText2">Package Two</p>
-                    <p class="imgText">Click for Details</p>
-                </div></a>
-            <input class="btn btn1"type="submit" title="Add To Cart"value="">
-
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-
-            <a href="#cleaner3">
-                <div class="clean clean3">
-                    <p class="imgText2">Package Three</p>
-                    <p class="imgText">Click for Details</p>
-                </div></a>
-            <input class="btn btn1"type="submit" title="Add To Cart"value="">
-
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-
-            <a href="#cleaner4">
-                <div class="clean clean4">
-                    <p class="imgText2">Package Four</p>
-                    <p class="imgText">Click for Details</p>
-                </div></a>
-            <input class="btn btn1"type="submit" title="Add To Cart"value="">           
-        </div> 
-    </div>
-    <div id="login" class="login">
-        <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <form id ="loginform" action="Validate"method="post">
-                </br></br><font size ="5">Login</font>
-                </br></br>
-                <input type="text" title="Username"id="uName"name="uName" placeholder="Username"></br></br>
-                <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
-                <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
-                <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a><div>
-                    <a href="#AdminLogin" title="AdminLogin"style="text-decoration:none;" >
-                        <font size="3"color="white" style="text-align:center;">Admin Login</font></a></div></form>
-        </div></div>
     <div id="login" class="login">
         <div>
             <a href="#close" title="Close" class="close">X</a>
