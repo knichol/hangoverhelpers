@@ -1,3 +1,4 @@
+<%@page import="java.text.SimpleDateFormat"%>
 <%@page import="enterprise.web_jpa_war.entity.*"%>
 <%@page import="enterprise.web_jpa_war.servlet.*"%>
 <%@page import="java.util.*"%>
@@ -179,28 +180,32 @@
             <div id="receipt" class="receipt">
                 <div>
                     <a href="#close" title="Close" class="close">X</a>
-                    <form  style="overflow: auto;"method="post">
+                    <form  method="post">
                         <table align="center"style="color:white;text-align: center;">
                             <tr>
-                            <th>Message ID</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>
-                            <th>Name</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>
-                            <th>Email</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>
-                            <th>Message Details</th>  <th>&nbsp;</th><th>&nbsp;</th>  <th>&nbsp;</th><th>&nbsp;</th>
-                            </tr>
+                            <th>Receipt No.</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>
+                            <th>Name</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>
+                            <th>Address</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>
+                            <th>Total Cost</th>  <th>&nbsp;</th><th>&nbsp;</th>  <th>&nbsp;</th>
+                            <th>Order Date</th>  <th>&nbsp;</th><th>&nbsp;</th>  <th>&nbsp;</th>
+                          
+                        </tr>
                             <%
                                 Class.forName("com.mysql.jdbc.Driver");
                                 Connection con = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
                                 Statement s = con.createStatement();
-                                ResultSet rs = s.executeQuery("select * from Contact");
-
+                                ResultSet rs = s.executeQuery("select * from Receipt where Name = '"+user+"'");
+                                
                                 while (rs.next()) {
                             %>
                             <tr>
-                            <td><%=rs.getString("message_ID")%></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                            <td><%=rs.getString("Name")%></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                            <td><%=rs.getString("Email")%></td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                            <td><%=rs.getString("Mail")%></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
+                            <td><%=rs.getString("Receipt_Num")%></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                            <td><%=rs.getString("Name")%></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                            <td><%=rs.getString("Address")%></td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                            <td><%=rs.getString("Total")%></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                            <td><%=rs.getTimestamp("Date")%></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                                
+                        </tr>
                             <%
                                 }
                             %>
