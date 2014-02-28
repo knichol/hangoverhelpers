@@ -76,10 +76,19 @@
         <% out.println("<input style='width:30px;height:30ps;'type='text' value='1'name='Stock" + id + "'/>");%>
         <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         <%              } while (rset.next());
-            out.println("</br></br><input class='btn'type='submit' value='Add to Cart' />");
+            String cart1 = "submit";
+            String cart2 = "submit";
+            String cart3 = "";
+            if (session.getAttribute("uname") == null) {
+                cart1 = "hidden";
+                cart2 = "hidden";
+                cart3 = "Login in to add Packages to Cart";
+            }
+            out.println("</br></br><input class='btn'type='" + cart1 + "' value='Add to Cart' />");
         %>  <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         <%
-                out.println("<input class='btn'type='reset' value='Clear' /></form></td>");
+                out.println("<input class='btn'type='" + cart2 + "' value='Clear' /><a href='#login'style='color:white;text-decoration:none;font-size:200%;'>"+cart3+"</a>");
+                out.println("</form></td>");
             }
             // Show "View Shopping Cart" if the cart is not empty
             session = request.getSession(false); // check if session exists
@@ -109,10 +118,10 @@
                     <a href="#AdminLogin" title="AdminLogin"style="text-decoration:none;" >
                         <font size="3"color="white" style="text-align:center;">Admin Login</font></a></div></form>
         </div></div>
-       <div id="AdminLogin" class="login">
+    <div id="AdminLogin" class="login">
         <div>
             <a href="#close" title="Close" class="close">X</a>
-           <form id =""action="AdminValidate"method="post">
+            <form id =""action="AdminValidate"method="post">
                 </br></br><font size ="5">Admin Login</font></br></br>
                 <input type="text" title="Admin"id="aName"name="aName" placeholder="Admin Name"></br></br>
                 <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>

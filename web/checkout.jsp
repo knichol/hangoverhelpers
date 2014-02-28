@@ -38,7 +38,7 @@
     <script src="script.js"></script> 
 </head>
 <body>    
-    <div class="receipt">
+    <div class="receipt1">
         <form style="text-align: center;color:white;">
             <%
 
@@ -49,20 +49,20 @@
                 ShoppingCart cart = null;
                 Class.forName("com.mysql.jdbc.Driver");
                 conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
-                // conn = pool.getConnection("mydb1127", "mydb112739");  // Get a connection from the pool
                 stmt = conn.createStatement();
+              
                 out.println("<h2 align='center'>Receipt</h2>");
                 // Retrieve the Cart
                 session = request.getSession(false);
                 if (session == null) {
-                    RequestDispatcher view = request.getRequestDispatcher("Services.jsp");
-                    view.include(request, response);
+                    out.println("<h3>Your Shopping cart is empty!</h3></body></html>");
+                    return;
                 }
                 synchronized (session) {
                     cart = (ShoppingCart) session.getAttribute("cart");
                     if (cart == null) {
-                        RequestDispatcher view = request.getRequestDispatcher("Services.jsp");
-                        view.include(request, response);
+                        out.println("<h3>Your Shopping cart is empty!</h3></body></html>");
+                        return;
                     }
                 }
 
@@ -104,15 +104,15 @@
                 cart.clear();   // empty cart
                 session.setAttribute("total", strAmount);
             %>
-            
+
             <h3 align='center'>Thank you.</h3>  
-            
+
             <a href="Services.jsp"style="text-decoration: none;">Back to Services</a>
 
         </form>
-            <form style="float: right;"action="Receipt" method="post">
-                <input class="btn"type="submit" value="Save Receipt">
-            </form>
+        <form style="float: right;"action="Receipt" method="post">
+            <input class="btn"type="submit" value="Save Receipt">
+        </form>
     </div>
 </body>
 </html>

@@ -395,7 +395,6 @@ input:hover,textarea:hover,select:hover{
     -moz-box-shadow:0 0 10px #7DFDFE;
 }
 .receipt1 { 
-    overflow: auto;
     margin: 10% auto;
     text-align: center;
     text-decoration: none;
