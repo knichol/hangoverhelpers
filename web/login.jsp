@@ -9,13 +9,13 @@
             <p style="margin-top:-54px; margin-left:-50px;" class="aligncenter">
             <table border="0">
                 <tr>
-                    <td><a title="Home"href="index.jsp"class="test">Home</a></td>
-                    <td>&nbsp;</td>
-                    <td><a title="Services" href="Services.jsp"class="test">Services</a></td>
-                    <td>&nbsp;</td>
-                    <td><a href="About.jsp"title="About Us"class="test">About</a></td>
-                    <td>&nbsp;</td>
-                    <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
+                <td><a title="Home"href="index.jsp"class="test">Home</a></td>
+                <td>&nbsp;</td>
+                <td><a title="Services" href="Services.jsp"class="test">Services</a></td>
+                <td>&nbsp;</td>
+                <td><a href="About.jsp"title="About Us"class="test">About</a></td>
+                <td>&nbsp;</td>
+                <td><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></td>
                 </tr></table></p>                       
             <p class="alignright">
                 <% String address = (String) session.getAttribute("address1");
@@ -31,7 +31,7 @@
                         name2 = "Login";
                         name3 = "";
                         user = "";
-                        uname="";
+                        uname = "";
                     }
                 %>   
                 <a  class="test"href="profile.jsp" title="Cart"><%=uname%></font></a>
@@ -47,13 +47,13 @@
 </head>
 <body>
     <div class="help"><form id ="loginform" action="Validate"method="post">
-        </br>Login</br></br>
-        <input type="text" title="Username"id="uName"name="uName" placeholder="Username"></br></br>
-        <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
-        <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
-        <a href="register.jsp" title="Register"style="text-decoration:none;" >
-            <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></form>
+            </br>Login</br></br>
+            <input type="text" title="Username"id="uName"name="uName" placeholder="Username"></br></br>
+            <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
+            <input class="btn"type="submit" id="CreateRecord"value="Login" title="Login"></br></br>
+            <a href="register.jsp" title="Register"style="text-decoration:none;" >
+                <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></form>
     </div>
-    
+
 </body>
 </html>

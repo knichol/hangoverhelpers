@@ -6,7 +6,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- *
  * @author Kevin
  */
 
@@ -24,7 +23,6 @@ public class Contact {
     @Column(name = "Mail")
     private String message;
 
-    
     public Contact() {
     }
 
@@ -45,5 +43,5 @@ public class Contact {
     public String getMessage() {
         return this.message;
     }
-    
+
 }

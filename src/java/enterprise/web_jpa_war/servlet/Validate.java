@@ -17,33 +17,33 @@ public class Validate extends HttpServlet {
 
             String uname = request.getParameter("uName");
             String pass = request.getParameter("Password");
-         
+
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
             Statement s = con.createStatement();
             ResultSet rs = s.executeQuery("select * from Customer where uName ='" + uname + "'");
-            
+
             if (rs.next()) {
                 if ((uname.equals(rs.getString(7))) && (pass.equals(rs.getString(5)))) {
-                        // New session creation
-                        HttpSession session = request.getSession(true);
-                        
-                        // Setting session attributes on login
-                        session.setAttribute("uname", uname);
-                        session.setAttribute("user", rs.getNString("Name"));
-                        session.setAttribute("email", rs.getNString("Email"));
-                        session.setAttribute("address", rs.getNString("Address"));
-                        session.setAttribute("phone", rs.getNString("Phone"));
+                    // New session creation
+                    HttpSession session = request.getSession(true);
 
-                        // Creating new cart session
-                        ShoppingCart cart = new ShoppingCart();
-                        session.setAttribute("cart", cart);
+                    // Setting session attributes on login
+                    session.setAttribute("uname", uname);
+                    session.setAttribute("user", rs.getNString("Name"));
+                    session.setAttribute("email", rs.getNString("Email"));
+                    session.setAttribute("address", rs.getNString("Address"));
+                    session.setAttribute("phone", rs.getNString("Phone"));
 
-                        // Send request to Welcome.jsp page
-                        RequestDispatcher view = request.getRequestDispatcher("index.jsp");
+                    // Creating new cart session
+                    ShoppingCart cart = new ShoppingCart();
+                    session.setAttribute("cart", cart);
 
-                        view.forward(request, response);
-                    
+                    // Send request to Welcome.jsp page
+                    RequestDispatcher view = request.getRequestDispatcher("index.jsp");
+
+                    view.forward(request, response);
+
                 } else {
                     out.println("<div style='font-size:30px; margin-top:100px;color:white'>"
                             + "Username and password do not match!</div>");
@@ -51,8 +51,7 @@ public class Validate extends HttpServlet {
 
                     view.include(request, response);
                 }
-            } 
-            else {
+            } else {
                 out.println("<div style='font-size:30px; color:red'>"
                         + "Please fill userid and password" + "</div >");
 

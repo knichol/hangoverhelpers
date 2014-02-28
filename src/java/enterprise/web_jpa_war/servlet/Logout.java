@@ -19,11 +19,6 @@ public class Logout extends HttpServlet {
 
             response.sendRedirect("index.jsp");
 
-            // Might need later or not. Who knows? ^_^
-            /*out.println("<div style='float:left;font-size:25px;'>" + "click here to "
-             + "<a href='index.jsp'>go to index</a></div>");
-             out.println("<h1 align='center'>" + "Logout Sucessfully..." + "</h1>");*/
-
         } finally {
             out.close();
         }
