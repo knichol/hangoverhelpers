@@ -61,32 +61,28 @@
 
                 if (rset.next()) {
                     // ResultSet's cursor now pointing at first row 
-
                     do {
                         out.println("<td><form style='color:white;font-family: Bradley hand ITC;'method='get' action='cart'>");
                         out.println("<input type='hidden' name='todo' value='add' />");
                         // Print each row with a checkbox identified by book's id
                         String id = rset.getString("Package_ID");
-                        //   out.println("<tr>");
-            %> 
-            <%out.println("<a><div style='margin-top:20px;'class='drink drink1'><p class='imgText1'>Package 1</p></div></a>");%>
+                        out.println("<a><div style='margin-top:20px;'class='drink "+rset.getString(2)+"'><p class='imgText1'>"+rset.getString(2)+"</p></div></a>");%>
         <input class="btn3"type="checkbox" name="id" value="<%=id%>"/>
         <% out.println(rset.getString("Name"));%>
         <% out.println("&#8364;" + rset.getString("Price"));%>
-        <% out.println("<input style='width:30px;height:30ps;'type='text' value='1'name='Stock" + id + "'/>");%>
-        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-        <%              } while (rset.next());
-            String cart1 = "submit";
-            String cart2 = "submit";
-            String cart3 = "";
-            if (session.getAttribute("uname") == null) {
-                cart1 = "hidden";
-                cart2 = "hidden";
-                cart3 = "Login in to add Packages to Cart";
-            }
-            out.println("</br></br><input class='btn'type='" + cart1 + "' value='Add to Cart' />");
-        %>  <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-        <%
+        <% out.println("<input style='width:30px;height:30ps;'type='text' value='1'name='Stock" + id + "'/>");
+                    out.println("<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
+                } while (rset.next());
+                String cart1 = "submit";
+                String cart2 = "submit";
+                String cart3 = "";
+                if (session.getAttribute("uname") == null) {
+                    cart1 = "hidden";
+                    cart2 = "hidden";
+                    cart3 = "Login in to add Packages to Cart";
+                }
+                out.println("</br></br><input class='btn'type='" + cart1 + "' value='Add to Cart' />");
+                out.println("<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
                 out.println("<input class='btn'type='" + cart2 + "' value='Clear' /><a href='#login'style='color:white;text-decoration:none;font-size:200%;'>" + cart3 + "</a>");
                 out.println("</form></td>");
             }
@@ -98,7 +94,6 @@
                     // Retrieve the shopping cart for this session, if any. Otherwise, create one.
                     cart = (ShoppingCart) session.getAttribute("cart");
                     if (cart != null && !cart.isEmpty()) {
-                        // out.println("<P><a href='cart?todo=view'>View Shopping Cart</a></p>");
                     }
                 }
             }
@@ -128,6 +123,7 @@
                 <input class="btn"type="submit" value="Login" title="Login"></br></br>
                 <a href="register.jsp" title="Register"style="text-decoration:none;" >
                     <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></form>
-        </div></div>
+        </div>
+    </div>
 </body>
 </html>
