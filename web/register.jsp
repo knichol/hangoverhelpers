@@ -45,7 +45,7 @@
             <input type="text" id="Name" title="Name" name="Name" placeholder="Fullname"></br></br>
             <input type="text" id="uName" title="Username" name="uName" placeholder="Username"></br></br>
             <input type="password" title="Password" id="Password" name="Password" placeholder="Password"></br></br>
-            <input type="text" title="Email" id="Email "name="Email" placeholder="Email"></br></br>
+            <input type="email" title="Email" id="Email "name="Email" placeholder="Email"></br></br>
             <input type="text" title="Address" id="Address" name="Address" placeholder="Address"></br></br>
             <input type="text" title="Phone Number" id="Phone" name="Phone" placeholder="Phone Number"></br></br>
             <input class="btn" type="submit" id="CreateRecord" value="Register" title="Register">

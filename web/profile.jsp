@@ -4,7 +4,6 @@
 <%@page import="java.util.*"%>
 <%@page import="java.sql.*"%>
 <%@page import="javax.servlet.*;"%>
-<%--<jsp:include page="Services.jsp" />--%>
 <html>
     <head>
         <title>HangoverHelpers - Cart</title><link  rel="shortcut icon" href="favicon.ico"/>
@@ -62,7 +61,7 @@
                     Email: <%=email%></br>
                     Address: <%=address%></br>
                     Phone: <%=phone%></br></br>
-                    <a href="#receipt" style="width: 60px;"class="btn"title="Receipt"style="text-decoration:none;" >
+                    <a href="#receipt" style="width: 60px;"class="btn"title="View Receipts"style="text-decoration:none;" >
                         <font size="3"style="text-align:center;">View Previous Receipts</font></a>
                 </form>
             </div>
@@ -100,13 +99,12 @@
                                 return;
                             }
                             for (String id : ids) {
-                                sqlStr = "SELECT * FROM Packages WHERE Package_ID = " + id;// for debugging
+                                sqlStr = "SELECT * FROM Packages WHERE Package_ID = " + id;
                                 rset = stmt.executeQuery(sqlStr);
-                                rset.next(); // Expect only one row in ResultSet
+                                rset.next(); 
                                 String title = rset.getString("Name");
                                 float price = rset.getFloat("Price");
 
-                                // Get quantity ordered - no error check!
                                 int Stock = Integer.parseInt(request.getParameter("Stock" + id));
                                 int idInt = Integer.parseInt(id);
                                 if (todo.equals("add")) {
@@ -117,11 +115,9 @@
                             }
 
                         } else if (todo.equals("remove")) {
-                            String id = request.getParameter("id");  // Only one id for remove case
+                            String id = request.getParameter("id"); 
                             cart.remove(Integer.parseInt(id));
                         }
-
-                        // All cases - Always display the shopping cart
                         if (cart.isEmpty()) {
                             out.println("<p style='text-align:center;'>Your shopping cart is empty</p>");
                         } else {
@@ -167,9 +163,7 @@
                             out.println("</table>");
                         }
                         out.println("<p style='text-align:center;'><a style='color:white;text-decoration:none;'href='Welcome.jsp'>Select More Packages</a></p>");
-                        // Display the Checkout
                         if (!cart.isEmpty()) {
-                            //                out.println("<br /><br />");
                             out.println("<form style='text-align:center;'method='get' action='checkout'>");
                             out.println("<input class='btn'type='submit' value='CheckOut'/>");
                             out.println("</form>");

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : Admin
-    Created on : Feb 27, 2014, 12:38:22 PM
-    Author     : Kevin
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
