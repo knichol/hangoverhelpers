@@ -50,7 +50,7 @@
                 Class.forName("com.mysql.jdbc.Driver");
                 conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
                 stmt = conn.createStatement();
-              
+
                 out.println("<h2 align='center'>Receipt</h2>");
                 // Retrieve the Cart
                 session = request.getSession(false);

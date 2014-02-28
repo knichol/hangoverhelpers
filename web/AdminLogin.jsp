@@ -13,12 +13,12 @@
     <body>
         <div style="text-align: center;">
 
-        <h1>Admin Login</h1>
-        <div class="help"><form id =""action="AdminValidate"method="post">
-                </br>Login</br>
-                <input type="text" title="Admin"id="aName"name="aName" placeholder="Admin Name"></br>
-                <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br>
-                <input class="btn"type="submit" value="Login" title="Login"></br></form>
-    </body>
-        
-</html>
+            <h1>Admin Login</h1>
+            <div class="help"><form id =""action="AdminValidate"method="post">
+                    </br>Login</br>
+                    <input type="text" title="Admin"id="aName"name="aName" placeholder="Admin Name"></br>
+                    <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br>
+                    <input class="btn"type="submit" value="Login" title="Login"></br></form>
+                </body>
+
+                </html>

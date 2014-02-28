@@ -60,10 +60,10 @@
                     <a href="#AdminLogin" title="AdminLogin"style="text-decoration:none;" >
                         <font size="3"color="white" style="text-align:center;">Admin Login</font></a></div></form>
         </div></div>
-       <div id="AdminLogin" class="login">
+    <div id="AdminLogin" class="login">
         <div>
             <a href="#close" title="Close" class="close">X</a>
-           <form id =""action="AdminValidate"method="post">
+            <form id =""action="AdminValidate"method="post">
                 </br><font size ="5">Admin Login</font></br></br>
                 <input type="text" title="Admin"id="aName"name="aName" placeholder="Admin Name"></br></br>
                 <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>

@@ -56,7 +56,7 @@
                 conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
 
                 stmt = conn.createStatement();
-                String sqlStr = "SELECT * FROM Packages";
+                String sqlStr = "SELECT * FROM Packages where Stock > '0'";
                 ResultSet rset = stmt.executeQuery(sqlStr);
 
                 if (rset.next()) {
@@ -87,7 +87,7 @@
             out.println("</br></br><input class='btn'type='" + cart1 + "' value='Add to Cart' />");
         %>  <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         <%
-                out.println("<input class='btn'type='" + cart2 + "' value='Clear' /><a href='#login'style='color:white;text-decoration:none;font-size:200%;'>"+cart3+"</a>");
+                out.println("<input class='btn'type='" + cart2 + "' value='Clear' /><a href='#login'style='color:white;text-decoration:none;font-size:200%;'>" + cart3 + "</a>");
                 out.println("</form></td>");
             }
             // Show "View Shopping Cart" if the cart is not empty

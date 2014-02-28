@@ -7,15 +7,15 @@
         <div title="HangoverHelpers" class="sloth"></div>
         <div style="margin-left: auto;margin-right:auto;">
             <a title="HangoverHelpers" href="index.jsp" class="alignleft">HangoverHelpers</a>
-           <p style="margin-top:-54px;" class="aligncenter">
+            <p style="margin-top:-54px;" class="aligncenter">
             <table align="center">
-            <th><a title="Home"href="index.jsp"class="test">Home</a></th>
-            <th>&nbsp;</th>
-            <th><a title="Services" href="Services.jsp"class="test">Services</a></th>
-            <th>&nbsp;</th>
-            <th><a href="About.jsp"title="About Us"class="test">About</a></td>
-            <th>&nbsp;</th>
-            <th><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></th>
+                <th><a title="Home"href="index.jsp"class="test">Home</a></th>
+                <th>&nbsp;</th>
+                <th><a title="Services" href="Services.jsp"class="test">Services</a></th>
+                <th>&nbsp;</th>
+                <th><a href="About.jsp"title="About Us"class="test">About</a></td>
+                <th>&nbsp;</th>
+                <th><a title="Contact Us" href="Contact.jsp"class="test">Contact</a></th>
             </table>
             </p>
             <p class="alignright">
@@ -79,7 +79,7 @@
         <div id="goods1"style="display:block;margin-top: 40px;text-align: center;">  
 
             <a><div class="drink drink1"><p class="imgText1">Package 1</p></div></a>
-                <input class="btn btn2" type="submit"value="" title="Add To Cart" id="1">
+            <input class="btn btn2" type="submit"value="" title="Add To Cart" id="1">
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
             <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
 
@@ -189,10 +189,10 @@
                     <a href="#AdminLogin" title="AdminLogin"style="text-decoration:none;" >
                         <font size="3"color="white" style="text-align:center;">Admin Login</font></a></div></form>
         </div></div>
-       <div id="AdminLogin" class="login">
+    <div id="AdminLogin" class="login">
         <div>
             <a href="#close" title="Close" class="close">X</a>
-           <form id =""action="AdminValidate"method="post">
+            <form id =""action="AdminValidate"method="post">
                 </br></br><font size ="5">Admin Login</font></br></br>
                 <input type="text" title="Admin"id="aName"name="aName" placeholder="Admin Name"></br></br>
                 <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>

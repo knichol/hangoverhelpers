@@ -188,14 +188,14 @@
                             <th>Address</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>
                             <th>Total Cost</th>  <th>&nbsp;</th><th>&nbsp;</th>  <th>&nbsp;</th>
                             <th>Order Date</th>  <th>&nbsp;</th><th>&nbsp;</th>  <th>&nbsp;</th>
-                          
-                        </tr>
+
+                            </tr>
                             <%
                                 Class.forName("com.mysql.jdbc.Driver");
                                 Connection con = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
                                 Statement s = con.createStatement();
-                                ResultSet rs = s.executeQuery("select * from Receipt where Name = '"+user+"'");
-                                
+                                ResultSet rs = s.executeQuery("select * from Receipt where Name = '" + user + "'");
+
                                 while (rs.next()) {
                             %>
                             <tr>
@@ -204,8 +204,8 @@
                             <td><%=rs.getString("Address")%></td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                             <td><%=rs.getString("Total")%></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
                             <td><%=rs.getTimestamp("Date")%></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                                
-                        </tr>
+
+                            </tr>
                             <%
                                 }
                             %>
