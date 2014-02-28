@@ -105,13 +105,15 @@
                 session.setAttribute("total", strAmount);
             %>
         </form>
-        <form style="float: centre;"action="Receipt" method="post">
+        <form style="text-align: center;"action="Receipt" method="post">
             <input class="btn"type="submit" value="Save Receipt">
         </form>
-            <form>   <h3 align='center'>Thank you.</h3>  
-
-            <a href="Services.jsp"style="text-decoration: none;">Back to Services</a>
-            </form>
+        <table style="font-family: Bradley hand ITC;color:white;font-size:150%;"align="center">
+            <tr>
+            <th align='center'>Thank you.</th>  </tr><tr>
+            <th><a href="Services.jsp"style="text-decoration: none;">Back to Services</a></th>
+        </tr>
+        </table>
     </div>
 </body>
 </html>
