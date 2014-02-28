@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package enterprise.web_jpa_war.entity;
 
 import java.io.Serializable;
@@ -23,7 +22,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  *
  * @author Kevin
  */
-
 @Entity
 @Table(name = "Packages")
 @XmlRootElement
@@ -34,6 +32,7 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Packages.findByPrice", query = "SELECT p FROM Packages p WHERE p.price = :price"),
     @NamedQuery(name = "Packages.findByStock", query = "SELECT p FROM Packages p WHERE p.stock = :stock")})
 public class Packages implements Serializable {
+
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
@@ -111,5 +110,5 @@ public class Packages implements Serializable {
     public String toString() {
         return "enterprise.web_jpa_war.entity.Packages[ packageID=" + packageID + " ]";
     }
-    
+
 }

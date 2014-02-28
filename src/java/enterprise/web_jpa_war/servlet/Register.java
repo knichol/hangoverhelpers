@@ -24,14 +24,6 @@ public class Register extends HttpServlet {
     @Resource
     private UserTransaction utx;
 
-    /**
-     * Processes requests for both HTTP
-     * <code>GET</code> and
-     * <code>POST</code> methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException {
         assert emf != null;  //Make sure injection went through correctly.
@@ -49,20 +41,14 @@ public class Register extends HttpServlet {
             //Create a person instance out of it
             Customer cust = new Customer(uname, name, pass, email, address, phone);
 
-            //begin a transaction
             utx.begin();
-            //create an em. 
-            //Since the em is created inside  transaction, it is associsated with 
-            //the transaction
             em = emf.createEntityManager();
-            //persist the person entity
             em.persist(cust);
-            //commit transaction which will trigger the em to 
-            //commit newly created entity into database
             utx.commit();
 
             //New session creation
             HttpSession session = request.getSession(true);
+
             //setting attribute on session
             session.setAttribute("uname", uname);
             session.setAttribute("user", name);
@@ -79,9 +65,6 @@ public class Register extends HttpServlet {
 
             view.forward(request, response);
 
-            //Forward to ListPerson servlet to list persons along with the newly
-            //created person above
-            request.getRequestDispatcher("ListPerson").forward(request, response);
         } catch (Exception ex) {
             throw new ServletException(ex);
         } finally {
@@ -94,8 +77,7 @@ public class Register extends HttpServlet {
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
-     * Handles the HTTP
-     * <code>GET</code> method.
+     * Handles the HTTP <code>GET</code> method.
      *
      * @param request servlet request
      * @param response servlet response
@@ -106,8 +88,7 @@ public class Register extends HttpServlet {
     }
 
     /**
-     * Handles the HTTP
-     * <code>POST</code> method.
+     * Handles the HTTP <code>POST</code> method.
      *
      * @param request servlet request
      * @param response servlet response
