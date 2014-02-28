@@ -104,8 +104,6 @@
                 cart.clear();   // empty cart
                 session.setAttribute("total", strAmount);
             %>
-
-           
         </form>
         <form style="float: centre;"action="Receipt" method="post">
             <input class="btn"type="submit" value="Save Receipt">
