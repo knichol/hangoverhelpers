@@ -87,7 +87,7 @@
             out.println("</br></br><input class='btn'type='" + cart1 + "' value='Add to Cart' />");
         %>  <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
         <%
-                out.println("<input class='btn'type='" + cart2 + "' value='Clear' /><a href='#login'style='color:white;text-decoration:none;font-size:200%;'>"+cart3+"</a>");
+                out.println("<input class='btn'type='" + cart2 + "' value='Clear' /><a href='#login'style='color:white;text-decoration:none;font-size:200%;'>" + cart3 + "</a>");
                 out.println("</form></td>");
             }
             // Show "View Shopping Cart" if the cart is not empty

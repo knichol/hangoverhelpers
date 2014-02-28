@@ -50,7 +50,7 @@
                 Class.forName("com.mysql.jdbc.Driver");
                 conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
                 stmt = conn.createStatement();
-              
+
                 out.println("<h2 align='center'>Receipt</h2>");
                 // Retrieve the Cart
                 session = request.getSession(false);
@@ -108,10 +108,10 @@
         <form style="float: centre;"action="Receipt" method="post">
             <input class="btn"type="submit" value="Save Receipt">
         </form>
-            <form>   <h3 align='center'>Thank you.</h3>  
+        <form>   <h3 align='center'>Thank you.</h3>  
 
             <a href="Services.jsp"style="text-decoration: none;">Back to Services</a>
-            </form>
+        </form>
     </div>
 </body>
 </html>
