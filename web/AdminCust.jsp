@@ -1,5 +1,5 @@
 <%-- 
-    Document   : Admin
+    Document   : AdminCust
     Created on : Feb 27, 2014, 12:38:22 PM
     Author     : Kevin
 --%>
@@ -28,12 +28,12 @@
                 <table align="center"style="text-align: center;"border="2">
                     <tr>
                     <td>ID</td>
-                    <td>Username</td>
-                    <td>Password</td>
-                    <td>Fullname</td>
-                    <td>Email</td>
-                    <td>Address</td>
-                    <td>Phone</td>
+                    <td>USERNAME</td>
+                    <td>PASSWORD</td>
+                    <td>FULLNAME</td>
+                    <td>EMAIL</td>
+                    <td>ADDRESS</td>
+                    <td>PHONE</td>
                     </tr>
                     <%
                         Class.forName("com.mysql.jdbc.Driver");

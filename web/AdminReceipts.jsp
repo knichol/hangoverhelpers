@@ -1,5 +1,5 @@
 <%-- 
-    Document   : Admin
+    Document   : AdminReceipts
     Created on : Feb 27, 2014, 12:38:22 PM
     Author     : Kevin
 --%>
@@ -9,7 +9,7 @@
     <head>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Admin - Contact Messages List</title>
+        <title>Admin - Receipts List</title>
     </head>
     <body>
         <div style="text-align: center;">
@@ -20,7 +20,7 @@
                 }
             %>
 
-            <h1>List of Contact Messages Currently in Database</h1>
+            <h1>List of Receipts Currently in Database</h1>
             <div><a href="Admin.jsp" title="cAdmin"style="text-decoration:none;" >
                     Back To Admin Panel</a></div><br>
 
@@ -28,24 +28,26 @@
 
                 <table align="center"style="text-align: center;" border="2">
                     <tr>
-                    <th>MESSAGE ID</th>
+                    <th>RECEIPT#</th>
                     <th>NAME</th>
-                    <th>EMAIL</th>
-                    <th>MESSAGE CONTENTS</th>    
+                    <th>ADDRESS</th>
+                    <th>TOTAL</th>   
+                    <th>ORDER DATE</th>   
                     </tr>
                     <%
                         Class.forName("com.mysql.jdbc.Driver");
                         Connection con = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
                         Statement s = con.createStatement();
-                        ResultSet rs = s.executeQuery("select * from Contact");
+                        ResultSet rs = s.executeQuery("select * from Receipt");
 
                         while (rs.next()) {
                     %>
                     <tr>
-                    <td><%=rs.getString("message_ID")%></td>
+                    <td><%=rs.getString("Receipt_Num")%></td>
                     <td><%=rs.getString("Name")%></td>
-                    <td><%=rs.getString("Email")%></td> 
-                    <td><%=rs.getString("Mail")%></td>
+                    <td><%=rs.getString("Address")%></td> 
+                    <td><%=rs.getString("total")%></td> 
+                    <td><%=rs.getTimestamp("Date")%></td>
                     </tr>
                     <%
                         }

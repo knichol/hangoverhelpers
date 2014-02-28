@@ -27,10 +27,10 @@
 
                 <table align="center"style="text-align: center;"border="2">
                     <tr>
-                    <th>Package ID</th>
-                    <th>Package Name</th>
-                    <th>Package Price</th>
-                    <th>Remaining Stock</th>    
+                    <th>PACKAGE ID</th>
+                    <th>PACKAGE NAME</th>
+                    <th>PACKAGE PRICE</th>
+                    <th>REMAINING STOCK</th>    
                     </tr>
                     <%
                         Class.forName("com.mysql.jdbc.Driver");
