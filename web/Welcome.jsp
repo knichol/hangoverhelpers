@@ -56,7 +56,7 @@
                 conn = DriverManager.getConnection("jdbc:mysql://danu2.it.nuigalway.ie:3306/mydb1127", "mydb1127", "mydb112739");
 
                 stmt = conn.createStatement();
-                String sqlStr = "SELECT * FROM Packages";
+                String sqlStr = "SELECT * FROM Packages where Stock > '0'";
                 ResultSet rset = stmt.executeQuery(sqlStr);
 
                 if (rset.next()) {
