@@ -66,7 +66,7 @@
                         out.println("<input type='hidden' name='todo' value='add' />");
                         // Print each row with a checkbox identified by book's id
                         String id = rset.getString("Package_ID");
-                        out.println("<a><div style='margin-top:20px;'class='drink "+rset.getString(2)+"'><p class='imgText1'>"+rset.getString(2)+"</p></div></a>");%>
+                        out.println("<a href='#" + rset.getString(2) + "'><div  style='margin-top:20px;'class='drink " + rset.getString(2) + "'><p class='imgText1'>" + rset.getString(2) + "</br>Click </br>for Details</p></div></a>");%>
         <input class="btn3"type="checkbox" name="id" value="<%=id%>"/>
         <% out.println(rset.getString("Name"));%>
         <% out.println("&#8364;" + rset.getString("Price"));%>
@@ -99,6 +99,192 @@
             }
         %>
     </div>
+    <div id="Food1" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form>
+                </br></br><font size ="5">Food Package 1</font>
+                </br></br>
+                <ol>
+                    <li>Water</li>
+                    <li>Hunky Dory Cheese & Onion</li>
+                    <li>Twister Ice Cream</li>
+                    <li>Apple</li>
+                    <li>Curry Chips</li>
+                    <li>Golden Crisp</li>
+                    <li>Mighty Munch</li>
+                    <li>Snack Box</li>
+                </ol>
+            </form>
+
+        </div></div>
+    <div id="Food2" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form>
+                </br></br><font size ="5">Food Package 2</font>
+                </br></br>
+                <ol>
+                    <li>Pineapple</li>
+                    <li>Diet Coke</li>
+                    <li>Hunky Dory Buffalo</li>
+                    <li>Thai rings</li>
+                    <li>Hamburger</li>
+                    <li>Coke Calippo</li>
+                    <li>Mighty Munch</li>
+                    <li>Chicken Burger</li>
+                </ol>
+            </form>
+
+        </div></div>
+    <div id="Food3" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form>
+                </br></br><font size ="5">Food Package 3</font>
+                <ol>
+                    <li>Ryvita Berry</li>
+                    <li>Lucozade Sport</li>
+                    <li>Milkyway</li>
+                    <li>Ready Salted Pringles</li>
+                    <li>Curry Cheese Chips</li>
+                    <li>Orange Calippo</li>
+                    <li>Mighty Munch</li>
+                    <li>Sausage Roll</li>
+                </ol>
+
+            </form>
+
+        </div></div>
+    <div id="Food4" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form>
+                </br></br><font size ="5">Food Package 4</font>
+                <li>Watermelon</li>
+                <li>Lucozade</li>
+                <li>Prawn Cocktail Pringles</li>
+                <li>Cheese & Onion Taytos</li>
+                <li>Chicken Fillet Roll</li>
+                <li>Strawberry Slushie</li>
+                <li>Mighty Munch</li>
+                <li>Vegaterian Pizza</li>
+                </ol>
+            </form>
+
+        </div></div>
+    <div id="Food5" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form>
+                </br></br><font size ="5">Food Package 5</font>
+                <ol>
+                    <li>Rice Cakes</li>
+                    <li>Powerade</li>
+                    <li>Popcorn</li>
+                    <li>Salt & Vinegar Pringles</li>
+                    <li>Mushroom Pizza</li>
+                    <li>Blueberry Slushie</li>
+                    <li>Mighty Munch</li>
+                    <li>Chicken Pizza</li>
+                </ol>
+            </form>
+
+        </div></div>
+    <div id="Food6" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form>
+                </br></br><font size ="5">Food Package 6</font>
+                <ol>
+                    <li>Bombay Mix</li>
+                    <li>7up</li>
+                    <li>Hunky Dory Salt & Vinegar</li>
+                    <li>Onion rings</li>
+                    <li>Margherita  Pizza</li>
+                    <li>Iceburger</li>
+                    <li>Mighty Munch</li>
+                    <li>Breakfast Roll</li>
+                </ol>
+            </form>
+
+        </div></div>
+    <div id="Food7" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form>
+                </br></br><font size ="5">Food Package 7</font>
+                <ol>
+                    <li>Green Seedless Grapes</li>
+                    <li>Fanta Orange</li>
+                    <li>Sour Cream & Onion Pringles</li>
+                    <li>Galaxy Caramel</li>
+                    <li>Pepperoni Pizza</li>
+                    <li>Magnum</li>
+                    <li>Mighty Munch</li>
+                    <li>Chips</li>
+                </ol>
+            </form>
+
+        </div></div>
+    <div id="Food8" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form>
+                </br></br><font size ="5">Food Package 8</font>
+                <ol>
+                    <li>Pear</li>
+                    <li>Tea</li>
+                    <li>Green Olive</li>
+                    <li>Bournville</li>
+                    <li>Baby Sausage Rolls</li>
+                    <li>Loop De Loop</li>
+                    <li>Mighty Munch</li>
+                    <li>Kebab</li>
+                </ol>
+            </form>
+
+        </div></div>
+    <div id="Clean1" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form>
+                </br></br><font size ="5">Cleaning Package 1</font>
+                <li>This package hires our helpers to do a quick clean of items that are left 
+                    after the party!</li>
+            </form>
+
+        </div></div>
+    <div id="Clean2" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form>
+                </br></br><font size ="5">Cleaning Package 2</font>
+                <li>This package hires our helpers to do a quick clean of items that are left 
+                    after the party & cleans the floor etc.</li>
+            </form>
+
+        </div></div>
+    <div id="Clean3" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form>
+                </br></br><font size ="5">Cleaning Package 3</font>
+                <li>This package hires our helpers to do a quick clean of the floor, windows,couches & gets 
+                    rid of all rubbish</li>
+            </form>
+
+        </div></div>
+    <div id="Clean4" class="login">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form>
+                </br></br><font size ="5">Cleaning Package 4</font>
+                <li>The Ultimate package lets hires Helpers to clean the entire house!</li>
+
+            </form>
+
+        </div></div>
     <div id="login" class="login">
         <div>
             <a href="#close" title="Close" class="close">X</a>
