@@ -74,7 +74,10 @@
                 <input type="password" title="Password"id="Password" name="Password" placeholder="Password" ></br></br>
                 <input class="btn"type="submit" value="Login" title="Login"></br></br>
                 <a href="register.jsp" title="Register"style="text-decoration:none;" >
-                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></form>
-        </div></div>
+                    <font size="3"color="white" style="text-align:center;">Not Registered?</font></a></br>
+             <a href="#login" title="Customer Login"style="text-decoration:none;" >
+                        <font size="3"color="white" style="text-align:center;">Customer Login</font></a></form>
+        </div>
+    </div>
 </body>
 </html>
