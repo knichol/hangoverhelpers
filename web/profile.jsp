@@ -142,7 +142,7 @@
                                 out.println("<td>&#8364;" + price + "</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
 
                                 out.println("<td><form method='get'>");
-                                out.println("<input type='hidden' name='todo' value='update' />");
+                                out.println("<input type='hidden' name='addToCart' value='update' />");
                                 out.println("<input type='hidden' name='id' value='" + id + "' />");
                                 out.println("<input style='width:50px;height:30px;'type='text' size='3' name='Stock" + id + "' value='" + Stock + "'/>");
                                 out.println("<input class='btn'type='submit' value='Update' />");
@@ -150,7 +150,7 @@
 
                                 out.println("<td><form method='get'>");
                                 out.println("<input class='btn'type='submit' value='Remove'/>");
-                                out.println("<input type='hidden' name='todo' value='remove'/>");
+                                out.println("<input type='hidden' name='addToCart' value='remove'/>");
                                 out.println("<input type='hidden' name='id' value='" + id + "'/>");
                                 out.println("</form></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>");
                                 out.println("</tr>");
