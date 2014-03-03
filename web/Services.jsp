@@ -63,7 +63,7 @@
                     // ResultSet's cursor now pointing at first row 
                     do {
                         out.println("<td><form style='color:white;font-family: Bradley hand ITC;'method='get' action='cart'>");
-                        out.println("<input type='hidden' name='todo' value='add' />");
+                        out.println("<input type='hidden' name='addToCart' value='add' />");
                         // Print each row with a checkbox identified by book's id
                         String id = rset.getString("Package_ID");
                         out.println("<a href='#" + rset.getString(2) + "'><div  style='margin-top:20px;'class='drink " + rset.getString(2) + "'><p class='imgText1'>" + rset.getString(2) + "</br>Click </br>for Details</p></div></a>");%>

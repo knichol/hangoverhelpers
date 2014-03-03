@@ -106,7 +106,7 @@
             %>
         </form>
         <form style="text-align: center;"action="Receipt" method="post">
-            <input class="btn"type="submit" value="Save Receipt">
+            <input style="width:110px;"class="btn"type="submit" value="Save Receipt">
         </form>
         <table style="font-family: Bradley hand ITC;color:white;font-size:150%;"align="center">
             <tr>

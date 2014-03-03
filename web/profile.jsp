@@ -70,12 +70,11 @@
                     <%
                         session = request.getSession(true);
                         ShoppingCart cart;
-                        synchronized (session) {  // synchronized to prevent concurrent updates
-                            // Retrieve the shopping cart for this session, if any. Otherwise, create one.
+                        synchronized (session) {
                             cart = (ShoppingCart) session.getAttribute("cart");
                             if (cart == null) {  // No cart, create one.
                                 cart = new ShoppingCart();
-                                session.setAttribute("cart", cart);  // Save it into session
+                                session.setAttribute("cart", cart);  
                             }
                         }
 
@@ -88,11 +87,11 @@
                         stmt = conn.createStatement();  // Get a connection from the pool
                         out.println("<h2 style='text-align:center;'>Shopping Cart</h2>");
 
-                        String todo = request.getParameter("todo");
-                        if (todo == null) {
-                            todo = "view";  // to prevent null pointer
+                        String add = request.getParameter("addToCart");
+                        if (add == null) {
+                            add = "view";  // to prevent null pointer
                         }
-                        if (todo.equals("add") || todo.equals("update")) {
+                        if (add.equals("add") || add.equals("update")) {
                             String[] ids = request.getParameterValues("id");
                             if (ids == null) {
                                 out.println("<h3>Please Select a Package!</h3></body></html>");
@@ -106,15 +105,15 @@
                                 float price = rset.getFloat("Price");
 
                                 int Stock = Integer.parseInt(request.getParameter("Stock" + id));
-                                int idInt = Integer.parseInt(id);
-                                if (todo.equals("add")) {
-                                    cart.add(idInt, title, price, Stock);
-                                } else if (todo.equals("update")) {
-                                    cart.update(idInt, Stock);
+                                int idI = Integer.parseInt(id);
+                                if (add.equals("add")) {
+                                    cart.add(idI, title, price, Stock);
+                                } else if (add.equals("update")) {
+                                    cart.update(idI, Stock);
                                 }
                             }
 
-                        } else if (todo.equals("remove")) {
+                        } else if (add.equals("remove")) {
                             String id = request.getParameter("id"); 
                             cart.remove(Integer.parseInt(id));
                         }
