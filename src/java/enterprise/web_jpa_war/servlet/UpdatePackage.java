@@ -8,11 +8,6 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-import javax.persistence.PersistenceUnit;
-import javax.persistence.EntityManagerFactory;
-import javax.annotation.Resource;
-import javax.transaction.UserTransaction;
-
 /**
  * The servlet class to update stock
  */

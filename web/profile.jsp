@@ -161,7 +161,7 @@
 
                             out.println("</table>");
                         }
-                        out.println("<p style='text-align:center;'><a style='color:white;text-decoration:none;'href='Welcome.jsp'>Select More Packages</a></p>");
+                        out.println("<p style='text-align:center;'><a style='color:white;text-decoration:none;'href='Services.jsp'>Select More Packages</a></p>");
                         if (!cart.isEmpty()) {
                             out.println("<form style='text-align:center;'method='get' action='checkout'>");
                             out.println("<input class='btn'type='submit' value='CheckOut'/>");

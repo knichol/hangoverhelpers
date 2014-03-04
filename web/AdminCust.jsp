@@ -65,7 +65,7 @@
             </form>
 
             <div style="text-align: center;"class="register">
-                <form style="text-align: center;"id ="register" action="Register" method="post">
+                <form style="text-align: center;"id ="register" action="AdminReg" method="post">
                     Add New User</br>
                     <input type="text" id="Name" title="Name" name="Name" placeholder="Fullname"></br>
                     <input type="text" id="uName" title="Username" name="uName" placeholder="Username"></br>
